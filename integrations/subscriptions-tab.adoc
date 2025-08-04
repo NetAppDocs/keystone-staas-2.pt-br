@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: integrations/subscriptions-tab.html 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp 
+summary: Para saber mais sobre suas assinaturas do Keystone , você pode visualizar uma lista de todas as suas assinaturas na aba Assinaturas. 
+---
+= Veja detalhes sobre suas assinaturas Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode visualizar uma lista de todas as suas assinaturas na aba *Assinaturas* no BlueXP e no Digital Advisor.  Esta aba fornece insights fáceis de entender com base no status da sua assinatura e uso, ajudando você a se manter informado e a agir quando necessário.
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+A aba *Assinaturas* no BlueXP é dividida em duas seções: *Assinaturas* e *Níveis de serviço de desempenho*.  Cada seção oferece insights específicos para ajudar você a gerenciar e monitorar suas assinaturas do Keystone .  Para visualizar informações detalhadas de suas assinaturas, siga estas etapas:
+
+.Passos
+. No menu de navegação esquerdo do BlueXP , acesse *Armazenamento > Keystone > Assinaturas*.
++
+image:bxp-subscription-list-1.png["ver os detalhes da aba de assinatura"]
+
++
+Você vê as principais métricas, como status da capacidade, status de expiração da assinatura e versão do Keystone em todas as assinaturas.  Para saber mais, consultelink:../integrations/keystone-bluexp.html["Painel Keystone no BlueXP"] .
+
++
+Você pode ver os seguintes detalhes na tabela:
+
++
+** *Número da assinatura*: O número da assinatura do Keystone atribuído pela NetApp.
+** *ID de rastreamento*: O ID de rastreamento atribuído no momento da ativação da assinatura.  Este é um ID exclusivo para cada assinatura e site, usado para rastrear a assinatura.
+** *Nome do cliente*: O nome do cliente associado à assinatura do Keystone .
+** *Assinaturas vinculadas*: se você tiver alguma assinatura secundária vinculada à sua assinatura principal, esta coluna lista os números de assinatura vinculada à assinatura principal.  Este número de assinatura pode ser da sua assinatura primária ou secundária (vinculada).
+** * Versão do Keystone *: A versão do serviço Keystone que está sendo usada para a assinatura.  As regras do plano de tarifas para níveis de serviço de desempenho podem ser diferentes entre as versões de assinatura.  Para saber mais sobre a versão v1, consulte https://docs.netapp.com/us-en/keystone/index.html["Serviços de assinatura Keystone | Documentação da versão 1"^] .
+** *Período de cobrança*: O período de cobrança da assinatura.
+** *Níveis de serviço de desempenho*: O número de planos de tarifas associados à assinatura, com cada plano de tarifas correspondendo a um nível de serviço de desempenho específico e capacidade comprometida.
+** *Capacidade máxima*: Capacidade máxima consumida dentro da assinatura.
+** *Dias até o vencimento da assinatura*: Número de dias restantes até o vencimento da assinatura.
++
+
+TIP: Você pode personalizar as colunas exibidas na tabela usando o seletor de colunasimage:column-selector.png["ícone do seletor de coluna"] ícone.  Para determinados campos e colunas, você pode ver ícones de informações ou avisos e dicas de ferramentas que fornecem informações adicionais sobre os dados.
+
+
+
+. Você pode selecionar a subguia *Níveis de serviço de desempenho* para visualizar os níveis de serviço de desempenho em todas as assinaturas.
++
+image:bxp-performance-levels.png["visualizar níveis de serviço de desempenho em todas as assinaturas"]
+
++
+** *Níveis de serviço de desempenho em todas as assinaturas*: Exibe o número de níveis de serviço de desempenho em todas as assinaturas.
+** *Consistência de provisionamento entre assinaturas*: mostra as contagens de níveis de serviço de desempenho com provisionamento excessivo e insuficiente.
++
+Você pode ver a lista de níveis de serviço de desempenho, incluindo detalhes importantes, como o nome do cliente, o número da assinatura, o tipo de nível de serviço de desempenho, o número total de volumes e o status de conformidade de QoS.  A tabela também exibe a contagem de volumes protegidos, a capacidade total comprometida, consumida, provisionada, disponível (com e sem burst) e a capacidade de burst acumulada.
+
+
+
+
+
+--
+.Digital Advisor
+--
+Para visualizar suas assinaturas no Digital Advisor, siga estas etapas:
+
+.Passos
+. No painel de navegação esquerdo do Digital Advisor , acesse *Geral > Assinaturas Keystone > Assinaturas*.
++
+Você pode visualizar todas as suas assinaturas aqui, com informações detalhadas sobre cada uma delas.
+
++
+image:all-subs-4.png["uma imagem da aba Assinaturas"]
+
++
+Para determinados campos e colunas, você pode ver ícones de informações ou avisos e dicas de ferramentas que fornecem informações adicionais sobre os dados.
+
++
+** *Número da assinatura*: O número da assinatura do Keystone atribuído pela NetApp.
+** *Assinaturas vinculadas*: esta coluna está disponível opcionalmente para você.  Se você tiver alguma assinatura secundária vinculada à sua assinatura principal, esta coluna listará os números de assinatura vinculados à assinatura principal.  Este número de assinatura pode ser da sua assinatura primária ou secundária (vinculada).
+** *ID de rastreamento*: O ID de rastreamento atribuído no momento da ativação da assinatura.  Este é um ID exclusivo para cada assinatura e site.
++
+
+TIP: Se você assinou um serviço complementar de proteção avançada de dados, pode clicar na dica de ferramenta ao lado do seu número de assinatura para visualizar o ID de rastreamento da assinatura do parceiro em uma configuração do MetroCluster .  Para visualizar o consumo detalhado por assinaturas de parceiros em uma configuração do MetroCluster , consultelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Gráficos de referência para proteção avançada de dados"] .
+
+** *Tipo de uso*: Você pode ter assinado várias versões do Keystone .  As regras do plano de tarifas para níveis de serviço de desempenho podem ser diferentes entre as versões de assinatura.  Ao observar o valor nesta coluna, você sabe se o tipo de uso é cobrado de acordo com o uso provisionado, físico ou lógico.  Para saber mais sobre a versão 1, consulte https://docs.netapp.com/us-en/keystone/index.html["Serviços de assinatura Keystone | Documentação da versão 1"^] .
+** *Período de cobrança*: O período de cobrança da assinatura.
+** *Data de início*: A data de início da assinatura.
+** *Data de término*: Data de término da assinatura.  Se você tiver uma assinatura mensal faturável que se renova automaticamente a cada mês, você verá `Month-on-month` em vez da data final.  Com base nessa data, você poderá ver notificações de assinaturas que estão prestes a terminar ou que têm políticas de renovação automática anexadas.
+** *Status de uso*: Exibe o indicador de uso para indicar se o consumo está dentro ou excedendo o limite da assinatura.  Você pode classificar a lista por esta coluna se quiser visualizar os registros de maior consumo.
+** image:subs-dtls-icon.png["ícone"]: Clicar neste ícone para uma assinatura abre a aba *Consumo Atual* com os detalhes de uso dessa assinatura.
+** image:aiq-ks-time-icon.png["ícone"]: Clicar neste ícone abre a aba *Tendência de Consumo*, onde você pode ver os dados históricos de uso para cada nível de serviço de desempenho incluído nesta assinatura.
++
+Você pode consultar os indicadores de uso para verificar o status de uso de cada assinatura:
+
++
+image:icon-grey.png["ícone de ponto cinza"]*Sem consumo*: Nenhum uso de capacidade registrado em relação à capacidade comprometida do nível de serviço de desempenho. image:icon-green.png["ícone de ponto verde"] *Normal*: O consumo é normal. image:icon-amber.png["ícone de ponto âmbar"] *Alto*: Consumo máximo, ou seja, o uso está prestes a atingir 100% ou mais da capacidade comprometida. image:icon-red.png["ícone de ponto vermelho"] *Burst*: O consumo está dentro do limite de burst.  O consumo de pico é o consumo que ultrapassa 100% da capacidade comprometida de um nível de serviço de desempenho e está dentro do limite de uso de pico acordado. image:icon-purple.png["ícone de ponto roxo"] *Acima do limite de estouro*: indica consumo acima do limite de estouro acordado.
+
+
+
+
+
+--
+====
+*Informações relacionadas*
+
+* link:../integrations/dashboard-overview.html["Entenda o painel do Keystone"]
+* link:../integrations/current-usage-tab.html["Veja os detalhes do seu consumo atual"]
+* link:../integrations/consumption-tab.html["Ver tendências de consumo"]
+* link:../integrations/subscription-timeline.html["Veja o cronograma da sua assinatura"]
+* link:../integrations/assets-tab.html["Veja seus ativos de assinatura Keystone"]
+* link:../integrations/assets.html["Visualize ativos em suas assinaturas Keystone"]
+* link:../integrations/volumes-objects-tab.html["Ver detalhes de volumes e objetos"]
+

@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/install-collector.html 
+keywords: install, keystone, collector, private, mode, vmware vsphere, linux, deploy, debian, rpm file 
+summary: Siga algumas etapas para instalar o Keystone Collector em um ambiente que não tenha acesso à Internet, também conhecido como _site escuro_ ou _modo privado_. 
+---
+= Instalar o Keystone Collector em modo privado
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Siga algumas etapas para instalar o Keystone Collector em um ambiente que não tenha acesso à Internet, também conhecido como _site escuro_ ou _modo privado_.  Este tipo de instalação é perfeito para seus sites seguros.
+
+Você pode implantar o Keystone Collector em sistemas VMware vSphere ou instalá-lo em sistemas Linux, dependendo de seus requisitos.  Siga as etapas de instalação que correspondem à opção selecionada.
+
+
+
+== Implantar no VMware vSphere
+
+Siga estes passos:
+
+. Baixe o arquivo de modelo OVA em https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova["Portal da Web NetApp Keystone"] .
+. Para obter as etapas de implantação do coletor Keystone com arquivo OVA, consulte a seçãolink:../installation/vapp-installation.html#deploying-the-ova-template["Implantando o modelo OVA"] .
+
+
+
+
+== Instalar no Linux
+
+O software Keystone Collector é instalado no servidor Linux usando os arquivos .deb ou .rpm fornecidos, com base na distribuição Linux.
+
+Siga estas etapas para instalar o software no seu servidor Linux:
+
+. Baixe ou transfira o arquivo de instalação do Keystone Collector para o servidor Linux:
++
+`keystone-collector-<version>.noarch.rpm`
+
+. Abra um terminal no servidor e execute os seguintes comandos para iniciar a instalação.
++
+** *Usando pacote Debian*
++
+`dpkg -i keystone-collector_<version>_all.deb`
+
+** *Usando arquivo RPM*
++
+`yum install keystone-collector-<version>.noarch.rpm`
+
++
+ou
+
++
+`rpm -i keystone-collector-<version>.noarch.rpm`
+
+
+
+. Digitar `y` quando solicitado a instalar o pacote.
+

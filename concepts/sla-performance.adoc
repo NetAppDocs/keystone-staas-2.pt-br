@@ -1,0 +1,140 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-performance.html 
+keywords: sustainability, sla, service level agreement, slo, service level objectives 
+summary: A Keystone oferece SLO baseado em latência por nível de serviço de desempenho, conforme descrito no pedido da Keystone para capacidade consumida até o limite de pico. 
+---
+= Desempenho SLO
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O NetApp Keystone oferece SLO baseado em latência por nível de serviço de desempenho, conforme descrito no pedido do Keystone para capacidade consumida até o limite de pico, de acordo com os termos e condições listados a seguir.
+
+
+
+== Métricas
+
+* *Desempenho degradado*: A quantidade de tempo, em minutos, por incidente, durante a qual a meta de latência do 90º percentil não é atingida.
+* A latência do *90º percentil* é medida por volume, por nível de desempenho, para todos os volumes dentro de uma Ordem Keystone .  A latência é amostrada a cada cinco minutos, e o valor do 90º percentil calculado ao longo de um período de 24 horas é usado como medida diária, considerando os seguintes pontos:
++
+** Os volumes que registram pelo menos cinco IOPS no momento da coleta de métricas são considerados para uma amostra.
+** Volumes com mais de 30% de operações de gravação no momento da coleta de métricas são excluídos da amostra.
+** A latência adicionada pelo AQoS para IOPS/TiB solicitados que for maior que IOPS/TiB de destino é excluída da amostra.
+** A latência adicionada pelo AQoS para manter o IOPS mínimo por volume é excluída da amostra.
+** Para volumes que têm o FabricPool habilitado, a latência incorrida devido à transferência de dados de e para o armazenamento de destino (frio) não é contabilizada.
+** A latência causada pelo aplicativo, host ou rede do cliente fora do cluster ONTAP não é contada.
+** Ao usar o serviço complementar de proteção avançada de dados, a latência de destino inclui apenas operações de E/S de e para o array de armazenamento local.
+** Durante um período de 24 horas, pelo menos dez métricas válidas devem estar disponíveis.  Caso contrário, as métricas serão descartadas.
+** Se um ou mais volumes em um array de armazenamento não tiverem uma política de AQoS válida aplicada, o número de IOPS disponíveis para outros volumes poderá ser afetado, e a NetApp não será responsável por direcionar ou atender aos níveis de desempenho naquele array de armazenamento.
+** Nas configurações do FabricPool , os níveis de desempenho são aplicáveis quando todos os blocos de dados solicitados estão no armazenamento de origem (ativo) do FabricPool e o armazenamento de origem não está em um relacionamento síncrono do SnapMirror .
+
+
+
+
+
+
+== Níveis de serviço de desempenho
+
+Todos os níveis de serviço de desempenho suportados pelos arrays de armazenamento flash ONTAP são elegíveis para SLO de desempenho e garantem o atendimento à seguinte latência alvo:
+
+|===
+
+
+| *Nível de serviço* | Extremo | Prêmio | Desempenho | Padrão 
+
+
+ a| 
+*Latência do percentil 90^ alvo*
+| <1 ms | <2ms | <4ms | <4ms 
+|===
+Para saber mais sobre os requisitos de latência dos níveis de serviço de desempenho, consultelink:../concepts/service-levels.html["Níveis de serviço de desempenho em Keystone"] .
+
+
+
+== Créditos de serviço
+
+
+NOTE: SLAs e garantias estão disponíveis mediante nomeação.
+
+A NetApp emite créditos de serviço pelo desempenho degradado:
+
+|===
+
+
+| *Limite de desempenho* | *Crédito de serviço* 
+
+
+ a| 
+Latência do 90º percentil > latência alvo
+| 3% para cada dia de calendário de ocorrência 
+|===
+
+
+=== Cálculo de crédito de serviço
+
+Os créditos de serviço são determinados usando a seguinte fórmula:
+
+Créditos de serviço = (capacidade impactada / capacidade total comprometida) X taxas de capacidade X dias afetados X porcentagem de crédito
+
+Onde:
+
+* *capacidade impactada*: A quantidade de capacidade armazenada afetada.
+* *capacidade total comprometida*: A capacidade comprometida para o nível de serviço de desempenho do pedido Keystone .
+* *taxas de capacidade*: As taxas para o nível de desempenho afetado, conforme a ordem Keystone .
+* *dias afetados*: O número de dias corridos impactados.
+* *porcentagem de crédito*: A porcentagem predeterminada para crédito de serviço.
+
+
+*Exemplo*
+
+O exemplo a seguir mostra o método de cálculo para créditos de serviço:
+
+|===
+
+
+| *Nível de serviço* | *Capacidade impactada* | *Capacidade total comprometida* | *Taxas de capacidade* | *Dias do calendário afetados* | *Porcentagem de crédito* 
+
+
+ a| 
+Extremo
+| 10 Tib | 50 Tib | $ 1000 | 2 | 3% 
+|===
+Usando a fórmula: Créditos de serviço = (10/50) X 1000 x 2 x 0,03
+
+Com base no cálculo, os créditos de serviço serão de US$ 12.
+
+
+
+=== Solicitação de crédito de serviço
+
+Se uma violação do SLA for detectada, abra um tíquete de suporte de prioridade 3 (P3) com o suporte da NetApp Keystone .
+
+* Os seguintes detalhes são necessários:
++
+.. Número de assinatura do Keystone
+.. Detalhes do controlador de volumes e armazenamento
+.. Local, hora, data e descrição do problema
+.. Duração calculada da detecção de latência
+.. Ferramentas e métodos de medição
+.. Qualquer outro documento aplicável
+
+
+* Forneça os detalhes na planilha do Excel, conforme mostrado abaixo, para um tíquete P3 aberto com o suporte do NetApp Keystone .
++
+image:sla-breach.png["modelo de planilha do Excel"]
+
+
+
+[NOTE]
+====
+* Uma solicitação de crédito de serviço deve ser iniciada dentro de seis semanas após o suporte do NetApp Keystone validar uma violação.  Todos os créditos de serviço devem ser reconhecidos e aprovados pela NetApp.
+* Créditos de serviço podem ser aplicados a uma fatura futura.  Os créditos de serviço não se aplicam a assinaturas expiradas do Keystone .  Para saber mais, consultelink:../concepts/gssc.html["Suporte NetApp Keystone"] .
+
+
+====

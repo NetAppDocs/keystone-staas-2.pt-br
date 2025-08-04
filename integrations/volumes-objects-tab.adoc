@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: integrations/volumes-objects-tab.html 
+keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
+summary: Visualize detalhes de capacidade no nível de armazenamento de volume ou objeto. 
+---
+= Ver detalhes sobre volumes ONTAP e armazenamento de objetos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se quiser visualizar detalhes de capacidade no nível de armazenamento de volume ou objeto, navegue até a guia *Volumes e Objetos* no Digital Advisor.  Para StorageGRID, você pode usar esta guia para ler o uso pelos nós individuais no seu ambiente de armazenamento de objetos.
+
+Você pode consultar a aba *Ativos* no BlueXP para ver esses detalhes.  Para visualizar os detalhes de uma assinatura específica do Keystone STaaS, consultelink:../integrations/assets-tab.html["Ver ativos associados a uma assinatura Keystone"] .  Se você quiser visualizar detalhes de várias assinaturas Keystone , consultelink:../integrations/assets.html["Visualize ativos em suas assinaturas Keystone"] .
+
+
+NOTE: O título desta aba varia de acordo com a natureza da implantação no seu site.  Se você tiver ONTAP e armazenamento de objetos, o título da guia aparecerá como *Volumes e Objetos*.  Somente para ONTAP, o nome aparece *Volumes*.  Para armazenamento de objetos StorageGRID , você pode ver a guia *Objetos*.
+
+
+
+== Visualizar volumes ONTAP e detalhes de armazenamento de objetos
+
+A guia *Volumes e Objetos* oferece insights sobre volumes do sistema ONTAP e armazenamento de objetos em diferentes níveis de detalhes.  Para volumes ONTAP , há duas subguias: *Resumo do volume*, que fornece uma contagem geral dos volumes mapeados para os níveis de serviço de desempenho assinados, e *Detalhes do volume*, que lista esses volumes novamente com seus detalhes específicos.  A subguia *Objetos* fornece detalhes sobre armazenamento de objetos para assinaturas que incluem níveis de serviço de desempenho para armazenamento de arquivos e objetos.
+
+[role="tabbed-block"]
+====
+.Resumo do volume
+--
+. No painel de navegação esquerdo do Digital Advisor , acesse *Geral > Assinaturas Keystone > Volumes e objetos > Resumo do volume*.
+. Selecione o número da assinatura.
++
+Para a assinatura selecionada do Keystone STaaS, você pode ver o número total de volumes, seu status de conformidade de QoS, a contagem de volumes protegidos e a capacidade total comprometida, consumida e disponível em todos esses volumes.  Se você clicar no número de volumes não compatíveis ou protegidos, será direcionado para a guia *Detalhes do volume*, onde você poderá visualizar uma lista filtrada mostrando os volumes não compatíveis ou os volumes protegidos, com base na sua seleção.
+
++
+image:volume-summary-2.png["Guia de resumo de volume"]
+
+
+
+--
+.Detalhes do volume
+--
+. No painel de navegação esquerdo do Digital Advisor , acesse *Geral > Assinaturas Keystone > Volumes > Detalhes do volume*.
+. Selecione o número da assinatura.
++
+Você pode ver a listagem tabular dos volumes, como uso de capacidade, tipo de volume, cluster, agregado e os níveis de serviço de desempenho do Keystone atribuídos.  Você pode rolar pelas colunas e aprender mais sobre elas passando o mouse sobre os ícones de informação ao lado dos títulos das colunas.  Você pode classificar pelas colunas e filtrar as listas para visualizar informações específicas.
+
++
+
+NOTE: As políticas de QoS não são aplicáveis na versão 3 do Keystone .
+
++
+Você pode usar *Ocultar/Mostrar Colunas* para adicionar ou remover colunas exibidas na tabela.  Por padrão, todas as colunas são selecionadas, exceto a coluna *Departamento*.  Você pode selecionar ou desmarcar qualquer coluna, incluindo a coluna *Departamento*, e suas preferências serão salvas para uso posterior.  Ao baixar o relatório CSV, os detalhes da coluna *Departamento* serão incluídos, se selecionados, enquanto outras colunas aparecerão independentemente do status de seleção na tabela.
+
++
+
+NOTE: Para o serviço complementar de proteção avançada de dados, uma coluna adicional aparece para indicar se o volume é primário ou espelho na configuração do MetroCluster .  Você pode copiar números de série de nós individuais clicando no botão *Copiar números de série de nós*.
+
++
+image:volume-details-3.png["Guia de detalhes de volumes"]
+
+
+
+--
+.Objetos
+--
+. No painel de navegação esquerdo do Digital Advisor , acesse *Geral > Assinaturas Keystone > Objetos*.
+. Selecione o número da assinatura.  Por padrão, o primeiro número de assinatura disponível é selecionado se a assinatura selecionada anteriormente não incluir níveis de serviço de desempenho para armazenamento de arquivos e objetos.
++
+
+NOTE: Para StorageGRID, esta guia exibe o uso físico dos nós para armazenamento de objetos.
+
++
+image:objects-details.png["Guia Objetos"]
+
+
+
+--
+====
+*Informações relacionadas*
+
+* link:../integrations/dashboard-overview.html["Entenda o painel do Keystone"]
+* link:../integrations/subscriptions-tab.html["Ver detalhes da sua assinatura"]
+* link:../integrations/current-usage-tab.html["Veja os detalhes do seu consumo atual"]
+* link:../integrations/consumption-tab.html["Ver tendências de consumo"]
+* link:../integrations/subscription-timeline.html["Veja o cronograma da sua assinatura"]
+* link:../integrations/assets-tab.html["Veja seus ativos de assinatura Keystone"]
+* link:../integrations/assets.html["Visualize ativos em suas assinaturas Keystone"]
+* link:../integrations/performance-tab.html["Ver métricas de desempenho"]
+

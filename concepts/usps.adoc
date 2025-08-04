@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: O United States Protected Support é um serviço complementar que fornece entrega e suporte de serviços Keystone contínuos de cidadãos dos EUA em solo americano. 
+---
+= Saiba mais sobre o USPS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O United States Protected Support (USPS) é uma oferta complementar para assinaturas do NetApp Keystone .  Ele lhe dá direito a receber entrega e suporte de serviços Keystone contínuos de cidadãos dos EUA em solo americano.
+
+Leia as seções a seguir para entender quais elementos de suas assinaturas estão vinculados a este serviço complementar e são fornecidos de acordo com os termos do Contrato NetApp Keystone :disclaimer1[Os serviços e ofertas descritos aqui estão sujeitos, limitados e regidos por um Contrato Keystone totalmente executado.]
+
+
+
+== Monitoramento NetApp USPS
+
+A equipe de suporte do NetApp USPS Keystone monitora a integridade dos seus produtos e serviços assinados, fornece suporte remoto e colabora com seu gerente de sucesso do Keystone .  Todo o pessoal que monitora os produtos associados aos pedidos de assinatura relevantes da Keystone são cidadãos dos EUA que operam em solo americano.
+
+
+
+== Gerente de Sucesso Keystone
+
+O Keystone Success Manager (KSM) é um cidadão americano que opera em solo americano.  Suas responsabilidades são especificadas no seu Contrato NetApp Keystone .
+
+
+
+== Atividades de implantação
+
+Quando disponível, as atividades de implantação e instalação no local e remotas são conduzidas por cidadãos dos EUA em solo americano. Nota de rodapé: isenção de responsabilidade [A disponibilidade de pessoal apropriado para atividades no local depende da localização geográfica em que os sistemas Keystone são implantados.]
+
+
+
+== Apoiar
+
+Quando disponíveis, as atividades de suporte e solução de problemas no local são conduzidas por cidadãos dos EUA em solo americano. nota de rodapé: isenção de responsabilidade[]

@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: installation/security.html 
+keywords: VMware, security, hardening, Keystone Collector 
+summary: O Keystone Collector inclui recursos de segurança que monitoram o desempenho e as métricas de uso dos sistemas Keystone e é configurado para usar configurações de segurança reforçada. 
+---
+= Segurança do Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O Keystone Collector inclui recursos de segurança que monitoram o desempenho e as métricas de uso dos sistemas Keystone , sem arriscar a segurança dos dados do cliente.
+
+O funcionamento do Keystone Collector é baseado nos seguintes princípios de segurança:
+
+* *Privacidade por design* - O Keystone Collector coleta dados mínimos para realizar a medição de uso e o monitoramento de desempenho. Para obter mais informações, consulte link:data-collection.html["Dados coletados para faturamento"^] .  Olink:configuration.html#limit-collection-of-private-data["Remover dados privados"] opção é habilitada por padrão, o que mascara e protege informações confidenciais.
+* *Acesso com privilégios mínimos* - O Keystone Collector requer permissões mínimas para monitorar os sistemas de armazenamento, o que minimiza os riscos de segurança e evita quaisquer modificações não intencionais nos dados.  Essa abordagem está alinhada ao princípio do menor privilégio, aprimorando a postura geral de segurança dos ambientes monitorados.
+* *Estrutura de desenvolvimento de software segura* - A Keystone usa uma estrutura de desenvolvimento de software segura durante todo o ciclo de desenvolvimento, o que atenua riscos, reduz vulnerabilidades e protege o sistema contra ameaças potenciais.
+
+
+
+
+== Reforço da segurança
+
+Por padrão, o Keystone Collector é configurado para usar configurações de segurança reforçada.  A seguir estão as configurações de segurança recomendadas:
+
+* O sistema operacional da máquina virtual Keystone Collector:
++
+** Está em conformidade com o padrão CIS Debian Linux 12 Benchmark.  Fazer qualquer alteração na configuração do sistema operacional fora do software de gerenciamento Keystone Collector pode reduzir a segurança do sistema. Para obter mais informações, consulte link:https://learn.cisecurity.org/benchmarks["Guia de referência do CIS"^] .
+** Recebe e instala automaticamente patches de segurança verificados pelo Keystone Collector por meio do recurso de atualização automática.  Desabilitar essa funcionalidade pode levar a um software vulnerável e sem patches.
+** Autentica atualizações recebidas do Keystone Collector.  Desabilitar a verificação do repositório APT pode levar à instalação automática de patches não autorizados, potencialmente introduzindo vulnerabilidades.
+
+
+* O Keystone Collector valida automaticamente os certificados HTTPS para garantir a segurança da conexão.  Desabilitar esse recurso pode levar à representação de endpoints externos e vazamento de dados de uso.
+* Suporte do Keystone Collectorlink:configuration.html#trust-a-custom-root-ca["CA confiável personalizada"] certificação.  Por padrão, ele confia em certificados assinados por CAs raiz públicas reconhecidas pelolink:https://wiki.mozilla.org/CA["Programa de Certificação Mozilla CA"^] .  Ao habilitar CAs confiáveis adicionais, o Keystone Collector habilita a validação de certificado HTTPS para conexões com endpoints que apresentam esses certificados.
+* O Keystone Collector habilita a opção *Remover Dados Privados* por padrão, que mascara e protege informações confidenciais. Para obter mais informações, consulte link:configuration.html#limit-collection-of-private-data["Limitar a coleta de dados privados"^] .  Desabilitar esta opção resulta na comunicação de dados adicionais ao sistema Keystone .  Por exemplo, pode incluir informações inseridas pelo usuário, como nomes de volumes, que podem ser consideradas informações confidenciais.
+
+
+*Informações relacionadas*
+
+* link:installation-overview.html["Visão geral do Keystone Collector"]
+* link:vapp-prereqs.html["Requisitos de infraestrutura virtual"]
+* link:configuration.html["Configurar o Keystone Collector"]
+

@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: concepts/overview.html 
+keywords: learn about keystone, keystone introduction, keystone, STaaS, service, offering, overview 
+summary: Keystone é um modelo de serviço baseado em assinatura e pagamento conforme o crescimento, para empresas que preferem modelos de consumo de OpEx ao CapEx inicial ou leasing. 
+---
+= Saiba mais sobre o NetApp Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O NetApp Keystone é um modelo de serviço baseado em assinatura e pagamento conforme o uso que fornece uma experiência de nuvem híbrida perfeita para empresas que preferem modelos de consumo de despesas operacionais em vez de despesas de capital iniciais ou leasing para atender às suas necessidades de armazenamento e proteção de dados.
+
+Com o Keystone, você se beneficia de:
+
+* *Custo-benefício*: Pague somente pelo armazenamento necessário com flexibilidade para lidar com capacidade extra.
+* *Eficiência de capital*: acesse armazenamento de nível empresarial sem investimentos iniciais.
+* *Escalabilidade*: dimensione facilmente sua capacidade de armazenamento conforme seu negócio cresce.
+* *Personalização*: ajuste seus planos de armazenamento e migre para a nuvem conforme necessário, otimizando seus custos gerais.
+* *Integração em nuvem*: combine serviços locais e em nuvem em uma única assinatura.
+* *Segurança*: Proteja seus dados com medidas de segurança avançadas e recuperação garantida contra ameaças.
+
+
+image:keystone-benefit-1.png["Benefícios do Keystone"]
+
+O Keystone fornece capacidade de armazenamento em níveis de serviço de desempenho predefinidos para tipos de armazenamento de arquivos, blocos e objetos.  Esse armazenamento pode ser implantado no local e operado pela NetApp, um parceiro ou o cliente.  O Keystone pode ser usado em associação com serviços de nuvem da NetApp , como o Cloud Volumes ONTAP, que pode ser implantado em um ambiente hiperescalar de sua escolha.
+
+
+
+== Armazenamento como serviço Keystone (STaaS)
+
+As ofertas de armazenamento como serviço (STaaS) visam fornecer um modelo semelhante à nuvem pública para aquisição, implantação e gerenciamento de infraestrutura de armazenamento.  Enquanto muitas empresas ainda estão trabalhando em sua estratégia para nuvem híbrida, o Keystone STaaS oferece a flexibilidade para começar com serviços locais e fazer a transição para a nuvem quando chegar a hora certa.  Isso garante que você possa proteger seus compromissos em diferentes modelos de implantação, realocando seus gastos conforme necessário, sem aumentar sua fatura mensal.
+
+*Informações relacionadas*
+
+* link:../concepts/pricing.html["Preços Keystone"]
+* link:../concepts/add-on.html["Serviços complementares no Keystone STaaS"]
+* link:../concepts/service-levels.html["Níveis de serviço de desempenho em Keystone"]
+* link:../concepts/infra.html["Infraestrutura Keystone"]
+* link:../concepts/operational-models.html["Modelos operacionais em Keystone"]
+

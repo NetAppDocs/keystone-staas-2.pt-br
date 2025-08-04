@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-tiering.html 
+keywords: add-on services, add-on, data tiering 
+summary: O serviço complementar de hierarquização de dados identifica dados usados com menos frequência e os hierarquiza no armazenamento compatível. 
+---
+= Saiba mais sobre camadas de dados
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os serviços padrão do Keystone STaaS para armazenamento de arquivos e blocos incluem recursos de hierarquização que identificam dados usados com menos frequência e os hierarquizam para o armazenamento frio da NetApp compatível com o Keystone STaaS.  Você pode usar a hierarquização de dados como um serviço complementar se quiser hierarquizar seus dados inativos em qualquer armazenamento que não seja da NetApp e que seja compatível com Keystone STaaS.
+
+Para obter informações sobre serviços padrão e complementares, consultelink:../concepts/supported-storage-services.html["Serviços Keystone STaaS"] .  Para obter informações sobre os níveis de serviço de desempenho, consultelink:../concepts/service-levels.html["Níveis de serviço de desempenho em Keystone"] .
+
+O serviço complementar de hierarquização é necessário somente quando os dados são hierarquizados em qualquer armazenamento não NetApp , como Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) e outros armazenamentos de objetos de terceiros compatíveis com S3 e com suporte do Keystone STaaS.
+
+O recurso de hierarquização aproveita a tecnologia NetApp FabricPool , que permite o hierarquização automatizada de dados acessados com pouca frequência para camadas de armazenamento de objetos dentro e fora das instalações.
+
+O serviço de hierarquização de dados complementar permite a hierarquização dos níveis Extreme, Premium, Performance, Standard e Value para um destino de armazenamento de objetos.  A proporção de dados quentes e frios a serem hierarquizados não é fixa, e cada nível é medido e faturado separadamente.
+
+Por exemplo, se a meta para o nível de armazenamento refrigerado for:
+
+* Nível de valor do Keystone STaaS, nível de objeto do Keystone STaaS StorageGRID ou grade SGWS existente (de propriedade do cliente) - Não há custo adicional; faz parte do serviço padrão.
+* Armazenamento de objetos de terceiros com suporte para nuvem pública (AWS, Azure, Google) ou Keystone STaaS - Há uma cobrança adicional pela capacidade de dados em camadas para o destino de armazenamento a frio.
+
+
+As taxas para serviços de níveis adicionais são aplicadas durante todo o período da assinatura.
+
+
+NOTE: Os serviços de computação, armazenamento e rede baseados em hiperescala exigidos pelo Cloud Volumes ONTAP não são fornecidos pela NetApp como parte das assinaturas do Keystone STaaS; esses serviços precisam ser adquiridos diretamente de provedores de serviços de nuvem hiperescala.
+
+*Informações relacionadas*
+
+link:https://kb.netapp.com/hybrid/Keystone/AIQ_Dashboard/How_to_approximate_Keystone_Consumption_with_Data_Tiering_(FabricPool)_through_the_ONTAP_cli["Como aproximar o consumo do Keystone com hierarquização de dados (FabricPool) usando o ONTAP CLI"^]

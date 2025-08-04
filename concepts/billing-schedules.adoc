@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules.html 
+keywords: billing schedules, schedule for payment 
+summary: As assinaturas do Keystone STaaS são cobradas mensalmente e anualmente. 
+---
+= Cronogramas de faturamento
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+As assinaturas do Keystone STaaS são cobradas mensalmente ou anualmente.
+
+
+
+== Faturamento mensal
+
+As faturas são enviadas mensalmente.  Para o mês em que os serviços são utilizados, uma fatura é enviada no mês seguinte.  Por exemplo, a fatura dos serviços que você utilizou em janeiro é entregue no início de fevereiro.  Esta fatura inclui os encargos pela capacidade comprometida e, se aplicável, qualquer uso excessivo.
+
+
+
+== Faturamento anual
+
+Uma fatura é gerada no início de cada ano de assinatura para o pagamento mínimo da capacidade comprometida.  Ele é gerado na data de início da assinatura.  Outra fatura é enviada no final de um trimestre de assinatura, somando as cobranças aplicáveis de qualquer uso excessivo acumulado naquele trimestre.  Se a capacidade comprometida for alterada durante uma assinatura, uma fatura será enviada no mesmo dia para os pagamentos mínimos proporcionais ao restante do ano de assinatura.  A faturação é calculada a partir do dia em que a alteração da capacidade comprometida se torna efetiva.

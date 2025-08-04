@@ -1,0 +1,316 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: A NetApp oferece recursos novos e aprimorados em cada versão dos serviços Keystone STaaS. 
+---
+= Novidades no Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba mais sobre os recursos e aprimoramentos mais recentes nos serviços Keystone STaaS.
+
+
+
+== 05 de agosto de 2025
+
+
+
+=== Exibir dados de consumo em nível de instância
+
+Você pode visualizar o consumo atual e os dados históricos de cada instância de nível de serviço de desempenho por meio do painel do Keystone no BlueXP.  Este recurso está disponível para níveis de serviço de desempenho com múltiplas instâncias, desde que você tenha uma assinatura do Keystone versão 3 (v3).  Para saber mais, consultelink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Veja o consumo de suas assinaturas Keystone"] .
+
+
+
+== 30 de junho de 2025
+
+
+
+=== Lançamento da versão 3 (v3) do Keystone
+
+Agora você pode assinar o Keystone versão 3 (v3), a versão mais recente da oferta NetApp Keystone STaaS.  Esta versão apresenta vários aprimoramentos, incluindo níveis de serviço de desempenho simplificados, opções adicionais de capacidade de pico e frequências de cobrança flexíveis.  Essas melhorias simplificam o gerenciamento, a otimização e o dimensionamento de soluções de armazenamento.  Para saber mais, consultelink:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["Serviços Keystone STaaS para v3"] .
+
+
+
+== 19 de junho de 2025
+
+
+
+=== Painel Keystone no BlueXP
+
+Agora você pode acessar o painel do Keystone diretamente do BlueXP.  Essa integração oferece um único local para monitorar, gerenciar e acompanhar todas as suas assinaturas do Keystone , juntamente com outros serviços da NetApp .
+
+Com o painel Keystone no BlueXP, você pode:
+
+* Visualize todos os detalhes da sua assinatura, uso da capacidade e ativos em um só lugar.
+* Gerencie assinaturas facilmente e solicite alterações conforme suas necessidades evoluem.
+* Mantenha-se atualizado com as informações mais recentes sobre seu ambiente de armazenamento.
+
+
+Para começar, vá para *Armazenamento > Keystone* no menu de navegação esquerdo do BlueXP .  Para saber mais, consultelink:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Visão geral do painel Keystone"] .
+
+
+
+== 08 de janeiro de 2025
+
+
+
+=== Adição de opções de visualização do uso diário de dados acumulados
+
+Agora você pode visualizar o uso diário acumulado de dados em formato de gráfico ou tabela para um período de cobrança mensal ou trimestral clicando na barra que exibe os dados faturados.  Para saber mais, consultelink:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Ver o uso diário acumulado de dados em burst"] .
+
+
+
+== 12 de dezembro de 2024
+
+
+
+=== Coluna Lógica Usada renomeada
+
+A coluna *Lógica Usada* na aba *Detalhes do Volume* em *Volumes e Objetos* agora foi renomeada para *Lógica Keystone Usada*.
+
+
+
+=== Guia de ativos aprimorados
+
+A aba *Ativos* na tela *Assinaturas Keystone * agora tem duas novas subabas: * ONTAP* e * StorageGRID*.  Essas subguias oferecem insights detalhados em nível de cluster para ONTAP e informações em nível de grade para StorageGRID com base em suas assinaturas.  Para saber mais, consultelink:./integrations/assets-tab.html["Guia de ativos"^] .
+
+
+
+=== Nova opção Ocultar/Mostrar Colunas
+
+A aba *Detalhes do Volume* em *Volumes e Objetos* agora inclui uma opção *Ocultar/Mostrar Colunas*.  Esta opção permite que você selecione ou desmarque colunas para personalizar a listagem tabular de volumes de acordo com sua preferência.  Para saber mais, consultelink:./integrations/volumes-objects-tab.html["Aba Volumes e Objetos"^] .
+
+
+
+== 21 de novembro de 2024
+
+
+
+=== Explosão de faturamento acumulado aprimorada
+
+Agora você pode visualizar dados de uso acumulado de pico trimestralmente por meio da opção *Explosão acumulada faturada* se tiver optado por um período de cobrança trimestral.  Para saber mais, consultelink:./integrations/consumption-tab.html#view-accrued-burst["Ver estouro acumulado faturado"^] .
+
+
+
+=== Novas colunas na guia Detalhes dos volumes
+
+Para melhorar a clareza no cálculo do uso lógico, duas novas colunas foram adicionadas à guia *Detalhes do volume* dentro da guia *Volumes e objetos*:
+
+* *AFS lógico*: exibe a capacidade lógica usada pelo sistema de arquivos ativo do volume.
+* *Instantâneo físico*: exibe o espaço físico usado pelos instantâneos.
+
+
+Essas colunas fornecem mais clareza sobre a coluna *Logical Used*, que mostra a capacidade lógica combinada usada pelo sistema de arquivos ativo do volume e o espaço físico usado pelos snapshots.
+
+
+
+== 11 de novembro de 2024
+
+
+
+=== Geração de relatórios aprimorada
+
+Agora você pode gerar um relatório consolidado para visualizar os detalhes dos seus dados do Keystone usando o recurso Relatório no Digital Advisor.  Para saber mais, consultelink:./integrations/options.html#generate-consolidated-report-from-digital-advisor["Gerar relatório consolidado"^] .
+
+
+
+== 10 de julho de 2024
+
+
+
+=== Modificações de rótulo
+
+O rótulo *Uso atual* é alterado para *Consumo atual* e *Tendência de capacidade* é alterado para *Tendência de consumo*.
+
+
+
+=== Barra de pesquisa para assinaturas
+
+O menu suspenso *Assinaturas* em todas as guias da tela * Assinaturas Keystone * agora inclui uma barra de pesquisa.  Você pode pesquisar por assinaturas específicas listadas no menu suspenso *Assinaturas*.
+
+
+
+== 27 de junho de 2024
+
+
+
+=== Exibição consistente de assinatura
+
+A tela * Assinaturas Keystone * é atualizada para exibir o número de assinatura selecionado em todas as guias.
+
+* Quando qualquer aba na tela * Assinaturas Keystone * é atualizada, a tela navega automaticamente para a aba * Assinaturas * e redefine todas as abas para a primeira assinatura listada no menu suspenso * Assinatura *.
+* Se a assinatura selecionada não estiver inscrita nas métricas de desempenho, a guia *Desempenho* exibirá a primeira assinatura listada no menu suspenso *Assinatura* durante a navegação.
+
+
+
+
+== 29 de maio de 2024
+
+
+
+=== Indicador de explosão aprimorado
+
+O indicador *Burst* no índice do gráfico de uso foi aprimorado para exibir o valor percentual do limite de burst.  Esse valor muda dependendo do limite de pico acordado para uma assinatura.  Você também pode visualizar o valor do limite de pico na aba *Assinaturas* passando o mouse sobre o indicador *Uso de pico* na coluna *Status de uso*.
+
+
+
+=== Adição de níveis de serviço
+
+Os níveis de serviço *CVO Primário* e *CVO Secundário* estão incluídos para dar suporte ao Cloud Volumes ONTAP para assinaturas que têm planos de tarifas com capacidade comprometida zero ou aquelas configuradas com um cluster metropolitano.
+
+* Você pode visualizar o gráfico de uso da capacidade para esses níveis de serviço no antigo painel do widget * Assinaturas Keystone * e na guia * Tendência de capacidade *, além de informações detalhadas de uso na guia * Uso atual *.
+* Na aba *Assinaturas*, esses níveis de serviço são exibidos como `CVO (v2)` na coluna *Tipo de Uso*, permitindo a identificação do faturamento de acordo com esses níveis de serviço.
+
+
+
+
+=== Recurso de zoom para rajadas de curto prazo
+
+A aba *Tendência de Capacidade* agora inclui um recurso de zoom para visualizar os detalhes de picos de curto prazo nos gráficos de uso. Para obter mais informações, consulte link:./integrations/consumption-tab.html["Guia Tendência de Capacidade"^] .
+
+
+
+=== Exibição aprimorada de assinaturas
+
+A exibição padrão de assinaturas foi aprimorada para classificar por ID de rastreamento.  As assinaturas na aba *Assinaturas*, incluindo no menu suspenso *Assinatura* e nos relatórios CSV, agora serão exibidas com base na sequência alfabética dos IDs de rastreamento, seguindo a ordem de a, A, b, B e assim por diante.
+
+
+
+=== Exibição aprimorada de burst acumulado
+
+A dica de ferramenta que aparece ao passar o mouse sobre o gráfico de barras de uso da capacidade na guia *Tendência de capacidade* agora exibe o tipo de pico acumulado com base na capacidade comprometida.  Ele diferencia entre pico acumulado provisório e faturado, mostrando *Consumo acumulado provisório* e *Consumo acumulado faturado* para assinaturas com planos de tarifas de capacidade comprometida zero, e *Pico acumulado provisório* e *Pico acumulado faturado* para aqueles com capacidade comprometida diferente de zero.
+
+
+
+== 09 de maio de 2024
+
+
+
+=== Novas colunas em relatórios CSV
+
+Os relatórios CSV da guia *Tendência de capacidade* agora incluem as colunas *Número da assinatura* e *Nome da conta* para melhor detalhamento.
+
+
+
+=== Coluna Tipo de Uso Aprimorado
+
+A coluna *Tipo de uso* na guia *Assinaturas* foi aprimorada para exibir usos lógicos e físicos como valores separados por vírgula para assinaturas que abrangem níveis de serviço para arquivo e objeto.
+
+
+
+=== Acesse os detalhes do armazenamento de objetos na guia Detalhes do volume
+
+A guia *Detalhes do volume* dentro da guia *Volumes e objetos* agora fornece detalhes de armazenamento de objetos junto com informações de volume para assinaturas que incluem níveis de serviço para arquivo e objeto.  Você pode clicar no botão *Detalhes do armazenamento de objetos* na guia *Detalhes do volume* para visualizar os detalhes.
+
+
+
+== 28 de março de 2024
+
+
+
+=== Melhoria na exibição de conformidade da política de QoS na guia Detalhes do volume
+
+A guia *Detalhes do volume* dentro da guia *Volumes e objetos* agora fornece melhor visibilidade da conformidade da política de Qualidade de Serviço (QoS).  A coluna anteriormente conhecida como *AQoS* foi renomeada para *Compliant*, que indica se a política de QoS está em conformidade.  Além disso, uma nova coluna *Tipo de política de QoS* foi adicionada, que especifica se a política é fixa ou adaptável.  Se nenhuma das opções se aplicar, a coluna exibirá _Não disponível_. Para obter mais informações, consulte link:./integrations/volumes-objects-tab.html["Aba Volumes e Objetos"^] .
+
+
+
+=== Nova coluna e exibição de assinatura simplificada na guia Resumo de Volume
+
+* A guia *Resumo do volume* dentro da guia *Volumes e objetos* agora inclui uma nova coluna intitulada *Protegido*.  Esta coluna fornece uma contagem dos volumes protegidos associados aos seus níveis de serviço assinados.  Se você clicar no número de volumes protegidos, será levado para a guia *Detalhes do volume*, onde você pode visualizar uma lista filtrada de volumes protegidos.
+* A guia *Resumo do volume* foi atualizada para exibir apenas assinaturas básicas, excluindo serviços complementares. Para obter mais informações, consulte link:./integrations/volumes-objects-tab.html["Aba Volumes e Objetos"^] .
+
+
+
+
+=== Alterar para exibição de detalhes de pico acumulado na guia Tendência de Capacidade
+
+A dica de ferramenta que aparece ao passar o mouse sobre o gráfico de barras de uso da capacidade na aba *Tendência de Capacidade* exibirá os detalhes dos picos acumulados no mês atual.  Os detalhes dos meses anteriores não estarão disponíveis.
+
+
+
+=== Acesso aprimorado para visualizar dados históricos de assinaturas do Keystone
+
+Agora você pode visualizar dados históricos se uma assinatura do Keystone for modificada ou renovada.  Você pode definir a data de início de uma assinatura para uma data anterior para visualizar:
+
+* Dados de consumo e uso acumulado de pico da aba *Tendência de Capacidade*.
+* Métricas de desempenho de volumes ONTAP na guia *Desempenho*.
+
+
+Os dados são exibidos com base na data de início selecionada da assinatura.
+
+
+
+== 29 de fevereiro de 2024
+
+
+
+=== Adição da aba Ativos
+
+A tela * Assinaturas Keystone * agora inclui a aba * Ativos *.  Esta nova guia fornece informações em nível de cluster com base em suas assinaturas. Para obter mais informações, consulte link:./integrations/assets-tab.html["Guia de ativos"^] .
+
+
+
+=== Melhorias na aba Volumes e Objetos
+
+Para fornecer mais clareza aos volumes do seu sistema ONTAP , dois novos botões de guia, *Resumo do volume* e *Detalhes do volume*, foram adicionados à guia *Volumes*.  A guia *Resumo do volume* fornece uma contagem geral dos volumes associados aos seus níveis de serviço assinados, incluindo o status de conformidade do AQoS e informações de capacidade.  A aba *Detalhes do Volume* lista todos os volumes e suas especificações. Para obter mais informações, consulte link:./integrations/volumes-objects-tab.html["Aba Volumes e Objetos"^] .
+
+
+
+=== Experiência de pesquisa aprimorada no Digital Advisor
+
+Os parâmetros de pesquisa na tela * Digital Advisor* agora incluem números de assinatura do Keystone e listas de observação criadas para assinaturas do Keystone .  Você pode inserir os três primeiros caracteres de um número de assinatura ou nome de lista de observação. Para obter mais informações, consulte link:./integrations/keystone-aiq.html["Veja o painel do Keystone no Active IQ Digital Advisor"^] .
+
+
+
+=== Ver registro de data e hora dos dados de consumo
+
+Você pode visualizar o registro de data e hora dos dados de consumo (em UTC) no painel antigo do widget * Keystone Subscriptions*.
+
+
+
+== 13 de fevereiro de 2024
+
+
+
+=== Capacidade de visualizar assinaturas vinculadas a uma assinatura principal
+
+Algumas de suas assinaturas principais podem ter assinaturas secundárias vinculadas.  Se esse for o caso, o número da assinatura principal continuará sendo exibido na coluna *Número da assinatura*, enquanto os números de assinatura vinculada serão listados em uma nova coluna *Assinaturas vinculadas* na guia *Assinaturas*.  A coluna *Assinaturas vinculadas* fica disponível somente se você tiver assinaturas vinculadas, e você pode ver mensagens informativas notificando-o sobre elas.
+
+
+
+== 11 de janeiro de 2024
+
+
+
+=== Dados faturados retornados para burst acumulado
+
+Os rótulos para *Explosão acumulada* agora são modificados para *Explosão acumulada faturada* na guia *Tendência de capacidade*.  Selecionar esta opção permite que você visualize os gráficos mensais dos dados de burst acumulados faturados. Para obter mais informações, consulte link:./integrations/consumption-tab.html#view-accrued-burst["Ver estouro acumulado faturado"^] .
+
+
+
+=== Detalhes de consumo acumulado para planos de tarifas específicos
+
+Se você tiver uma assinatura com planos de tarifas com capacidade comprometida _zero_, poderá visualizar os detalhes do consumo acumulado na aba *Tendência de Capacidade*.  Ao selecionar a opção *Consumo acumulado faturado*, você pode visualizar os gráficos mensais dos dados de consumo acumulado faturados.
+
+
+
+== 15 de dezembro de 2023
+
+
+
+=== Capacidade de pesquisar por listas de observação
+
+O suporte para listas de observação no Digital Advisor foi estendido para incluir sistemas Keystone .  Agora você pode visualizar os detalhes das assinaturas de vários clientes pesquisando com listas de observação.  Para obter mais informações sobre o uso de listas de observação no Keystone STaaS, consultelink:./integrations/keystone-aiq.html#search-by-keystone-watchlists["Pesquisar por listas de observação do Keystone"^] .
+
+
+
+=== Data convertida para fuso horário UTC
+
+Os dados retornados nas guias da tela * Assinaturas Keystone * do Digital Advisor são exibidos no horário UTC (fuso horário do servidor).  Quando você insere uma data para consulta, ela é automaticamente considerada no horário UTC. Para obter mais informações, consulte link:./integrations/keystone-aiq.html["Painel e relatórios de assinatura do Keystone"^] .

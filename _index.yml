@@ -1,0 +1,82 @@
+---
+indexpage:
+  title: Documentação Keystone
+  summary: O NetApp Keystone é uma oferta de armazenamento como serviço, com pagamento
+    conforme o uso, para serviços de armazenamento de dados no local e na nuvem em
+    uma única assinatura, com a capacidade de realocar os gastos com armazenamento
+    entre as nuvens.
+  keywords: Keystone STaaS
+  lead: O NetApp Keystone é um serviço flexível baseado em assinatura de pagamento
+    conforme o uso que oferece uma experiência de nuvem híbrida perfeita para clientes
+    que preferem despesas operacionais a despesas de capital ou leasing.  Ele oferece
+    a capacidade de acelerar o tempo de retorno do investimento ao remover o fardo
+    de TI de gerenciar recursos e evitar o longo ciclo de aquisição.  Navegue pelos
+    documentos nesta biblioteca para saber mais sobre a oferta de armazenamento como
+    serviço (STaaS) do NetApp Keystone .
+  tiles:
+  - title: Começar
+    links:
+    - title: O que é o NetApp Keystone?
+      url: "/concepts/overview.html"
+    - title: Instalar o Keystone Collector
+      url: "/installation/vapp-installation.html"
+    - title: Instalar o coletor ITOM
+      url: "/installation/itom-prereqs.html"
+    - title: Instalar o Keystone Collector em modo privado
+      url: "/dark-sites/overview.html"
+  - title: Painel Keystone no BlueXP e Digital Advisor
+    links:
+    - title: Entenda o painel do Keystone
+      url: "/integrations/dashboard-overview.html"
+    - title: Acesse o painel do Keystone
+      url: "/integrations/dashboard-access.html"
+    - title: Ver insights de assinatura
+      url: "/integrations/subscriptions-tab.html"
+    - title: Ver ativos
+      url: "/integrations/assets-tab.html"
+    - title: Pesquisar dados e gerar relatórios
+      url: "/integrations/options.html"
+  - title: Serviços suportados em Keystone
+    links:
+    - title: Níveis de serviço de desempenho Keystone
+      url: "/concepts/service-levels.html"
+    - title: Qualidade de Serviço (QoS)
+      url: "/concepts/qos.html"
+    - title: Quais são as unidades de medida?
+      url: "/concepts/metrics.html"
+    - title: Qual é o armazenamento base suportado?
+      url: "/concepts/supported-storage-services.html"
+    - title: Posso realocar meus gastos locais para a nuvem?
+      url: "/concepts/capacity-requirements.html#capacity-adjustments"
+  - title: Preços e faturamento da Keystone
+    links:
+    - title: Saiba mais sobre os preços do Keystone
+      url: "/concepts/pricing.html"
+    - title: Minhas programações de cobrança
+      url: "/concepts/billing-schedules.html"
+    - title: Faturamento com base na capacidade comprometida
+      url: "/concepts/committed-capacity-billing.html"
+    - title: Medição baseada na capacidade consumida
+      url: "/concepts/consumed-capacity-billing.html"
+    - title: O que acontece se eu consumir mais do que minha capacidade comprometida?
+      url: "/concepts/burst-consumption-billing.html"
+  - title: Faça mais com os serviços da Keystone
+    links:
+    - title: Saiba mais sobre sua equipe de suporte
+      url: "/concepts/gssc.html"
+    - title: O que posso fazer com meus dados frios ou menos utilizados?
+      url: "/concepts/data-tiering.html"
+    - title: Como posso proteger meus dados do Keystone ?
+      url: "/concepts/adp.html"
+    - title: Monitore, solucione problemas e aprimore o armazenamento
+      url: "/concepts/data-infra-insights.html"
+    - title: Suporte ao cidadão dos EUA
+      url: "/concepts/usps.html"
+  - title: Saber mais
+    links:
+    - title: Digital Advisor Active IQ
+      url: https://docs.netapp.com/us-en/active-iq/index.html
+    - title: BlueXP
+      url: https://docs.netapp.com/us-en/cloud-manager-family/
+    - title: Active IQ Unified Manager
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/

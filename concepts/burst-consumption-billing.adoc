@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-consumption-billing.html 
+keywords: burst consumption billing 
+summary: O faturamento do Keystone STaaS é baseado na capacidade máxima, que é a capacidade consumida por você, além da capacidade comprometida da sua assinatura. 
+---
+= Faturamento com base no consumo de pico
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O faturamento do Keystone STaaS é baseado na _capacidade de pico_, que é a capacidade consumida por você, além da capacidade comprometida da sua assinatura.
+
+Seu limite de burst é determinado e especificado no seu contrato Keystone .  Está 20% acima da capacidade comprometida.
+
+Capacidade comprometida é a capacidade comprometida a você ao adquirir a assinatura.  A capacidade comprometida e a capacidade de pico são medidas por nível de serviço de desempenho.  Capacidade consumida é a capacidade que suas cargas de trabalho realmente usam.
+
+Quando a capacidade consumida é maior que a capacidade comprometida para um nível de serviço de desempenho, o consumo de pico é registrado e cobrado adequadamente.  Normalmente, é 20% acima da capacidade comprometida.  O uso acima da capacidade de pico é indicado como "Acima do limite de pico".
+
+Esse processo ocorre para cada registro de consumo gerado.  O consumo explosivo, portanto, é um reflexo tanto da quantidade quanto da duração de suas capacidades superconsumidas além de suas capacidades comprometidas.  Para saber mais, consultelink:../integrations/consumption-tab.html["Veja as tendências de consumo das suas assinaturas Keystone"] .
+
+Para obter informações sobre as diferentes capacidades suportadas no Keystone, consultelink:../concepts/supported-storage-capacity.html["Capacidades de armazenamento suportadas no Keystone"] .

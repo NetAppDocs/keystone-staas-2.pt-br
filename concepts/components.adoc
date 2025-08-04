@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: concepts/components.html 
+keywords: infrastructure component, deployment requirement, installation requirement 
+summary: Saiba mais sobre os componentes necessários para habilitar os serviços do NetApp Keystone STaaS em seu ambiente. 
+---
+= Componentes necessários para implantação
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vários componentes são necessários para habilitar os serviços do NetApp Keystone STaaS em seu ambiente.  Você deve revisar os detalhes sobre esses componentes antes de começar.
+
+
+
+== Requisitos do site
+
+Há alguns requisitos específicos do local, como espaço, racks, PDUs, energia e resfriamento, com requisitos adicionais de rede e segurança discutidos aqui.
+
+
+
+=== Espaço
+
+Espaço no chão para hospedar o equipamento de infraestrutura Keystone (a ser fornecido pelos clientes).  A NetApp fornece as especificações de peso com base na configuração final.
+
+
+
+=== Prateleiras
+
+Quatro estantes de correio na oferta operada pelo cliente (a serem fornecidas pelos clientes).  Na oferta operada pela NetApp, a NetApp ou o cliente pode fornecer os racks, dependendo dos requisitos.  A NetApp fornece 42 racks profundos.
+
+
+
+=== PDUs
+
+Você deve fornecer unidades de distribuição de energia (PDUs), conectadas a dois circuitos separados e protegidos, com tomadas C13 suficientes.  Na oferta operada pelo cliente, em alguns casos, são necessárias saídas C19.  Na oferta operada pela NetApp, a NetApp ou o cliente pode fornecer as PDUs, dependendo dos requisitos.
+
+
+
+=== Poder
+
+Você deve fornecer a energia necessária.  A NetApp fornecerá as especificações de requisitos de energia com base na classificação de 200 V (típico A, Máx. A, T típico, T máximo, tipo de cabo de alimentação e quantidade), com base na configuração final.  Todos os componentes têm fontes de alimentação redundantes.  A NetApp fornecerá os cabos de alimentação no gabinete.
+
+
+
+=== Resfriamento
+
+A NetApp pode fornecer as especificações de requisitos de resfriamento (BTU típico, BTU máximo), com base na configuração e nos requisitos finais.
+
+
+
+=== Máquinas virtuais
+
+Máquinas virtuais são necessárias para a implantação do Keystone Collector e do ITOM Collector.  Para pré-requisitos de instalação, consultelink:../installation/installation-overview.html["Guia de instalação do Keystone Collector"] elink:../installation/itom-prereqs.html["Requisitos de instalação do coletor ITOM"] .  Os outros requisitos são compartilhados durante a implantação.
+
+
+
+=== Opções de implantação
+
+O Keystone Collector pode ser implantado através dos seguintes métodos:
+
+* Modelo VMware OVA (é necessário VMware vCenter Server 6.7 ou posterior)
+* O cliente fornece um servidor Linux em execução em um dos seguintes sistemas operacionais: Debian 12, Red Hat Enterprise Linux 8.6 ou versões 8.x posteriores, ou CentOS 7 (somente para ambientes existentes).  O software Keystone é instalado usando o `.deb` ou `.rpm` pacote, dependendo da distribuição Linux.
+
+
+O ITOM Collector pode ser implantado por meio dos seguintes métodos:
+
+* O cliente fornece um servidor Linux rodando em Debian 12, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Amazon Linux 2023 ou versões mais recentes.
+* O cliente fornece um servidor Windows executando o Windows Server 2016 ou versões mais recentes.
++
+
+TIP: Os sistemas operacionais recomendados são Debian 12, Windows Server 2016 ou versões mais recentes.
+
+
+
+
+
+=== Rede
+
+O acesso de saída ao _keystone.netapp.com_ é necessário para atualizações de software e uploads de dados de uso, que são essenciais para a operação e manutenção do Keystone Collector e do gateway de solução AIOps.
+
+Dependendo dos requisitos do cliente e dos controladores de armazenamento usados, a NetApp pode fornecer conectividade de 10 GB, 40 GB e 100 GB no site do cliente.
+
+A NetApp fornece os transceptores necessários somente para dispositivos de infraestrutura fornecidos pela NetApp .  Você deve fornecer os transceptores necessários para os dispositivos do cliente e o cabeamento para os dispositivos de infraestrutura Keystone fornecidos pela NetApp .
+
+
+
+== Requisito de acesso remoto
+
+A conectividade de rede é necessária entre a infraestrutura de armazenamento instalada no data center do cliente ou nos serviços colocalizados de propriedade do cliente e o centro de operações da Keystone .  O cliente é responsável por fornecer os serviços de computação e máquinas virtuais, além dos serviços de internet.  O cliente também é responsável pela aplicação de patches no sistema operacional (implantações não baseadas em OVA) e pelo reforço da segurança com base em políticas de segurança internas.  O projeto da rede deve ser baseado em um protocolo seguro e as políticas de firewall serão aprovadas pela NetApp e pelos clientes.
+
+A NetApp precisa acessar os componentes de hardware e software instalados para monitoramento e gerenciamento para fornecer serviços como monitoramento e cobrança aos clientes da Keystone .  O método mais comum é estabelecer uma conexão de rede privada virtual (VPN) com a rede do cliente e acessar os dados necessários.  Para superar qualquer complexidade operacional percebida pelos clientes como resultante da abertura de portas de firewall para novos serviços, as ferramentas de monitoramento iniciam uma conexão externa.  Os aplicativos de nuvem da NetApp , como a solução de monitoramento ITOM e o Zuora, usam essa conexão para executar seus respectivos serviços.  Este método atende ao requisito do cliente de não abrir portas de firewall, mas fornece acesso aos componentes de monitoramento que fazem parte deste serviço.

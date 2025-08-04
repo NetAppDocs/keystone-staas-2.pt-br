@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/pricing.html 
+keywords: pricing, billing introduction, Keystone billing 
+summary: A Keystone oferece um modelo de pagamento conforme o crescimento para suas necessidades de consumo flexíveis e escaláveis. 
+---
+= Preços Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O serviço de assinatura pré-pago do NetApp Keystone STaaS oferece consumo flexível e escalável com preços previsíveis e antecipados para suas necessidades de armazenamento.
+
+A Keystone oferece os seguintes recursos de cobrança:
+
+* Você pode pagar com base no IOPS e na capacidade comprometida de latência para atender a diversas necessidades de carga de trabalho.  Os diferentes níveis de serviço de desempenho — Extreme, Premium, Performance, Standard, Value e Object — permitem que você gerencie seu armazenamento com base no nível de serviço adquirido.
+* Ele apresenta faturamento previsível para a capacidade comprometida e pagamento por uso para uso de capacidade variável (burst).
+* Você pode selecionar um preço de pacote para hardware, sistema operacional principal e suporte por um preço de $/TiB.  Você tem uma única fatura para cada tipo de armazenamento, arquivo, bloco, objeto ou serviços de armazenamento em nuvem.
+* Você pode selecionar um prazo flexível para os serviços e opções de pagamento, como mensal, trimestral ou anual.
+
+
+O faturamento do Keystone é baseado na capacidade comprometida e no consumo de pico variável.
+
+Para obter informações sobre as diferentes capacidades suportadas no Keystone, consultelink:../concepts/supported-storage-capacity.html["Capacidades de armazenamento suportadas no Keystone"] .
+
+*Informações relacionadas*
+
+* link:../concepts/committed-capacity-billing.html["Faturamento com base na capacidade comprometida"]
+* link:../concepts/consumed-capacity-billing.html["Medição baseada na capacidade consumida"]
+* link:../concepts/burst-consumption-billing.html["Faturamento com base no consumo de pico"]
+* link:../concepts/misc-volume-billing.html["Faturamento com base em diversos tipos de volumes"]
+* link:../concepts/billing-schedules.html["Cronogramas de faturamento"]
+
