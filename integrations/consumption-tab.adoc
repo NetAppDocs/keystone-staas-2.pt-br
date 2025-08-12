@@ -187,6 +187,8 @@ Para o nível de serviço de desempenho _Advanced Data-Protect_, o gráfico apar
 
 image:adp-src-2.png["base primária mcc"]
 
+O consumo exibido de 94,21 TiB representa o uso da assinatura principal.  Considerando que a proteção avançada de dados divide o consumo entre sites parceiros com assinaturas separadas, este gráfico mostra apenas o uso principal do site.  Para saber mais sobre os preços do serviço complementar de proteção avançada de dados, consultelink:../concepts/adp.html#understand-pricing["Entenda os preços"] .
+
 .O que você pode ver na assinatura secundária (site espelho)
 Ao verificar a assinatura secundária, você pode ver que o gráfico de barras do nível de serviço de desempenho _Desempenho_ (nível de serviço de desempenho base) no mesmo ponto de coleta de dados que o site parceiro está invertido, e a divisão do consumo nos sites primário e espelho é de 93,38 TiB e 95,04 TiB, respectivamente.
 

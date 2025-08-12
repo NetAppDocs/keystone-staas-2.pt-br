@@ -25,7 +25,13 @@ O serviço avançado de proteção de dados da Keystone pode espelhar dados de f
 
 Para obter informações sobre como visualizar o consumo em uma configuração do MetroCluster , consultelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Gráficos de referência para proteção avançada de dados"] .
 
-Os custos adicionais se aplicam a todas as capacidades da sua assinatura, incluindo dados de origem, cópias espelhadas e dados não espelhados.
+
+
+== Entenda os preços
+
+O serviço complementar de proteção avançada de dados tem um preço baseado na capacidade comprometida em cada site.  Isso ajuda a determinar o custo real do serviço avançado de proteção de dados em $/TiB. Os custos adicionais se aplicam a todas as capacidades da sua assinatura, incluindo dados de origem, cópias espelhadas e dados não espelhados.
+
+Para a configuração do MetroCluster , cada site requer sua própria assinatura, e você é cobrado pela capacidade comprometida em cada site independentemente.  Para saber mais sobre faturamento, consultelink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Faturamento para proteção avançada de dados"] .
 
 Observe o seguinte:
 

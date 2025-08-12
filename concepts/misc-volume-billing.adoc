@@ -35,10 +35,12 @@ Observe o seguinte:
 
 A proteção avançada de dados usa o NetApp MetroCluster para espelhar dados entre dois clusters fisicamente separados.  Para agregados espelhados do MetroCluster , os dados são gravados duas vezes, uma vez em cada cluster.  O serviço Keystone cobra pelo consumo de cada lado de forma independente, resultando em dois registros de consumo idênticos.  As taxas adicionais são aplicadas a todas as capacidades da assinatura, independentemente de os dados estarem na origem ou se forem dados espelhados ou não espelhados.
 
+Cada site MetroCluster tem sua própria assinatura e cobrança.  Para configurações do MetroCluster , a medição de uso considera como o armazenamento é utilizado em ambos os sites.  Se você tiver uma configuração do MetroCluster com 100 TiB por site, apenas 50 TiB serão usados ativamente em cada site, com os 50 TiB restantes em cada site servindo como backup espelhado.  Os custos adicionais de proteção avançada de dados são calculados com base nesses 100 TiB de uso ativo total e divididos entre ambos os sites por meio de suas respectivas assinaturas de 50 TiB cada.
+
 Se você monitorar seus clusters por meio do ONTAP System Manager (Gerenciador do Sistema) ou do Active IQ Unified Manager (Gerenciador Unificado), poderá observar uma discrepância entre o consumo relatado nessas ferramentas e no Keystone.  O System Manager e o Unified Manager não relatam volumes no cluster espelhado (remoto) e, ao fazer isso, relatam metade das métricas de consumo que o serviço Keystone relata.
 
 .Exemplo:
-O Site A e o Site B são configurados em uma configuração MetroCluster .  Quando um usuário cria um volume de 10 TB no site A, um volume idêntico de 10 TB é criado no site B. O Keystone identifica 10 TB de consumo em cada site, para um aumento total de 20 TB.  O System Manager e o Unified Manager relatam um volume de 10 TB criado no site A, mas não relatam um volume de 10 TB no Site B.
+O Site A e o Site B são configurados em uma configuração MetroCluster . Quando um usuário cria um volume de 10 TB no site A, um volume idêntico de 10 TB é criado no site B. O Keystone identifica 10 TB de consumo em cada site, para um aumento total de 20 TB. O System Manager e o Unified Manager relatam um volume de 10 TB criado no site A, mas não relatam um volume de 10 TB no Site B.
 
 Além disso, todos os volumes criados em um sistema Keystone com proteção avançada de dados serão contabilizados no consumo de proteção avançada de dados, independentemente de esses volumes serem espelhados ou não.
 
