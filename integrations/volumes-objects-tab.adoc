@@ -54,7 +54,7 @@ Você pode ver a listagem tabular dos volumes, como uso de capacidade, tipo de v
 NOTE: As políticas de QoS não são aplicáveis na versão 3 do Keystone .
 
 +
-Você pode usar *Ocultar/Mostrar Colunas* para adicionar ou remover colunas exibidas na tabela.  Por padrão, todas as colunas são selecionadas, exceto a coluna *Departamento*.  Você pode selecionar ou desmarcar qualquer coluna, incluindo a coluna *Departamento*, e suas preferências serão salvas para uso posterior.  Ao baixar o relatório CSV, os detalhes da coluna *Departamento* serão incluídos, se selecionados, enquanto outras colunas aparecerão independentemente do status de seleção na tabela.
+Você pode usar *Ocultar/Mostrar Colunas* para adicionar ou remover colunas exibidas na tabela. Por padrão, a tabela mostra suas preferências de coluna salvas anteriormente.  Colunas adicionadas recentemente, como *Departamento* ou *Pegada Total*, ficam ocultas por padrão e devem ser selecionadas manualmente para aparecerem na tabela.  Você pode selecionar ou desmarcar qualquer coluna, e suas preferências serão salvas para uso posterior.  Ao baixar o relatório CSV, todas as colunas disponíveis são incluídas na exportação, independentemente das suas preferências de exibição.
 
 +
 
