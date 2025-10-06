@@ -110,7 +110,7 @@ image:kc-custom-ca.png["Tela TUI para personalização de CA"]
 
 == Crie níveis de serviço de desempenho
 
-Você pode criar Níveis de Serviço de Desempenho (PSLs) usando o utilitário TUI de gerenciamento do Keystone Collector.  A criação de PSLs por meio do TUI seleciona automaticamente os valores padrão definidos para cada nível de serviço, reduzindo a chance de erros que podem ocorrer ao definir manualmente esses valores durante a criação de PSLs por meio do Active IQ Unified Manager.
+Você pode criar Níveis de Serviço de Desempenho (PSLs) usando o utilitário TUI de gerenciamento do Keystone Collector. A criação de PSLs por meio do TUI seleciona automaticamente os valores padrão definidos para cada nível de serviço de desempenho, reduzindo a chance de erros que podem ocorrer ao definir manualmente esses valores durante a criação de PSLs por meio do Active IQ Unified Manager.
 
 Para saber mais sobre PSLs, consultelink:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html["Níveis de serviço de desempenho"^] .
 
@@ -133,15 +133,15 @@ image:qos-STaaS-selection-2.png["Tela TUI para especificar a versão do Keystone
 
 +
 
-NOTE: Você pode destacar a opção *KFS* para os serviços de assinatura do Keystone versão 1.  Os serviços de assinatura da Keystone diferem do Keystone STaaS nos níveis de serviço constituintes, ofertas de serviço e princípios de cobrança.  Para saber mais, consultelink:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Serviços de assinatura Keystone | Versão 1"^] .
+NOTE: Você pode destacar a opção *KFS* para os serviços de assinatura do Keystone versão 1. Os serviços de assinatura da Keystone diferem do Keystone STaaS nos níveis de serviço de desempenho dos constituintes, nas ofertas de serviço e nos princípios de cobrança. Para saber mais, consultelink:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Serviços de assinatura Keystone | Versão 1"^] .
 
-. Todos os níveis de serviço do Keystone suportados serão exibidos na opção *Selecionar níveis de serviço do Keystone * para a versão especificada do Keystone .  Habilite os níveis de serviço desejados na lista.
+. Todos os níveis de serviço de desempenho do Keystone suportados serão exibidos na opção *Selecionar níveis de serviço do Keystone * para a versão especificada do Keystone .  Habilite os níveis de serviço de desempenho desejados na lista.
 +
 image:qos-STaaS-selection-3.png["Tela TUI para exibir todos os níveis de serviço Keystone suportados"]
 
 +
 
-NOTE: Você pode selecionar vários níveis de serviço simultaneamente para criar PSLs.
+NOTE: Você pode selecionar vários níveis de serviço de desempenho simultaneamente para criar PSLs.
 
 . Selecione *Salvar* e pressione Enter.  Serão criados Níveis de Serviço de Desempenho.
 +
@@ -153,4 +153,4 @@ image:qos-performance-sl.png["Captura de tela da interface do usuário para exib
 
 
 
-TIP: Se um PSL para o nível de serviço selecionado já existir no servidor Active IQ Unified Manager especificado, você não poderá criá-lo novamente.  Se você tentar fazer isso, receberá uma mensagem de erro.image:qos-failed-policy-1.png["Tela TUI para exibir a mensagem de erro para criação de política"]
+TIP: Se um PSL para o nível de serviço de desempenho selecionado já existir no servidor Active IQ Unified Manager especificado, você não poderá criá-lo novamente. Se você tentar fazer isso, receberá uma mensagem de erro.image:qos-failed-policy-1.png["Tela TUI para exibir a mensagem de erro para criação de política"]

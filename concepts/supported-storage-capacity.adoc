@@ -28,7 +28,7 @@ Estes são os dados colocados na infraestrutura Keystone por um cliente.  Todas 
 
 Capacidade lógica mínima cobrada mensalmente durante a assinatura:
 
-* A capacidade é comprometida com cada nível de serviço.
+* A capacidade é comprometida com cada nível de serviço de desempenho.
 * Capacidade comprometida e níveis de serviço adicionais podem ser adicionados durante o prazo.
 
 
@@ -40,7 +40,7 @@ Durante o período de uma assinatura, você pode alterar as capacidades comprome
 
 * A capacidade comprometida pode ser diminuída com base em certas condições.  Para obter informações, consultelink:../concepts/capacity-requirements.html["Redução de capacidade"] .
 * A capacidade comprometida não pode ser aumentada 90 dias antes do vencimento da sua assinatura, a menos que a assinatura seja renovada por um período adicional de 12 meses.
-* Você pode solicitar alterações na capacidade comprometida por meio da interface do BlueXP ou do seu Keystone Success Manager (KSM).  Para obter informações sobre como solicitar alterações, consultelink:../concepts/gssc.html["Suporte NetApp Keystone"] .
+* Você pode solicitar alterações na capacidade comprometida por meio do Console ou do seu Keystone Success Manager (KSM). Para obter informações sobre como solicitar alterações, consultelink:../concepts/gssc.html["Suporte NetApp Keystone"] .
 
 
 

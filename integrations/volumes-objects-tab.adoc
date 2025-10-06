@@ -16,7 +16,7 @@ summary: Visualize detalhes de capacidade no nível de armazenamento de volume o
 [role="lead"]
 Se quiser visualizar detalhes de capacidade no nível de armazenamento de volume ou objeto, navegue até a guia *Volumes e Objetos* no Digital Advisor.  Para StorageGRID, você pode usar esta guia para ler o uso pelos nós individuais no seu ambiente de armazenamento de objetos.
 
-Você pode consultar a aba *Ativos* no BlueXP para ver esses detalhes.  Para visualizar os detalhes de uma assinatura específica do Keystone STaaS, consultelink:../integrations/assets-tab.html["Ver ativos associados a uma assinatura Keystone"] .  Se você quiser visualizar detalhes de várias assinaturas Keystone , consultelink:../integrations/assets.html["Visualize ativos em suas assinaturas Keystone"] .
+Você pode consultar a página *Ativos* no NetApp Console para visualizar esses detalhes. Para visualizar os detalhes de uma assinatura específica do Keystone STaaS, consultelink:../integrations/assets-tab.html["Ver ativos associados a uma assinatura Keystone"] . Se você quiser visualizar detalhes de várias assinaturas Keystone , consultelink:../integrations/assets.html["Visualize ativos em suas assinaturas Keystone"] .
 
 
 NOTE: O título desta aba varia de acordo com a natureza da implantação no seu site.  Se você tiver ONTAP e armazenamento de objetos, o título da guia aparecerá como *Volumes e Objetos*.  Somente para ONTAP, o nome aparece *Volumes*.  Para armazenamento de objetos StorageGRID , você pode ver a guia *Objetos*.
@@ -37,7 +37,7 @@ A guia *Volumes e Objetos* oferece insights sobre volumes do sistema ONTAP e arm
 Para a assinatura selecionada do Keystone STaaS, você pode ver o número total de volumes, seu status de conformidade de QoS, a contagem de volumes protegidos e a capacidade total comprometida, consumida e disponível em todos esses volumes.  Se você clicar no número de volumes não compatíveis ou protegidos, será direcionado para a guia *Detalhes do volume*, onde você poderá visualizar uma lista filtrada mostrando os volumes não compatíveis ou os volumes protegidos, com base na sua seleção.
 
 +
-image:volume-summary-2.png["Guia de resumo de volume"]
+image:volume-summary-3.png["Guia de resumo de volume"]
 
 
 
@@ -61,7 +61,7 @@ Você pode usar *Ocultar/Mostrar Colunas* para adicionar ou remover colunas exib
 NOTE: Para o serviço complementar de proteção avançada de dados, uma coluna adicional aparece para indicar se o volume é primário ou espelho na configuração do MetroCluster .  Você pode copiar números de série de nós individuais clicando no botão *Copiar números de série de nós*.
 
 +
-image:volume-details-3.png["Guia de detalhes de volumes"]
+image:volume-details-4.png["Guia de detalhes de volumes"]
 
 
 

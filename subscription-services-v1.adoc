@@ -16,7 +16,7 @@ summary: Serviços de assinatura Keystone STaaS sobre Keystone Flex
 [role="lead"]
 O Keystone STaaS foi precedido pelos serviços de assinatura do Keystone (anteriormente conhecidos como serviços de assinatura do Keystone Flex).
 
-Embora a navegação das duas ofertas seja semelhante nolink:./integrations/keystone-bluexp.html["Painel Keystone"^] Os serviços de assinatura da Keystone diferem do Keystone STaaS nos níveis de serviço de desempenho constituintes, na oferta de serviços e nos princípios de cobrança.  Desde abril de 2024, a NetApp mantém e publica documentação apenas para o Keystone STaaS.  Se você ainda estiver usando os serviços de assinatura do Keystone , entre em contato com seu KSM para obter suporte na migração para o Keystone STaaS.  Se necessário, você pode acessar uma versão em PDF da documentação dos serviços de assinatura do Keystone aqui:
+Embora a navegação das duas ofertas seja semelhante nolink:./integrations/keystone-console.html["Painel Keystone"^] Os serviços de assinatura da Keystone diferem do Keystone STaaS nos níveis de serviço de desempenho constituintes, na oferta de serviços e nos princípios de cobrança. Desde abril de 2024, a NetApp mantém e publica documentação apenas para o Keystone STaaS. Se você ainda estiver usando os serviços de assinatura do Keystone , entre em contato com seu KSM para obter suporte na migração para o Keystone STaaS. Se necessário, você pode acessar uma versão em PDF da documentação dos serviços de assinatura do Keystone aqui:
 
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["Inglês"^]
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["japonês"^]
