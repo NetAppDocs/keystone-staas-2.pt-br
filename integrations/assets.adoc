@@ -50,7 +50,7 @@ TIP: Você pode personalizar a tabela usando o seletor de colunasimage:column-se
 . No menu de navegação esquerdo do Console, selecione *Armazenamento > Keystone > Ativos*.
 . Selecione a aba *Volumes em clusters*.
 +
-image:console-volumes-clusters-multiple-sub.png["Uma captura de tela de volumes em clusters para várias assinaturas"]
+image:console-volumes-clusters-multiple-sub-1.png["Uma captura de tela de volumes em clusters para várias assinaturas"]
 
 +
 Você vê informações detalhadas sobre todos os volumes em clusters nas assinaturas do Keystone , incluindo nome do volume, número da assinatura, número de série do nó, conformidade com políticas de QoS, nome do cluster, nome do host e níveis de serviço de desempenho.  Você pode monitorar a capacidade provisionada, a utilização lógica e física e os dados frios.  Você também obtém uma visão geral de:
