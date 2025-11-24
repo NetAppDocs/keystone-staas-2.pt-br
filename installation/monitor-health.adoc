@@ -103,5 +103,5 @@ O TUI do Keystone Collector permite que você gere pacotes de suporte e os adici
 `$ keystone-collector-tui`
 . Acesse *Solução de problemas > Gerar pacote de suporte*.image:tui-sup-bundl.png["tela tui"]
 . Quando gerado, o local onde o pacote é salvo é exibido.  Use FTP, SFTP ou SCP para se conectar ao local e baixar o arquivo de log para um sistema local.image:tui-sup-bundl-2.png["tela tui"]
-. Quando o arquivo for baixado, você pode anexá-lo ao tíquete de suporte do Keystone ServiceNow.  Para obter informações sobre como levantar bilhetes, consultelink:../concepts/gssc.html["Gerando solicitações de serviço"] .
+. Quando o arquivo for baixado, você pode anexá-lo ao tíquete de suporte do Keystone ServiceNow. Para obter informações sobre como levantar bilhetes, consulte link:../concepts/support-services.html["Gerando solicitações de serviço"].
 

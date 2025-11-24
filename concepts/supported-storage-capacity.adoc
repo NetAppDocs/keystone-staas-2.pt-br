@@ -40,7 +40,7 @@ Durante o período de uma assinatura, você pode alterar as capacidades comprome
 
 * A capacidade comprometida pode ser diminuída com base em certas condições.  Para obter informações, consultelink:../concepts/capacity-requirements.html["Redução de capacidade"] .
 * A capacidade comprometida não pode ser aumentada 90 dias antes do vencimento da sua assinatura, a menos que a assinatura seja renovada por um período adicional de 12 meses.
-* Você pode solicitar alterações na capacidade comprometida por meio do Console ou do seu Keystone Success Manager (KSM). Para obter informações sobre como solicitar alterações, consultelink:../concepts/gssc.html["Suporte NetApp Keystone"] .
+* Você pode solicitar alterações na capacidade contratada por meio do Console ou do seu Keystone Success Manager (KSM). Para obter informações sobre como solicitar alterações, consulte link:../concepts/support-services.html["Suporte NetApp Keystone"].
 
 
 

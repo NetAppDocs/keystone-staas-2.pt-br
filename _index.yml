@@ -63,7 +63,7 @@ indexpage:
   - title: Faça mais com os serviços da Keystone
     links:
     - title: Saiba mais sobre sua equipe de suporte
-      url: "/concepts/gssc.html"
+      url: "/concepts/support-services.html"
     - title: O que posso fazer com meus dados frios ou menos utilizados?
       url: "/concepts/data-tiering.html"
     - title: Como posso proteger meus dados do Keystone ?
