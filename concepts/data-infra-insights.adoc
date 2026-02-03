@@ -30,11 +30,11 @@ image:keystone-widget-dii.png["Captura de tela do widget de assinaturas Keystone
 
 Os clientes podem integrar o DII para Keystone de duas maneiras: como parte de uma instância existente que monitora outros ambientes que não sejam Keystone ou como parte de uma nova instância.  É responsabilidade do cliente configurar o DII.  Se for necessária ajuda para configurar o DII em um ambiente complexo, a equipe de contas pode se envolverlink:https://www.netapp.com/services/["Serviços profissionais da NetApp"^] .
 
-Para configurar o DII, consultelink:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html["Integração de Data Infrastructure Insights"^] .
+Para configurar o DII, consulte link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_getting_started_with_cloud_insights.html["Integração de Data Infrastructure Insights"^].
 
 Observe o seguinte:
 
-* Se o cliente estiver iniciando uma nova instância DII, é recomendável começar com umalink:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html#starting-your-data-infrastructure-insights-free-trial["Teste gratuito do DII"^] .  Para saber mais sobre esse recurso e a lista de verificação de inicialização necessária, consultelink:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_feature_tutorials.html["Tutoriais de recursos"^] .
+* Se o cliente estiver iniciando uma nova instância do DII, recomenda-se começar com um link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_subscribing_to_cloud_insights.html#trial-edition["Teste gratuito do DII"^]. Para saber mais sobre esse recurso e a lista de verificação de inicialização necessária, consulte link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_feature_tutorials.html["Tutoriais de recursos"^].
 * Para cada site, é necessária uma Unidade de Aquisição.  Para instalar uma Unidade de Aquisição, consultelink:https://docs.netapp.com/us-en/data-infrastructure-insights/task_getting_started_with_cloud_insights.html#install-an-acquisition-unit["Instalar uma Unidade de Aquisição"^] .  Se o cliente já tiver uma instância DII e uma Unidade de Aquisição configuradas, ele poderá prosseguir com a configuração do coletor de dados.
 * Para cada hardware de armazenamento implantado, o cliente deve configurar um coletor de dados na Unidade de Aquisição.  Para configurar coletores de dados, consultelink:https://docs.netapp.com/us-en/data-infrastructure-insights/task_configure_data_collectors.html["Configurar coletores de dados"^] .  Os coletores de dados necessários para o armazenamento Keystone , com base no hardware subjacente, são os seguintes:
 +
