@@ -117,6 +117,8 @@ sidebar:
         url: "/integrations/consumption-tab.html"
       - title: Veja o cronograma da sua assinatura
         url: "/integrations/subscription-timeline.html"
+      - title: Veja o consumo e o status de saúde das assinaturas do MetroCluster
+        url: "/integrations/adp-tab.html"
     - title: Ver ativos
       entries:
       - title: Exibir ativos associados a uma assinatura
@@ -129,8 +131,6 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: Visualizar e criar monitores de alerta
         url: "/integrations/monitoring-alert-monitors.html"
-    - title: Modifique suas assinaturas
-      url: "/integrations/modify-subscription.html"
     - title: Visualize sua solicitação de serviço
       url: "/integrations/administration-tab.html"
     - title: Exibir volumes e detalhes de armazenamento de objetos

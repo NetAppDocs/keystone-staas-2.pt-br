@@ -14,16 +14,11 @@ summary: Use o serviço complementar de proteção avançada de dados para garan
 
 
 [role="lead"]
-Você pode assinar o serviço complementar de proteção avançada de dados com sua assinatura do Keystone STaaS.  Este serviço complementar usa a tecnologia NetApp MetroCluster para garantir proteção de dados eficiente de suas cargas de trabalho de missão crítica com um objetivo de ponto de recuperação (RPO) de 0.
+Você pode assinar o serviço adicional de proteção avançada de dados (ADP) com sua assinatura Keystone STaaS. Enquanto os serviços padrão do Keystone incluem proteção de dados padrão usando SnapMirror, SnapVault e Snapshot, este serviço adicional utiliza a tecnologia NetApp MetroCluster para garantir a proteção eficiente dos dados de suas cargas de trabalho críticas, com um objetivo de ponto de recuperação (RPO) de 0.
 
+O serviço avançado de proteção de dados Keystone pode espelhar dados de forma síncrona para um site secundário. Em caso de desastre no site primário, o site secundário pode assumir o controle, sem qualquer perda de dados. Esse recurso utiliza a configuração link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] entre dois sites para habilitar a proteção de dados. Você pode usar os serviços adicionais de proteção de dados avançada apenas para seus serviços de armazenamento de arquivos e blocos. Como parte desse serviço adicional, o nível de serviço de desempenho  `Advanced Data-Protect` é atribuído à sua assinatura.
 
-NOTE: Os serviços padrão Keystone STaaS para armazenamento de arquivos e blocos oferecem serviços de proteção de dados padrão usando tecnologias NetApp , como SnapMirror, SnapVault e Snapshot.
-
-Para obter informações sobre o padrão e o serviço em nuvem, consultelink:../concepts/supported-storage-services.html["Serviços Keystone STaaS"] .
-
-O serviço avançado de proteção de dados da Keystone pode espelhar dados de forma sincronizada para um site secundário.  Em caso de desastre no site principal, o site secundário pode assumir, sem qualquer perda de dados.  Este recurso aproveita olink:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] configuração entre dois sites para habilitar a proteção de dados.  Você pode usar os serviços complementares de proteção avançada de dados somente para seus serviços de armazenamento de arquivos e blocos.  Como parte deste serviço complementar, o `Advanced Data-Protect` o nível de serviço de desempenho é atribuído à sua assinatura.
-
-Para obter informações sobre como visualizar o consumo em uma configuração do MetroCluster , consultelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Gráficos de referência para proteção avançada de dados"] .
+Você pode monitorar métricas de consumo e de integridade para a sua configuração MetroCluster. Para mais informações, consulte link:../integrations/adp-tab.html["Veja o consumo e a saúde das suas assinaturas MetroCluster"].
 
 
 
@@ -31,7 +26,7 @@ Para obter informações sobre como visualizar o consumo em uma configuração d
 
 O serviço complementar de proteção avançada de dados tem um preço baseado na capacidade comprometida em cada site.  Isso ajuda a determinar o custo real do serviço avançado de proteção de dados em $/TiB. Os custos adicionais se aplicam a todas as capacidades da sua assinatura, incluindo dados de origem, cópias espelhadas e dados não espelhados.
 
-Para a configuração do MetroCluster , cada site requer sua própria assinatura, e você é cobrado pela capacidade comprometida em cada site independentemente.  Para saber mais sobre faturamento, consultelink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Faturamento para proteção avançada de dados"] .
+Para a configuração MetroCluster, cada site requer sua própria assinatura, e você é cobrado pela capacidade contratada em cada site independentemente.
 
 Observe o seguinte:
 
@@ -40,6 +35,38 @@ Observe o seguinte:
 * As taxas se aplicam somente aos seus serviços de armazenamento de arquivos e blocos.
 
 
-Os seguintes cenários do MetroCluster são suportados:
 
-image:mcc-1.png["Configurações do MetroCluster suportadas pelo Keystone"]
+
+== Configurações suportadas de MetroCluster
+
+Keystone suporta os seguintes cenários de implantação do MetroCluster:
+
+Configuração ativa/passiva:: Nessa configuração, os dados primários em um site são espelhados para um site secundário. Por exemplo, se 100 TiB de dados lógicos forem consumidos no site A, eles são replicados para o site B. Ambos os sites exigem assinaturas idênticas:
++
+--
+* *Assinatura 1 (site A):* 100 TiB de serviço de storage + 100 TiB de ADP
+* *Assinatura 2 (site B):* Serviço de armazenamento de 100 TiB + 100 TiB ADP
+
+
+--
+Configuração ativa/ativa com espelhamento completo:: Nessa configuração, ambos os sites hospedam dados primários que são espelhados bidirecionalmente. Por exemplo, 100 TiB de dados primários no site A são espelhados no site B, e 100 TiB de dados primários no site B são espelhados no site A. Ambos os sites exigem assinaturas para a capacidade combinada:
++
+--
+* *Assinatura 1 (site A):* 200 TiB de serviço de storage + 200 TiB de ADP
+* *Assinatura 2 (site B):* Serviço de armazenamento de 200 TiB + 200 TiB ADP
+
+
+--
+Configuração ativa/ativa com espelhamento parcial:: Nessa configuração, um site hospeda dados espelhados, enquanto o outro site hospeda dados espelhados e não espelhados. Por exemplo, 100 TiB de dados primários no site A são espelhados no site B, enquanto o site B também hospeda 100 TiB adicionais de dados não espelhados. As assinaturas diferem com base na capacidade de cada site:
++
+--
+* *Assinatura 1 (site A):* 100 TiB de serviço de storage + 100 TiB de ADP
+* *Assinatura 2 (site B):* Serviço de armazenamento de 200 TiB + 200 TiB ADP
+
+
+--
+
+
+O diagrama a seguir mostra essas configurações MetroCluster suportadas:
+
+image:mcc-1.png["Diagrama mostrando três configurações MetroCluster: ativo/passivo com espelhamento simétrico, ativo/ativo com espelhamento bidirecional completo e ativo/ativo com espelhamento parcial"]

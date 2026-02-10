@@ -34,7 +34,7 @@ Você vê as principais métricas, como uso de capacidade, status de expiração
 Você pode ver os seguintes detalhes na tabela:
 
 +
-** *Número da assinatura*: O número da assinatura do Keystone atribuído pela NetApp.
+** *Número da assinatura*: O número da assinatura Keystone atribuído por NetApp. Assinaturas com o ícone image:metrocluster-icon.png["Símbolo de assinatura do MetroCluster"] são assinaturas MetroCluster. Para saber mais sobre assinaturas MetroCluster, consulte link:../integrations/adp-tab.html["Veja o consumo e o status das suas assinaturas Keystone MetroCluster"].
 ** *ID de rastreamento*: O ID de rastreamento atribuído no momento da ativação da assinatura.  Este é um ID exclusivo para cada assinatura e site, usado para rastrear a assinatura.
 ** *Nome do cliente*: O nome do cliente associado à assinatura do Keystone .
 ** *Assinaturas vinculadas*: se você tiver alguma assinatura secundária vinculada à sua assinatura principal, esta coluna lista os números de assinatura vinculada à assinatura principal.  Este número de assinatura pode ser da sua assinatura primária ou secundária (vinculada).
@@ -78,7 +78,7 @@ Para determinados campos e colunas, você pode ver ícones de informações ou a
 ** *ID de rastreamento*: O ID de rastreamento atribuído no momento da ativação da assinatura.  Este é um ID exclusivo para cada assinatura e site.
 +
 
-TIP: Se você assinou um serviço complementar de proteção avançada de dados, pode clicar na dica de ferramenta ao lado do seu número de assinatura para visualizar o ID de rastreamento da assinatura do parceiro em uma configuração do MetroCluster .  Para visualizar o consumo detalhado por assinaturas de parceiros em uma configuração do MetroCluster , consultelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Gráficos de referência para proteção avançada de dados"] .
+TIP: Se você assinou o serviço complementar de proteção de dados avançada, pode clicar na dica de ferramenta ao lado do seu número de assinatura para visualizar o ID de rastreamento da assinatura do parceiro em uma configuração MetroCluster. Para visualizar o consumo detalhado por assinaturas de parceiros em uma configuração MetroCluster, consulte link:../integrations/adp-tab.html["Veja o consumo e o status de saúde das assinaturas do MetroCluster"].
 
 ** *Tipo de uso*: Você pode ter assinado várias versões do Keystone .  As regras do plano de tarifas para níveis de serviço de desempenho podem ser diferentes entre as versões de assinatura.  Ao observar o valor nesta coluna, você sabe se o tipo de uso é cobrado de acordo com o uso provisionado, físico ou lógico.  Para saber mais sobre a versão 1, consulte https://docs.netapp.com/us-en/keystone/index.html["Serviços de assinatura Keystone | Documentação da versão 1"^] .
 ** *Período de cobrança*: O período de cobrança da assinatura.
