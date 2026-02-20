@@ -18,11 +18,13 @@ O NetApp Data Infrastructure Insights (DII, anteriormente conhecido como Cloud I
 
 Para saber mais sobre o Data Infrastructure Insights, consultelink:https://docs.netapp.com/us-en/data-infrastructure-insights/["Documentação do Data Infrastructure Insights"^] .
 
-O DII está disponível para assinaturas novas e existentes.  Ele pode ser integrado a uma assinatura Keystone como um complemento para a capacidade comprometida.  Quando o DII é integrado a uma assinatura Keystone , ele terá um nível de serviço de desempenho correspondente para cada nível de serviço de desempenho base na assinatura.  Por exemplo, Extreme mapeia para DII Extreme, Premium mapeia para DII Premium e Performance mapeia para DII Performance.  Esses mapeamentos garantem que o nível de serviço de desempenho DII esteja alinhado com o nível de serviço de desempenho base da sua assinatura Keystone .
 
-Uma visão dos níveis de serviço de desempenho DII em um widget * Keystone Subscriptions * no painel do Digital Advisor :
 
-image:keystone-widget-dii.png["Captura de tela do widget de assinaturas Keystone que mostra os níveis de serviço DII"]
+== Sobre o DII para assinaturas Keystone
+
+DII está disponível tanto para novas assinaturas quanto para assinaturas existentes. Ele pode ser integrado a uma assinatura Keystone como um complemento para a capacidade contratada.
+
+Quando o DII é integrado a uma assinatura Keystone, ele terá um nível de serviço de desempenho correspondente para cada nível de serviço de desempenho base na assinatura. Por exemplo, Extreme corresponde a DII Extreme, Premium corresponde a DII Premium e Performance corresponde a DII Performance. Esses mapeamentos garantem que o nível de serviço de desempenho do DII esteja alinhado com o nível de serviço de desempenho base da sua assinatura Keystone.
 
 
 
@@ -60,14 +62,31 @@ NOTE: Embora o DII ofereça amplos recursos de monitoramento para o hardware imp
 
 
 
+== Ver consumo de DII
+
+Você pode visualizar o consumo dos seus serviços adicionais do DII através do NetApp Console ou Digital Advisor. Os dados de consumo para os níveis de serviço de desempenho do DII (como DII Extreme, DII Premium e DII Performance) aparecem junto com os seus níveis de serviço de desempenho básicos nas visualizações de consumo atual e tendência de consumo.
+
+O exemplo a seguir mostra nível de serviço de desempenho DII na guia *Consumo atual* do Console:
+
+image:console-current-consumption-dii.png["Captura de tela da aba de consumo atual exibindo os níveis de serviço do DII"]
+
+O exemplo a seguir mostra os níveis de serviço de desempenho do DII no widget *Keystone Subscriptions* no Digital Advisor:
+
+image:keystone-widget-dii.png["Captura de tela do widget Keystone Subscriptions exibindo os níveis de serviço DII"]
+
+Para obter mais informações sobre a visualização do consumo, consulte:
+
+* link:../integrations/current-usage-tab.html["Veja o consumo atual de suas assinaturas Keystone"]
+* link:../integrations/consumption-tab.html["Veja as tendências de consumo das suas assinaturas Keystone"]
+
+
+
+
 == Faturamento e medição
 
 A seguir estão descritos os detalhes de cobrança e medição do serviço complementar DII:
 
 * Este serviço é medido da mesma forma que sua assinatura principal.  Por exemplo, se sua assinatura principal inclui 100 TiB de serviço Extreme e 100 TiB de serviço Premium, ambos medidos com base no uso lógico, os serviços complementares, DII Extreme 100 TiB e DII Premium 100 TiB, também são medidos com base no uso lógico.  Se sua assinatura principal for medida com base em provisionamento, o serviço complementar será medido da mesma forma para a mesma capacidade.  O serviço adicional seguirá o mesmo método de medição da sua assinatura principal.
-+
-image:current-consumption-dii.png["Captura de tela da aba de consumo atual exibindo a medição dos níveis de serviço"]
-
 * Este serviço é medido e faturado junto com sua assinatura Keystone na mesma fatura.  Se você configurar o DII para o Keystone antes de ativar sua assinatura do Keystone , a cobrança ainda começará a partir da data de ativação da assinatura do Keystone ou da data de modificação para assinaturas existentes.
 * Este serviço é medido e faturado com base na capacidade comprometida e no uso intermitente para níveis de serviço de desempenho DII, além da fatura padrão da Keystone .  A medição deste serviço complementar segue a mesma metodologia do nível de serviço de desempenho de assinatura subjacente do Keystone , que pode ser lógico, provisionado ou físico.
 * Este serviço termina com a assinatura do Keystone à qual está vinculado.  Na renovação, você pode escolher se deseja renovar o serviço adicional.  Se você não renovar a assinatura do Keystone , o hardware monitorado será desativado e o serviço complementar será encerrado automaticamente.
