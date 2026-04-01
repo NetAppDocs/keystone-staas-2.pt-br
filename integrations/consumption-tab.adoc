@@ -39,21 +39,31 @@ NOTE: Você pode selecionar *Explosão acumulada* no menu suspenso *Exibir* se q
 
 +
 
-NOTE: Se você assinou serviços adicionais, como advanced data protection (ADP) ou Data Infrastructure Insights (DII), os dados de consumo desses serviços aparecem junto com seus níveis de serviço de desempenho básico, tanto na visualização de consumo histórico quanto na visualização de picos acumulados. Para saber mais sobre serviços adicionais, consulte link:../concepts/adp.html["Saiba mais sobre serviços adicionais."].
+NOTE: Se você assinou serviços adicionais, como advanced data protection (ADP) ou Data Infrastructure Insights (DII), os dados de consumo desses serviços aparecem junto com seus níveis de serviço de desempenho básico, tanto na visualização de consumo histórico quanto na visualização de picos acumulados. Para saber mais sobre serviços adicionais, consulte link:../concepts/adp.html["Saiba mais sobre serviços adicionais."]. image:consumption-trend-burst.png["captura de tela exibindo o consumo histórico"]
 
 +
-image:bxp-consumption-trend.png["captura de tela exibindo o consumo histórico"]
+O gráfico de linhas exibe dados históricos de consumo e permite que os usuários analisem tendências em um intervalo de datas selecionado. O gráfico mostra as seguintes métricas:
 
 +
-O gráfico de linhas exibe dados históricos de consumo e permite que os usuários analisem tendências em um intervalo de datas selecionado.  O gráfico mostra métricas como dados (capacidade de armazenamento usada pelos dados do usuário), instantâneo (capacidade de armazenamento usada pelos dados do instantâneo) e capacidade usada (capacidade total de armazenamento, incluindo dados e dados do instantâneo), juntamente com capacidade comprometida e de pico.  A data e a hora de cada ponto de dados são exibidas na parte inferior do gráfico.  Com base no intervalo de datas da sua consulta, os gráficos de uso mostram até 30 pontos de coleta de dados.  Você pode passar o cursor do mouse sobre o gráfico para ver o detalhamento do uso em cada ponto de coleta de dados.
+** *Capacidade utilizada*: Armazenamento total em uso, incluindo a capacidade de dados e de Snapshot.
+** *Dados*: Capacidade de armazenamento utilizada pelos dados de usuário.
+** *Snapshot*: Capacidade de armazenamento usada pelos dados do snapshot.
+** *Comprometido*: A capacidade comprometida contratada.
+** *Capacidade de pico*: o limite máximo de pico permitido para sua assinatura.
+** *Acima da capacidade máxima*: Consumo de armazenamento além do limite máximo. Essa métrica aparece somente quando o limite máximo é excedido.
++
+Com base no intervalo de datas da sua consulta, os gráficos de uso mostram até 30 pontos de coleta de dados. Você pode posicionar o cursor do mouse sobre o gráfico para visualizar o detalhamento do uso em cada ponto de coleta de dados.
 
 +
 
 NOTE: O intervalo de datas selecionado determina o nível de detalhe exibido na parte inferior do gráfico. Para períodos de 30 dias ou menos, a data e a hora são exibidas para cada ponto de dados. Para períodos superiores a 30 dias, apenas a data é exibida.
 
-
-
++
 Você também pode visualizar um resumo do consumo atual juntamente com o consumo histórico para ter uma compreensão clara do seu uso.
+
+
+
+
 
 --
 .Digital Advisor
@@ -118,6 +128,20 @@ Você pode clicar no botão de alternância *Mostrar uso atual* para visualizar 
 
 --
 ====
+
+
+== Veja os dados de previsão
+
+Você pode visualizar a projeção de uso da capacidade para os próximos 120 dias a partir da data atual através da opção *Previsão*, disponível na visualização *Histórico de consumo* da guia *Tendência de consumo* no Console. A opção está ativada por padrão.
+
+Por padrão, o gráfico exibe os últimos 30 dias de consumo histórico e uma projeção de 120 dias a partir da data atual no mesmo gráfico. Até 30 pontos de dados são plotados no total (20 para dados históricos e 10 para dados de previsão), com uma linha vertical separando os dois segmentos.
+
+image:forecast-1.png["captura de tela mostrando dados de previsão"]
+
+Se você selecionar um intervalo de datas que não termine na data atual, a previsão será desativada automaticamente. Para reativá-la, uma caixa de diálogo de confirmação informa que os dados da previsão só estão disponíveis quando o período selecionado termina na data atual. A confirmação redefine a visualização para o intervalo padrão dos últimos 30 dias de dados históricos mais os próximos 120 dias de previsão.
+
+Caso o consumo projetado exceda a capacidade máxima, um indicador de alerta aparecerá no gráfico, recomendando uma atualização de capacidade.
+
 
 
 == Cálculo de burst acumulado
