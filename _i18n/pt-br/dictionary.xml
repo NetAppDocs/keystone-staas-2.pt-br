@@ -2487,7 +2487,6 @@
   <block id="a91bb8801531bd0f94f5726293b87485" category="paragraph"><block ref="a91bb8801531bd0f94f5726293b87485" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa37f1bdab27c9577ff178edf4ff4fef" category="admonition">A aba *Relatórios* está temporariamente indisponível para assinaturas Keystone .</block>
   <block id="2193640916b96caede95ed8f42c339e8" category="paragraph"><block ref="2193640916b96caede95ed8f42c339e8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bfad9751c60f0a457fcc252ae1a203b7" category="paragraph">Entre em contato com o suporte do NetApp Keystone para obter mais informações sobre essas mensagens. Para obter informações sobre como abrir solicitações de serviço, consulte <block ref="f97d063259ee0af881752dffb06b5bc4" category="inline-link-macro-rx"></block>.</block>
   <block id="3a51c5c35df88316b8d012c010e340f7" category="section-title">24 de novembro de 2025</block>
   <block id="236430e108e8394ac19913076b10fb55" category="doc">Etiqueta de capacidade de explosão acumulada renomeada</block>
   <block id="73ba7647571e18c30e8b5b930b7d7ffb" category="paragraph">A etiqueta *Capacidade de rajada acumulada* foi renomeada para *Rajada acumulada*.</block>
@@ -2737,4 +2736,5 @@
   <block id="9678bc25baa5d4e1d8060e89e70f72fc" category="list-text"><block ref="9678bc25baa5d4e1d8060e89e70f72fc" category="inline-link-macro-rx"></block></block>
   <block id="843e615119fedf23ac503dbdf746f02a" category="inline-link-macro">Qual número de série usar ao criar um chamado de suporte técnico para o StorageGRID</block>
   <block id="ce9d93de629e2074412aaee90a3a8db2" category="list-text"><block ref="ce9d93de629e2074412aaee90a3a8db2" category="inline-link-macro-rx"></block></block>
+  <block id="4923c6e833cc1911c8344d01efacf0cd" category="paragraph">Entre em contato com o suporte da NetApp Keystone para mais informações sobre essas mensagens. Para obter informações sobre como abrir solicitações de serviço, consulte <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>.</block>
 </blocks>
