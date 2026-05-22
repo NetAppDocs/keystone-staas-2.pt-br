@@ -5,15 +5,13 @@ keywords: pricing, billing introduction, Keystone billing
 summary: A Keystone oferece um modelo de pagamento conforme o crescimento para suas necessidades de consumo flexíveis e escaláveis. 
 ---
 = Saiba mais sobre o faturamento do Keystone
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
-
-'''
-Barra lateral: link permanente da barra lateral: concepts/pricing.html Palavras-chave: preços, Keystone billing, capacidade contratada, capacidade consumida, consumo em pico, cronogramas de faturamento Resumo: Com NetApp Keystone STaaS, você paga pelo que contrata e somente extra pelo que usar além disso. Esta página explica como funciona o modelo de pagamento conforme o crescimento — desde como seu compromisso de armazenamento é precificado, até como a capacidade é medida e faturada, até quando as faturas são geradas. ---
-
-
-
-= Saiba mais sobre o faturamento do Keystone
 
 [role="lead"]
 Com NetApp Keystone STaaS, você paga pelo que contrata e somente extra pelo que usar além desse limite. Esta página explica como o modelo de pagamento conforme o uso funciona, incluindo como o preço do seu compromisso de armazenamento é calculado, como a capacidade é medida e faturada e quando as faturas são geradas.
