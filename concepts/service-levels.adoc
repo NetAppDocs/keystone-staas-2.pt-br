@@ -14,7 +14,7 @@ summary: O Keystone STaaS oferece capacidade de armazenamento em níveis de serv
 
 
 [role="lead"]
-O Keystone STaaS oferece capacidade de armazenamento de dados em níveis de serviço de desempenho predefinidos.  Cada volume gerenciado pelos serviços Keystone está associado a um nível de serviço de desempenho.
+Keystone STaaS oferece níveis de serviço de desempenho (PSLs) predefinidos, também chamados de níveis de serviço de desempenho básicos, para cada tipo de armazenamento. Cada PSL especifica as metas de desempenho (IOPS, taxa de transferência e latência), os protocolos suportados, a plataforma e os requisitos mínimos de capacidade. Analise os PSLs disponíveis para selecionar o nível de serviço certo para sua carga de trabalho e planejar sua assinatura.
 
 Uma assinatura pode ter vários planos de tarifas e cada plano de tarifas corresponde a um nível de serviço de desempenho.  Cada plano de tarifas tem uma capacidade comprometida por nível de serviço de desempenho.
 
