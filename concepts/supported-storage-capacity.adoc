@@ -18,12 +18,14 @@ O serviço NetApp Keystone STaaS suporta vários tipos de capacidades de armazen
 
 
 
+[[logical-capacity]]
 == Capacidade lógica
 
 Estes são os dados colocados na infraestrutura Keystone por um cliente.  Todas as capacidades Keystone referem-se a uma capacidade lógica.  Por exemplo, se um arquivo de 1 TiB for armazenado na infraestrutura Keystone , um mínimo de 1 TiB de capacidade deverá ser adquirido.
 
 
 
+[[committed-capacity]]
 == Capacidade comprometida
 
 Capacidade lógica mínima cobrada mensalmente durante a assinatura:
@@ -34,6 +36,7 @@ Capacidade lógica mínima cobrada mensalmente durante a assinatura:
 
 
 
+[[changes-to-committed-capacity]]
 === Mudanças na capacidade comprometida
 
 Durante o período de uma assinatura, você pode alterar as capacidades comprometidas.  No entanto, existem certas condições prévias:
@@ -45,18 +48,36 @@ Durante o período de uma assinatura, você pode alterar as capacidades comprome
 
 
 
+[[consumed-capacity]]
 == Capacidade consumida
 
-Capacidade consumida refere-se à capacidade (em TiB de armazenamento) atualmente consumida no serviço.  É a soma de:
+A capacidade consumida refere-se à capacidade (em TiB de storage) atualmente utilizada pelo serviço. Ela é calculada de forma diferente dependendo do tipo de storage de dados:
 
-* A capacidade lógica usada para armazenar todas as instâncias e tipos de dados do usuário (como cópias, cópias espelhadas e versões).
-* A capacidade lógica usada para armazenar volumes clonados que são maiores que 10% do tamanho do volume original.
-* A capacidade física usada para armazenar os dados diferenciais das cópias do Snapshot.
-* A capacidade física alocada.
+* *Armazenamento unificado ou otimizado para blocos*: A capacidade consumida é calculada com base no tipo de capacidade (lógica ou física) selecionado durante o processo de pedido. O cálculo é realizado por instância de nível de serviço de desempenho.
++
+.. *Capacidade lógica*: É a soma de:
++
+*** Capacidade lógica medida, antes das eficiências de dados do array de storage, para armazenar todas as instâncias e tipos de dados do cliente, como cópias, cópias espelhadas, versões e clones.
+*** Capacidade física utilizada para armazenar metadados e dados diferenciais de snapshots e determinados clones.
+*** Qualquer capacidade física provisionada de forma thick.
+
+
+.. *Capacidade física*: É a soma de:
++
+*** Capacidade física medida, após eficiências de dados do array de storage, para armazenar todas as instâncias e tipos de dados do cliente, como cópias, cópias espelhadas, versões e clones.
+*** Capacidade física utilizada para armazenar metadados e dados diferenciais de snapshots.
+*** Qualquer capacidade física provisionada de forma thick.
 
 
 
 
+* *Armazenamento de objetos*: A capacidade consumida é calculada como a quantidade de capacidade física medida usada para armazenar todas as instâncias e tipos de dados do cliente em todos os nós. Esse cálculo é baseado nas políticas de gerenciamento do ciclo de vida das informações (ILM) configuradas.
+* *Cloud Volumes ONTAP*: A capacidade consumida é calculada como a quantidade de capacidade lógica provisionada medida de todos os volumes do Cloud Volumes ONTAP.
+
+
+
+
+[[burst-capacity]]
 == Capacidade de ruptura
 
 O serviço NetApp Keystone permite que você use capacidade adicional além da capacidade comprometida para um nível de serviço.  Isso é chamado de utilização da capacidade de pico.
@@ -69,6 +90,7 @@ Observe estes pontos:
 
 
 
+[[billed-capacity]]
 == Capacidade faturada
 
 Fatura mensal = (capacidade comprometida [TiB] * taxa comprometida [$/TiB]) + (capacidade de burst média diária provisionada [TiB] * taxa de burst [$/TiB]).  A fatura mensal contém uma cobrança mínima com base na capacidade comprometida.

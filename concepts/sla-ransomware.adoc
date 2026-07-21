@@ -18,12 +18,14 @@ A NetApp garante a recuperação de dados de Snapshot de volumes SnapLock Compli
 
 
 
+[[service-levels]]
 == Níveis de serviço
 
 O Ransomware Recovery Assurance Service é necessário para todo o hardware que dá suporte à assinatura do Keystone durante o período de assinatura aplicável.
 
 
 
+[[service-credits]]
 == Créditos de serviço
 
 

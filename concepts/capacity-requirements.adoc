@@ -18,6 +18,7 @@ Os requisitos de capacidade para os níveis de serviço de desempenho do Keyston
 
 
 
+[[minimum-capacity-requirements-for-file-and-block-services]]
 == Requisitos mínimos de capacidade para serviços de arquivo e bloco
 
 A capacidade mínima e a capacidade incremental permitidas por assinatura são descritas na tabela a seguir.  A capacidade mínima por nível de serviço de desempenho é definida para ser a mesma em todos os movimentos de vendas da Keystone .  A capacidade acima da capacidade mínima, seja no início da assinatura, ou como um serviço adicional à assinatura, ou após a realocação durante a assinatura, também é estruturada na tabela.
@@ -44,6 +45,7 @@ Capacidade incremental (e em múltiplos) permitida como complemento durante a as
 |===
 
 
+[[minimum-capacity-requirements-for-object-storage]]
 == Requisitos mínimos de capacidade para armazenamento de objetos
 
 Você pode ver os requisitos mínimos de capacidade para armazenamento de objetos na tabela a seguir:
@@ -94,6 +96,7 @@ Não aplicável
 |===
 
 
+[[capacity-adjustments]]
 == Ajustes de capacidade
 
 Saiba mais sobre ajustes de capacidade:
@@ -107,6 +110,7 @@ Saiba mais sobre ajustes de capacidade:
 
 
 
+[[capacity-reduction]]
 === Redução de capacidade
 
 A redução de capacidade (anual) é aplicável ao modelo de pagamento _Anual Antecipado_ e somente às implantações locais.  Não está disponível para serviços de nuvem ou serviços de nuvem híbrida.  Ele fornece provisão para capacidade local, que pode ser reduzida em até 25% por nível de serviço por assinatura.  Essa redução é permitida uma vez por ano e entra em vigor no início do próximo período de cobrança anual.  Os pagamentos anuais baseados em serviços no local devem ser de >=US$ 200 mil a qualquer momento durante o período para aproveitar a redução de capacidade.  Como ele é compatível apenas com implantações locais, esse modelo de cobrança não permite realocação de gastos de serviços locais para serviços em nuvem.  Um exemplo de redução anual de capacidade é ilustrado na imagem a seguir.
@@ -115,6 +119,7 @@ image:reallocation.png["lógica de realocação explicada"]
 
 
 
+[[quarterly-spend-reallocation]]
 === Realocação trimestral de gastos
 
 O Keystone STaaS oferece a opção de realocar os gastos com serviços locais para os gastos do Cloud Volumes ONTAP .

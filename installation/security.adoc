@@ -25,6 +25,7 @@ O funcionamento do Keystone Collector é baseado nos seguintes princípios de se
 
 
 
+[[security-hardening]]
 == Reforço da segurança
 
 Por padrão, o Keystone Collector é configurado para usar configurações de segurança reforçada.  A seguir estão as configurações de segurança recomendadas:

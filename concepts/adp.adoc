@@ -22,6 +22,7 @@ Você pode monitorar métricas de consumo e de integridade para a sua configura�
 
 
 
+[[understand-pricing]]
 == Entenda os preços
 
 O serviço complementar de proteção avançada de dados tem um preço baseado na capacidade comprometida em cada site.  Isso ajuda a determinar o custo real do serviço avançado de proteção de dados em $/TiB. Os custos adicionais se aplicam a todas as capacidades da sua assinatura, incluindo dados de origem, cópias espelhadas e dados não espelhados.
@@ -37,6 +38,7 @@ Observe o seguinte:
 
 
 
+[[supported-metrocluster-configurations]]
 == Configurações suportadas de MetroCluster
 
 Keystone suporta os seguintes cenários de implantação do MetroCluster:

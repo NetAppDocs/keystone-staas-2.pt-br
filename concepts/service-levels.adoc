@@ -29,6 +29,7 @@ Os níveis de serviço de desempenho básico para os tipos de armazenamento supo
 
 
 
+[[performance-service-levels-for-file-and-block-storage]]
 == Níveis de serviço de desempenho para armazenamento de arquivos e blocos
 
 *Protocolos suportados*: NFS, CIFS, iSCSI e FC
@@ -61,6 +62,7 @@ Os níveis de serviço de desempenho básico para os tipos de armazenamento supo
 |===
 
 
+[[more-on-performance-service-levels-for-file-and-block-storage]]
 === Mais sobre níveis de serviço de desempenho para armazenamento de arquivos e blocos
 
 As métricas de nível de serviço de desempenho básico dependem das seguintes condições:
@@ -84,6 +86,7 @@ As métricas de nível de serviço de desempenho básico dependem das seguintes 
 
 
 
+[[object-storage]]
 == Armazenamento de objetos
 
 *Protocolo suportado*: S3
@@ -113,6 +116,7 @@ NOTE: A latência não inclui sobrecargas associadas à transferência de dados 
 
 
 
+[[cloud-storage]]
 == Armazenamento em nuvem
 
 *Protocolo suportado*: NFS, CIFS, iSCSI e S3 (somente AWS e Azure)

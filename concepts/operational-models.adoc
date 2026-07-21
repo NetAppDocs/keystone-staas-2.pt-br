@@ -27,6 +27,7 @@ O NetApp Keystone STaaS oferece dois modelos operacionais para entrega de servi�
 
 
 
+[[roles-and-responsibilities-across-the-service-lifecycle]]
 == Funções e responsabilidades ao longo do ciclo de vida do serviço
 
 * *Modelo operado por parceiro*: O compartilhamento de funções e responsabilidades depende do acordo entre você e o provedor de serviços ou parceiro.  Entre em contato com seu provedor de serviços para obter informações.

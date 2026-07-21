@@ -38,6 +38,7 @@ image:rest-api-token-types.png["Tipos de token"]
 
 
 
+[[generate-access-token-using-the-digital-advisor-rest-api]]
 == Gerar token de acesso usando a API REST do Digital Advisor
 
 O token de acesso é usado para autenticar solicitações da API do Digital Advisor .  Ele pode ser gerado diretamente pelo console junto com o token de atualização ou usando a seguinte chamada de API:
@@ -89,6 +90,7 @@ curl -X 'POST' \ 'https://api.activeiq.netapp.com/v1/tokens/accessToken' \ -H 'a
 ----
 
 
+[[execute-the-api-call]]
 == Execute a chamada da API
 
 Após a geração bem-sucedida de um token de acesso, chamadas autorizadas da API do Digital Advisor podem ser executadas para obter as informações necessárias.

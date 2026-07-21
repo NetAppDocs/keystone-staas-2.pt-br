@@ -27,6 +27,7 @@ Os seguintes termos e definições são usados no serviço Keystone STaaS para m
 
 
 
+[[metrics-measurement]]
 == Medição de métricas
 
 * *Medição de capacidade em GiB, TiB e PiB*: Medições de capacidade de armazenamento de dados usando base de 1024 (1 GiB = 1024^3^ bytes, 1 TiB = 1024^4^ bytes e 1 PiB = 1024^5^ bytes).
@@ -38,6 +39,7 @@ Os seguintes termos e definições são usados no serviço Keystone STaaS para m
 
 
 
+[[throughput-performance-metrics]]
 === Métricas de desempenho de rendimento
 
 As métricas de desempenho de rendimento são aplicáveis somente para serviços de arquivo e bloco com base em:
@@ -48,6 +50,7 @@ As métricas de desempenho de rendimento são aplicáveis somente para serviços
 
 
 
+[[variations-in-io-density]]
 === Variações na densidade de IO
 
 A densidade de IO calculada em IOPS/TiB e/ou MBps/TiB varia com base nos seguintes fatores:
@@ -75,6 +78,7 @@ A densidade de IO calculada em IOPS/TiB e/ou MBps/TiB varia com base nos seguint
 
 
 
+[[volume-aqos]]
 === Volume AQoS
 
 Cada volume ONTAP deve ter a política de qualidade de serviço adaptável (AQoS) aplicável aplicada.  Caso contrário, a capacidade dentro de cada volume que não tiver uma política de AQoS aplicada será cobrada na taxa do Nível de Serviço mais alto.

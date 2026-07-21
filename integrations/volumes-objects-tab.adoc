@@ -23,6 +23,7 @@ NOTE: O título desta aba varia de acordo com a natureza da implantação no seu
 
 
 
+[[view-ontap-volumes-and-object-storage-details]]
 == Visualizar volumes ONTAP e detalhes de armazenamento de objetos
 
 A guia *Volumes e Objetos* oferece insights sobre volumes do sistema ONTAP e armazenamento de objetos em diferentes níveis de detalhes.  Para volumes ONTAP , há duas subguias: *Resumo do volume*, que fornece uma contagem geral dos volumes mapeados para os níveis de serviço de desempenho assinados, e *Detalhes do volume*, que lista esses volumes novamente com seus detalhes específicos.  A subguia *Objetos* fornece detalhes sobre armazenamento de objetos para assinaturas que incluem níveis de serviço de desempenho para armazenamento de arquivos e objetos.

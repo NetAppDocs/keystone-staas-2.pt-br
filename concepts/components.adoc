@@ -18,48 +18,56 @@ Você precisa de vários componentes para habilitar os serviços NetApp Keystone
 
 
 
+[[site-requirements]]
 == Requisitos do site
 
 Há alguns requisitos específicos do local, como espaço, racks, PDUs, energia e resfriamento, com requisitos adicionais de rede e segurança discutidos aqui.
 
 
 
+[[space]]
 === Espaço
 
 Espaço no chão para hospedar o equipamento de infraestrutura Keystone (a ser fornecido pelos clientes).  A NetApp fornece as especificações de peso com base na configuração final.
 
 
 
+[[racks]]
 === Prateleiras
 
 Quatro estantes de correio na oferta operada pelo cliente (a serem fornecidas pelos clientes).  Na oferta operada pela NetApp, a NetApp ou o cliente pode fornecer os racks, dependendo dos requisitos.  A NetApp fornece 42 racks profundos.
 
 
 
+[[pdus]]
 === PDUs
 
 Você deve fornecer unidades de distribuição de energia (PDUs), conectadas a dois circuitos separados e protegidos, com tomadas C13 suficientes.  Na oferta operada pelo cliente, em alguns casos, são necessárias saídas C19.  Na oferta operada pela NetApp, a NetApp ou o cliente pode fornecer as PDUs, dependendo dos requisitos.
 
 
 
+[[power]]
 === Poder
 
 Você deve fornecer a energia necessária.  A NetApp fornecerá as especificações de requisitos de energia com base na classificação de 200 V (típico A, Máx. A, T típico, T máximo, tipo de cabo de alimentação e quantidade), com base na configuração final.  Todos os componentes têm fontes de alimentação redundantes.  A NetApp fornecerá os cabos de alimentação no gabinete.
 
 
 
+[[cooling]]
 === Resfriamento
 
 A NetApp pode fornecer as especificações de requisitos de resfriamento (BTU típico, BTU máximo), com base na configuração e nos requisitos finais.
 
 
 
+[[virtual-machines]]
 === Máquinas virtuais
 
 Máquinas virtuais são necessárias para a implantação do Keystone Collector e do ITOM Collector.  Para pré-requisitos de instalação, consultelink:../installation/installation-overview.html["Guia de instalação do Keystone Collector"] elink:../installation/itom-prereqs.html["Requisitos de instalação do coletor ITOM"] .  Os outros requisitos são compartilhados durante a implantação.
 
 
 
+[[deployment-options]]
 === Opções de implantação
 
 O Keystone Collector pode ser implantado através dos seguintes métodos:
@@ -80,6 +88,7 @@ TIP: Os sistemas operacionais recomendados são Debian 12, Windows Server 2016 o
 
 
 
+[[networking]]
 === Rede
 
 O acesso de saída ao _keystone.netapp.com_ é necessário para atualizações de software e uploads de dados de uso, que são essenciais para a operação e manutenção do Keystone Collector e do gateway de solução AIOps.
@@ -90,6 +99,7 @@ A NetApp fornece os transceptores necessários somente para dispositivos de infr
 
 
 
+[[remote-access-requirement]]
 == Requisito de acesso remoto
 
 A conectividade de rede é necessária entre a infraestrutura de armazenamento instalada no data center do cliente ou nos serviços colocalizados de propriedade do cliente e o centro de operações da Keystone .  O cliente é responsável por fornecer os serviços de computação e máquinas virtuais, além dos serviços de internet.  O cliente também é responsável pela aplicação de patches no sistema operacional (implantações não baseadas em OVA) e pelo reforço da segurança com base em políticas de segurança internas.  O projeto da rede deve ser baseado em um protocolo seguro e as políticas de firewall serão aprovadas pela NetApp e pelos clientes.

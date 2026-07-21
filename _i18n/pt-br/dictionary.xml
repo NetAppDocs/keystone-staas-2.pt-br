@@ -700,11 +700,6 @@
   <block id="38ee5c58ab48cb8a1b633c2aea7a1e45" category="list-text">A capacidade comprometida pode ser diminuída com base em certas condições.  Para obter informações, consulte<block ref="bce311488cda7b3fc83e86e7b3939fd8" category="inline-link-macro-rx"></block> .</block>
   <block id="5f961dc6311c34fa23cf40360afba9db" category="list-text">A capacidade comprometida não pode ser aumentada 90 dias antes do vencimento da sua assinatura, a menos que a assinatura seja renovada por um período adicional de 12 meses.</block>
   <block id="dd83b22a815febb6c6547eab078bbf30" category="section-title">Capacidade consumida</block>
-  <block id="95ff7c62926d2ecbfa68d2cb55e84679" category="paragraph">Capacidade consumida refere-se à capacidade (em TiB de armazenamento) atualmente consumida no serviço.  É a soma de:</block>
-  <block id="bc1fb831529945409538850faa16026e" category="list-text">A capacidade lógica usada para armazenar todas as instâncias e tipos de dados do usuário (como cópias, cópias espelhadas e versões).</block>
-  <block id="b2a0ad297e26236d750246160723aa4e" category="list-text">A capacidade lógica usada para armazenar volumes clonados que são maiores que 10% do tamanho do volume original.</block>
-  <block id="93fcc6bc4dfbcffb60fef19d3e82a054" category="list-text">A capacidade física usada para armazenar os dados diferenciais das cópias do Snapshot.</block>
-  <block id="92103b58e95f2c7bb6f6903f55f4e0ca" category="list-text">A capacidade física alocada.</block>
   <block id="08d63a30cdbc798edef3e21cacda1ac2" category="section-title">Capacidade de ruptura</block>
   <block id="3be3c0e5a4c3f89e825b202394d2aaab" category="paragraph">O serviço NetApp Keystone permite que você use capacidade adicional além da capacidade comprometida para um nível de serviço.  Isso é chamado de utilização da capacidade de pico.</block>
   <block id="8bf4a89637b88a17fe1be4dad5d23488" category="paragraph">Observe estes pontos:</block>
@@ -902,7 +897,6 @@
   <block id="9bb097552337391bef04a8384c5c2779" category="summary">Antes de começar a usar o Keystone, você precisa garantir que os clusters ONTAP e os sistemas StorageGRID atendam a alguns requisitos.</block>
   <block id="6d29d2542a6a2e3e81746082b1d99b07" category="list-title">Versões de software</block>
   <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8 ou posterior</block>
-  <block id="0cd22f9baa25202637cff789fe1dfe9f" category="list-text">Active IQ Unified Manager (Gerenciador Unificado) 9.10 ou posterior</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Antes de começar</block>
   <block id="b2a3bf9896e977dfd8243da5ea25ed44" category="paragraph">Atenda aos seguintes requisitos se você pretende coletar dados de uso somente por meio do ONTAP:</block>
   <block id="3e53b7d63056b7201f19b650655aad66" category="list-text">Certifique-se de que o ONTAP 9.8 ou posterior esteja configurado.  Para obter informações sobre como configurar um novo cluster, consulte estes links:</block>
@@ -922,7 +916,6 @@
   <block id="da7599bcceca45d5f685a0c9ca169dd1" category="inline-link">Habilitar acesso à senha da conta ONTAP</block>
   <block id="ce5996c36dc9e027cc9e9e6ac10b3c9f" category="list-text">Crie um usuário ONTAP com a função "somente leitura" e o tipo de aplicativo "http" e habilite a autenticação por senha.  Para saber mais sobre autenticação, consulte<block ref="ff30655b37a4a92ad3dccbb4dd39b63c" category="inline-link-rx"></block> .</block>
   <block id="6fccd3079eed02626646a383fcba9c32" category="paragraph">Atenda aos seguintes requisitos se você pretende coletar dados de uso por meio do Active IQ Unified Manager:</block>
-  <block id="ad98fcce772f03d25a2b4758c7fbf35c" category="list-text">Certifique-se de que o Unified Manager 9.10 ou posterior esteja configurado.  Para obter informações sobre como instalar o Unified Manager, consulte estes links:</block>
   <block id="d0b5d22f0f22d32554c2064ce1e75865" category="inline-link">Instalando o Unified Manager em sistemas VMware vSphere</block>
   <block id="9893071aa012ae6b029eae73ae2be44e" category="list-text"><block ref="9893071aa012ae6b029eae73ae2be44e" category="inline-link-rx"></block></block>
   <block id="af5e840663cada43f534ae4ad3ceb289" category="inline-link">Instalando o Unified Manager em sistemas Linux</block>
@@ -1749,7 +1742,6 @@
   <block id="7e147d47de92c4a609c07c4bb5e40f29" category="list-text">*Período de cobrança*: O período de cobrança da assinatura.</block>
   <block id="15d3201050b72761174ef874891c70c2" category="list-text">*Níveis de serviço de desempenho*: O número de planos de tarifas associados à assinatura, com cada plano de tarifas correspondendo a um nível de serviço de desempenho específico e capacidade comprometida.</block>
   <block id="7977aee626f33c6d577f1efc799f2747" category="list-text">*Capacidade máxima*: Capacidade máxima consumida dentro da assinatura.</block>
-  <block id="e0e64854d2f2c608544b01e8cc518243" category="list-text">*Dias até o vencimento da assinatura*: Número de dias restantes até o vencimento da assinatura.</block>
   <block id="e567b31e26c159f427dde0e64b05c3c2" category="admonition">Você pode personalizar as colunas exibidas na tabela usando o seletor de colunas<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block> ícone.  Para determinados campos e colunas, você pode ver ícones de informações ou avisos e dicas de ferramentas que fornecem informações adicionais sobre os dados.</block>
   <block id="ed4d0852f1703e0820b9637850aeae85" category="paragraph">Para visualizar suas assinaturas no Digital Advisor, siga estas etapas:</block>
   <block id="01bbb3898ca00363b1b5c84f5c112a6e" category="list-text">No painel de navegação esquerdo do Digital Advisor , acesse *Geral &gt; Assinaturas Keystone &gt; Assinaturas*.</block>
@@ -2507,7 +2499,6 @@
   <block id="1e007e954fdd7587bcd939b10c21e650" category="list-text">No Console, você pode interagir com o gráfico de faturamento acumulado para filtrar o uso diário de dados. Para saber mais, consulte <block ref="0cc16f2bbc32fd70c68f98b9b0b4296a" category="inline-link-macro-rx"></block>.</block>
   <block id="1b342e2d578a51d6b3d947da95fe0f10" category="paragraph">No Console, você pode filtrar a tabela selecionando qualquer barra que represente um período de faturamento no gráfico de faturamento acumulado. Quando filtrada, a tabela exibe apenas os dias dentro do período de faturamento selecionado. Para visualizar o conjunto de dados completo novamente, use a opção *Clear filters*. Se não houver dados disponíveis para o período selecionado, uma mensagem é exibida indicando que não há dados disponíveis.</block>
   <block id="e6f9cff2e05b0c21bfa8eacbea1108b9" category="paragraph"><block ref="e6f9cff2e05b0c21bfa8eacbea1108b9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c4eab7429b9b42ab319272d31567f10b" category="paragraph"><block ref="c4eab7429b9b42ab319272d31567f10b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6331e16cef510e2a7170f77ace7d4d3c" category="list-text">*Tipo de uso*: Você pode ter assinado várias versões do Keystone. As regras do plano de tarifas para níveis de serviço de desempenho podem ser diferentes entre as versões da assinatura. Ao observar o valor nesta coluna, você sabe se o tipo de uso é cobrado conforme o uso provisionado, físico ou lógico. Para saber mais sobre a versão 1, consulte <block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>.</block>
   <block id="8c4ee08746e9d4d8b64596c87ac3fab1" category="inline-image-macro">ícone de expansão</block>
   <block id="b3aabf2706f0dd29444a14f90b5b670f" category="admonition">Você pode clicar na seta para baixo <block ref="f41a012a2c49083e45aae37ff23f77bc" category="inline-image-macro-rx" type="image"></block> no cabeçalho da tabela para expandir todas as assinaturas e visualizar as informações de níveis de serviço de desempenho para cada assinatura simultaneamente. Isso mostra informações detalhadas de capacidade, incluindo uso atual, capacidade comprometida, capacidade provisionada, capacidade de pico e capacidade disponível para todas as assinaturas. Como alternativa, você pode clicar na seta para baixo ao lado da coluna *Expiration date* nas linhas de assinatura individuais para expandi-las uma de cada vez.</block>
@@ -2672,7 +2663,6 @@
   <block id="513ac101f78fa63747befb7f73414070" category="paragraph">NetApp usa a solução de monitoramento ITOM para monitorar proativamente a integridade de seus produtos e serviços assinados e se conectar ao ambiente NetApp Keystone para solução de problemas.</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="section-title">Recursos adicionais</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
-  <block id="07d64f85c46041387234eb4f1b2c6dda" category="list-text"><block ref="07d64f85c46041387234eb4f1b2c6dda" category="inline-link-macro-rx"></block></block>
   <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="inline-link-macro">Documentação de produtos da NetApp</block>
   <block id="c4c9ecac280f54a5500192a9efb21c2b" category="list-text"><block ref="c4c9ecac280f54a5500192a9efb21c2b" category="inline-link-macro-rx"></block></block>
   <block id="417de6e21a96febf9dc5f6d95a18c845" category="inline-link-macro">Como identificar o número de série da plataforma ONTAP</block>
@@ -2775,4 +2765,30 @@
   <block id="b52a8fe5a68b65cd156fdbdd49db6e3f" category="paragraph"><block ref="b52a8fe5a68b65cd156fdbdd49db6e3f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="012c1fa51b2cce435780c63eb94ec4e8" category="paragraph">Você pode usar esses dados para verificar se a cobrança de uma determinada data está correta e para conferir os valores de débito de uso da sua assinatura.</block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">29 de junho de 2026</block>
+  <block id="74cf60fbdf1e9979b4bc96c9e0974a6b" category="doc">Veja o status de expiração da assinatura e de renovação automática</block>
+  <block id="495b22b0bc55d3822a5ffc86d03d07c9" category="paragraph">A coluna *Dias até o vencimento da assinatura* na tabela de assinaturas (*Armazenamento &gt; Keystone &gt; Assinaturas*) agora exibe um ícone ao lado da data de vencimento. A cor do ícone indica a proximidade do vencimento quando a renovação automática está desativada: verde (&gt;120 dias), laranja (91–120 dias), vermelho (&lt;90 dias) ou cinza (vencida). Para assinaturas com renovação automática ativada, um ícone de renovação automática é exibido, indicando que a assinatura será renovada automaticamente ao final do período atual. O status é somente leitura e reflete os termos do seu contrato. Depois de abrir uma assinatura, esses ícones aparecem no cabeçalho de detalhes da assinatura nas guias *Consumo atual*, *Tendência de consumo*, *Linha do tempo da assinatura* e *Ativos*, fornecendo visibilidade do status de vencimento e renovação enquanto você navega.</block>
+  <block id="ba93540c77434b5a45f562c939e84d30" category="paragraph">Para saber mais, consulte<block ref="97b83a5c42cc5367f46b598d7c9e65ca" category="inline-link-rx"></block>.</block>
+  <block id="e13f280ffa976818e3580eb46f21ed29" category="list-text"><block ref="e13f280ffa976818e3580eb46f21ed29" category="inline-link-macro-rx"></block></block>
+  <block id="56ae4bcb822e971e4c40a45fcdc8fe7c" category="paragraph">A capacidade consumida refere-se à capacidade (em TiB de storage) atualmente utilizada pelo serviço. Ela é calculada de forma diferente dependendo do tipo de storage de dados:</block>
+  <block id="52bde02f3e1edb6d6e28dca0d312445a" category="list-text">*Armazenamento unificado ou otimizado para blocos*: A capacidade consumida é calculada com base no tipo de capacidade (lógica ou física) selecionado durante o processo de pedido. O cálculo é realizado por instância de nível de serviço de desempenho.</block>
+  <block id="845131517a9dd7f41b73102338bac133" category="list-text">*Capacidade lógica*: É a soma de:</block>
+  <block id="330cf8188d7a3b58592b4c81821c0f57" category="list-text">Capacidade lógica medida, antes das eficiências de dados do array de storage, para armazenar todas as instâncias e tipos de dados do cliente, como cópias, cópias espelhadas, versões e clones.</block>
+  <block id="10bec3c494dd9bec3b24fa97cf339ed5" category="list-text">Capacidade física utilizada para armazenar metadados e dados diferenciais de snapshots e determinados clones.</block>
+  <block id="16e3fe3518e138a40219bf6cc72c86b0" category="list-text">Qualquer capacidade física provisionada de forma thick.</block>
+  <block id="0649df2b2e490a85273ef7528dbeb91a" category="list-text">*Capacidade física*: É a soma de:</block>
+  <block id="ac24d860f9ed456787c6adde87f5cdec" category="list-text">Capacidade física medida, após eficiências de dados do array de storage, para armazenar todas as instâncias e tipos de dados do cliente, como cópias, cópias espelhadas, versões e clones.</block>
+  <block id="b329b0abe6bbbcab63fca174e7088d74" category="list-text">Capacidade física utilizada para armazenar metadados e dados diferenciais de snapshots.</block>
+  <block id="1e36ff768e1131f8fc01f855cb88fb27" category="list-text">*Armazenamento de objetos*: A capacidade consumida é calculada como a quantidade de capacidade física medida usada para armazenar todas as instâncias e tipos de dados do cliente em todos os nós. Esse cálculo é baseado nas políticas de gerenciamento do ciclo de vida das informações (ILM) configuradas.</block>
+  <block id="474b185f5d41440b6fd87e927f87c541" category="list-text">*Cloud Volumes ONTAP*: A capacidade consumida é calculada como a quantidade de capacidade lógica provisionada medida de todos os volumes do Cloud Volumes ONTAP.</block>
+  <block id="23d4d9cd1c1ff2d6d2933321e5728e41" category="list-text">Active IQ Unified Manager (Unified Manager) posterior à versão 9.10 e anterior à 9.16P2</block>
+  <block id="2532e6915fa7b6217c6d00baa817a264" category="list-text">Certifique-se de que Unified Manager em versão posterior à 9.10 e anterior à 9.16P2 esteja configurado. Para obter informações sobre a instalação do Unified Manager, consulte estes links:</block>
+  <block id="eb471dad784c59f27107be17f79c179b" category="paragraph"><block ref="eb471dad784c59f27107be17f79c179b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ed9a56ae580bae02af0f4033c1fc03e" category="list-text">*Dias restantes para o vencimento da assinatura*: Exibe um ícone ao lado da data de vencimento para indicar quanto tempo falta para o vencimento da assinatura e se ela será renovada automaticamente. Este status é somente leitura e reflete os termos do seu contrato. Para revisar os detalhes do contrato, consulte <block ref="2cf57deab11a97384e65ae3b18f8e059" category="inline-link-macro-rx"></block>.</block>
+  <block id="0f90b275e273c351e98af167ee4042b0" category="paragraph">Quando a renovação automática está desativada, a cor do ícone indica a proximidade do vencimento:</block>
+  <block id="e0646e6cc1521e0d850cfe435090ef1a" category="list-text">*Verde*: restam mais de 120 dias até o vencimento.</block>
+  <block id="2eaf25d8a1f7859cabcfaf2c76ce332d" category="list-text">*Laranja*: Restam entre 91 e 120 dias até o vencimento.</block>
+  <block id="0f256230b1488e77dbb19f67f96d22e7" category="list-text">*Vermelho*: Faltam menos de 90 dias para o vencimento. Para evitar interrupção no serviço, envie uma solicitação de renovação ao suporte do NetApp Keystone.</block>
+  <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*Cinza*: A assinatura expirou.</block>
+  <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">Para assinaturas com renovação automática ativada, um ícone de renovação automática é exibido, indicando que a assinatura será renovada automaticamente ao final do período atual.</block>
+  <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">20 de julho de 2026</block>
 </blocks>

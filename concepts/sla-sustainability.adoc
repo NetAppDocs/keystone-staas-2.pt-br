@@ -18,6 +18,7 @@ O NetApp Keystone oferece uma medição garantida do número máximo de watts re
 
 
 
+[[metrics]]
 == Métricas
 
 * *Watts*: O consumo de energia relatado pelo AutoSupport diário, incluindo o uso pelo controlador e prateleiras de disco conectadas.
@@ -34,6 +35,7 @@ Para saber mais sobre a taxa de eficiência de armazenamento, consulte https://d
 
 
 
+[[performance-service-levels]]
 == Níveis de serviço de desempenho
 
 O SLO de sustentabilidade é baseado nos seguintes critérios de consumo:
@@ -62,6 +64,7 @@ Para saber mais, consultelink:https://docs.netapp.com/us-en/keystone-staas/conce
 
 
 
+[[service-credits]]
 == Créditos de serviço
 
 
@@ -95,6 +98,7 @@ Se o consumo de W/TiB durante um período de cobrança não atender aos critéri
 |===
 
 
+[[service-credit-request]]
 === Solicitação de crédito de serviço
 
 Se uma violação do SLA for detectada, abra um tíquete de suporte de prioridade 3 (P3) com o suporte da NetApp Keystone e forneça os detalhes solicitados na planilha do Excel, conforme mostrado abaixo:
