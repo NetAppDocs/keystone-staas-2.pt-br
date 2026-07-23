@@ -691,7 +691,6 @@
   <block id="1c8da55ed1bb51aa2c1e766474b9b2bc" category="summary">Saiba mais sobre os tipos de capacidades de armazenamento suportados pelo serviço NetApp Keystone STaaS para a versão 2.</block>
   <block id="e561d7dfcd6620325c8edbb7b2c1d749" category="paragraph">O serviço NetApp Keystone STaaS suporta vários tipos de capacidades de armazenamento.  Entender esses diferentes termos de capacidade pode ajudar você a usar o Keystone.</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">Capacidade lógica</block>
-  <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">Estes são os dados colocados na infraestrutura Keystone por um cliente.  Todas as capacidades Keystone referem-se a uma capacidade lógica.  Por exemplo, se um arquivo de 1 TiB for armazenado na infraestrutura Keystone , um mínimo de 1 TiB de capacidade deverá ser adquirido.</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">Capacidade comprometida</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">Capacidade lógica mínima cobrada mensalmente durante a assinatura:</block>
   <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">Capacidade comprometida e níveis de serviço adicionais podem ser adicionados durante o prazo.</block>
@@ -2791,4 +2790,5 @@
   <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*Cinza*: A assinatura expirou.</block>
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">Para assinaturas com renovação automática ativada, um ícone de renovação automática é exibido, indicando que a assinatura será renovada automaticamente ao final do período atual.</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">20 de julho de 2026</block>
+  <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">Essa é a quantidade de capacidade de storage necessária para armazenar dados de usuário antes que quaisquer eficiências de dados fornecidas pelo array de storage sejam aplicadas.</block>
 </blocks>
