@@ -1,0 +1,12 @@
+= Gere insights de integridade para assinaturas do Keystone
+:allow-uri-read: 
+
+
+Esta versão do Keystone STaaS inclui as seguintes atualizações no painel do Keystone na NetApp Console.
+
+
+
+[[generate-health-insights-for-keystone-subscriptions]]
+=== Gere insights de integridade para assinaturas do Keystone
+
+Você pode baixar relatórios sob demanda do PowerPoint ou agendar entregas únicas, semanais, mensais ou trimestrais em *Storage > Keystone > Monitoring > Health reports* na NetApp Console. Cada relatório combina o uso da assinatura, a integridade operacional, os riscos e as vulnerabilidades em todas as assinaturas selecionadas, ajudando você a identificar problemas e compartilhar insights acionáveis com os destinatários. Para saber mais, consulte https://docs.netapp.com/us-en/keystone-staas/integrations/health-assessment-reports.html["Gere e agende relatórios de integridade para assinaturas do Keystone"].

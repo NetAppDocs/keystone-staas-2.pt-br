@@ -36,6 +36,15 @@ Os detalhes são gerados no formato CSV que você pode salvar para uso e compara
 
 
 
+[[generate-health-reports-from-netapp-console]]
+== Gere relatórios de saúde a partir do NetApp Console
+
+Use o NetApp Console para gerar ou agendar relatórios de integridade para uma ou mais assinaturas. Esses relatórios do PowerPoint consolidam o uso das assinaturas, a integridade operacional, os riscos e as vulnerabilidades. O Digital Advisor não oferece suporte à geração nem ao agendamento de relatórios de avaliação de integridade.
+
+Para saber mais, consulte link:../integrations/health-assessment-reports.html["Gere e agende relatórios de integridade para assinaturas do Keystone"].
+
+
+
 [[generate-consolidated-report-from-digital-advisor]]
 == Gerar relatório consolidado do Digital Advisor
 

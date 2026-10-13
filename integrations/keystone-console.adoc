@@ -36,6 +36,7 @@ A página *Visão geral* oferece os seguintes insights:
 * link:../integrations/dashboard-overview.html["Saiba mais sobre o painel Keystone"]
 * link:../integrations/dashboard-access.html["Comece a usar o painel do Keystone"]
 * link:..//integrations/keystone-aiq.html["Painel Keystone no Digital Advisor"]
+* link:../integrations/health-assessment-reports.html["Gerar e agendar relatórios de saúde"]
 * link:../integrations/subscriptions-tab.html["Ver detalhes da sua assinatura"]
 * link:../integrations/current-usage-tab.html["Veja os detalhes do seu consumo atual"]
 * link:../integrations/consumption-tab.html["Ver tendências de consumo"]

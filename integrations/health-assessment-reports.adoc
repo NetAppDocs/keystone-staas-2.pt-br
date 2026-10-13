@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: integrations/health-assessment-reports.html 
+keywords: keystone-aiq, keystone reports, health assessment report, health reports, keystone dashboard, monitoring, console 
+summary: Use os relatórios de avaliação de integridade do Keystone no NetApp Console para ver detalhes da assinatura, avaliar a integridade, analisar tendências de uso e identificar riscos e vulnerabilidades em uma ou mais assinaturas. Você pode gerar relatórios sob demanda ou agendá-los para compartilhar informações operacionais e de conformidade precisas com as partes interessadas. 
+---
+= Gere e agende relatórios de integridade para assinaturas do Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gere ou agende relatórios de integridade para uma ou mais assinaturas do Keystone no painel do Keystone no NetApp Console. Esses relatórios fornecem uma visão consolidada do uso da assinatura, da integridade operacional, dos riscos e das vulnerabilidades que você pode compartilhar com os destinatários pretendidos. Essa funcionalidade não está disponível no Digital Advisor.
+
+.Sobre esta tarefa
+Os relatórios de saúde fornecem uma visão do uso da assinatura, da integridade operacional e dos riscos identificados nas assinaturas que você selecionar. Na página *Novo relatório*, use o painel *Configuração do relatório* para definir o escopo e as opções do relatório. Use a área de visualização para revisar a ordem e o layout dos slides antes de gerar ou agendar o relatório. A visualização mostra apenas a estrutura do relatório e não exibe os dados reais das assinaturas.
+
+Siga estes passos para gerar um relatório para download imediato ou para agendar um relatório único ou recorrente para entrega posterior:
+
+.Passos
+. No menu de navegação à esquerda do Console, selecione *Armazenamento > Keystone > Monitoramento > Relatórios*.
+. Selecione *Novo relatório*.
+. No painel *Configuração do relatório*, insira um nome no campo *Nome do relatório*.
+. Selecione um intervalo de tempo na lista suspensa *Intervalo de tempo*.
++
+Selecione um intervalo predefinido, como *Últimos 60 dias*, ou selecione *Personalizado* para inserir suas próprias datas. O intervalo selecionado determina os dados históricos exibidos na seção *Tendência de consumo* e em outras seções baseadas em tempo. Se você selecionar *Personalizado*, não poderá agendar o relatório.
+
++
+image:../media/schedule-report.png["a configuração do relatório de integridade mostra que o agendamento está desativado quando um intervalo de datas personalizado é selecionado"]
+
+. Selecione uma ou mais assinaturas na lista suspensa *Assinaturas*.
++
+
+NOTE: Os parceiros da NetApp podem selecionar assinaturas em uma ou mais de suas contas de clientes do Keystone gerenciadas.
+
+. Em *Seções do relatório*, selecione as seções que deseja incluir.
++
+Cada seção selecionada aparece na área de pré-visualização e é incluída no relatório gerado. Por exemplo, você pode incluir um resumo de suas assinaturas, uso atual da capacidade, tendências de consumo, capacidade física, integridade do sistema e riscos e vulnerabilidades. Para *Tendência de consumo*, você pode incluir um gráfico do consumo histórico e, opcionalmente, uma previsão do consumo futuro.
+
+. Selecione um tema para a apresentação.
+. Analise as seções exibidas na área de visualização prévia para confirmar se elas correspondem às suas seleções.
+. Escolha como deseja criar o relatório.
++
+** *Gerar relatório*
++
+Selecione *Gerar relatório* para baixar o relatório imediatamente.
+
++
+O relatório é enviado para geração, e você retorna à guia *Relatórios*. O relatório aparece com o status *Em execução*.
+
++
+Após o status mudar para *Gerado*, selecione o ícone de reticências no final da linha do relatório e, em seguida, selecione *Baixar*.
+
+** *Agendar relatório*
++
+Selecione *Agendar* para criar um relatório único ou recorrente e conclua as seguintes etapas:
+
++
+... Selecione uma frequência: *uma vez*, *semanalmente*, *mensalmente* ou *trimestralmente*.
+... Selecione uma *data de início*.
++
+image:../media/schedule-dialog.png["Caixa de diálogo de agendamento de relatório mostrando a frequência semanal selecionada, os campos de data de início e de término vazios, um campo Destinatários e o formato PPT selecionado"]
+
++
+A data de início determina quando o relatório é executado pela primeira vez. Para frequências recorrentes, o relatório é executado novamente de acordo com a programação semanal, mensal ou trimestral selecionada.
+
+... Opcionalmente, selecione uma *Data de término*.
++
+Se você não selecionar uma data de término, o agendamento continuará até que você a altere.
+
+... Selecione *Agendar relatório*.
++
+Depois que você cria o agendamento, o relatório aparece na guia *Relatórios* com o tipo de execução *Execução agendada*. Use as colunas *Última execução*, *Próxima execução* e *Status* para acompanhar cada execução.
+
++
+Para editar um cronograma semanal, mensal ou trimestral, selecione o ícone de reticências no final da linha do relatório e, em seguida, selecione *Editar cronograma*. Você pode fazer isso independentemente de o status ser *Agendado* ou *Gerado*. Não é possível editar um cronograma *Uma vez* depois que o relatório for gerado.
+
++
+Após o status mudar para *Gerado*, selecione o ícone de reticências ao lado do relatório e selecione *Baixar*.
+
+
+
+
+
+
+
+.Resultado
+Os relatórios gerados são baixados como apresentações do PowerPoint. Você pode selecionar *Gerar novamente* no menu de reticências para criar um novo relatório com a mesma configuração.
+
+*Informações relacionadas*
+
+* link:../integrations/dashboard-access.html["Comece a usar o painel do Keystone"]
+* link:../integrations/subscriptions-tab.html["Veja detalhes sobre suas assinaturas Keystone"]
+* link:../integrations/current-usage-tab.html["Ver o uso atual"]
+* link:../integrations/consumption-tab.html["Ver tendências de consumo"]
+* link:../integrations/assets-tab.html["Veja os ativos associados às suas assinaturas"]
+* link:../integrations/monitoring-alerts.html["Visualizar e gerenciar alertas"]
+* link:../integrations/monitoring-alert-monitors.html["Visualizar e criar monitores de alerta"]
+

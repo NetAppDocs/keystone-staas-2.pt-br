@@ -18,6 +18,7 @@ O painel do Keystone é sua solução ideal para monitorar, analisar e gerenciar
 
 * *Monitorar detalhes da assinatura*: visualize informações detalhadas sobre suas assinaturas Keystone, incluindo níveis de serviço de desempenho (serviços básicos e adicionais, como proteção avançada de dados e Data Infrastructure Insights), uso de capacidade, ativos e alertas.
 * *Acompanhe o uso da capacidade e gere relatórios*: acompanhe o uso atual e histórico da capacidade e gere relatórios para analisar dados de assinatura e tomar decisões informadas.
+* *Gerar relatórios de integridade*: Crie relatórios de avaliação de integridade sob demanda ou agendados para analisar o uso da assinatura, a integridade operacional, os riscos e as vulnerabilidades.
 * *Ver cronograma de assinaturas*: Mantenha-se informado sobre datas e eventos importantes monitorando o cronograma de suas assinaturas.
 * *Gerenciar assinaturas*: envie solicitações para modificar níveis de serviço de desempenho ou outros parâmetros de assinatura conforme suas necessidades mudam.
 * *Analise volumes e objetos*: obtenha insights detalhados sobre os volumes e objetos de suas assinaturas, incluindo sua capacidade nos níveis de volume e objeto.
@@ -100,6 +101,11 @@ link:../integrations/options.html#generate-reports-from-netapp-console-or-digita
 
 
  a| 
+link:../integrations/health-assessment-reports.html["Gerar e agendar relatórios de saúde"]
+| Sim | Não 
+
+
+ a| 
 link:../integrations/volumes-objects-tab.html["Ver detalhes de volumes e objetos"]
 | Sim | Sim 
 
@@ -116,6 +122,7 @@ link:../integrations/performance-tab.html["Ver métricas de desempenho"]
 *Informações relacionadas*
 
 * link:../integrations/dashboard-access.html["Comece a usar o painel do Keystone"]
+* link:../integrations/health-assessment-reports.html["Gerar e agendar relatórios de saúde"]
 * link:../integrations/keystone-console.html["Painel Keystone no NetApp Console"]
 * link:..//integrations/keystone-aiq.html["Painel Keystone no Digital Advisor"]
 

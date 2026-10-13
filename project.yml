@@ -131,6 +131,8 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: Visualizar e criar monitores de alerta
         url: "/integrations/monitoring-alert-monitors.html"
+    - title: Gerar e agendar relatórios de saúde
+      url: "/integrations/health-assessment-reports.html"
     - title: Visualize sua solicitação de serviço
       url: "/integrations/administration-tab.html"
     - title: Exibir volumes e detalhes de armazenamento de objetos

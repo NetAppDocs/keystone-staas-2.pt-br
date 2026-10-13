@@ -226,6 +226,7 @@ Você pode alternar para uma visualização de tabela clicando na opção *Tabel
 * link:../integrations/dashboard-overview.html["Entenda o painel do Keystone"]
 * link:../integrations/subscriptions-tab.html["Veja detalhes sobre suas assinaturas Keystone"]
 * link:../integrations/current-usage-tab.html["Veja o consumo atual de suas assinaturas Keystone"]
+* link:../integrations/health-assessment-reports.html["Gerar e agendar relatórios de saúde"]
 * link:../integrations/subscription-timeline.html["Veja o cronograma de suas assinaturas Keystone"]
 * link:../integrations/assets-tab.html["Ver ativos associados a uma assinatura Keystone"]
 * link:../integrations/monitoring-alerts.html["Visualizar e gerenciar alertas e monitores"]

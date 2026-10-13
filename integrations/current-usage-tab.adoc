@@ -72,6 +72,7 @@ Para obter informações sobre seus serviços de armazenamento Keystone e os ní
 * link:../integrations/dashboard-overview.html["Entenda o painel do Keystone"]
 * link:../integrations/subscriptions-tab.html["Ver detalhes da sua assinatura"]
 * link:../integrations/consumption-tab.html["Ver tendências de consumo"]
+* link:../integrations/health-assessment-reports.html["Gerar e agendar relatórios de saúde"]
 * link:../integrations/subscription-timeline.html["Veja o cronograma da sua assinatura"]
 * link:../integrations/assets-tab.html["Veja seus ativos de assinatura Keystone"]
 * link:../integrations/assets.html["Visualize ativos em suas assinaturas Keystone"]
