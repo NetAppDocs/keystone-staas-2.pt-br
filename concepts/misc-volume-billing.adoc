@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
 keywords: Billing and miscellaneous scenarios 
-summary: Saiba mais sobre o faturamento do Keystone para configurações específicas, incluindo volumes clonados, proteção avançada de dados e muito mais. 
+summary: As regras de faturamento do Keystone STaaS variam para determinadas configurações de volume. Esta página explica o faturamento de volumes clonados, SnapMirror de destino, LUNs, volumes temporários e volumes do sistema. 
 ---
-= Faturamento Keystone para tipos de volume específicos
+= Faturamento do Keystone STaaS para tipos específicos de volume
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Saiba mais sobre o faturamento do Keystone para configurações especí
 
 
 [role="lead"]
-Entender o faturamento do Keystone para configurações específicas pode ajudar você a otimizar o uso do serviço e gerenciar custos.  As configurações incluem volumes clonados, proteção avançada de dados, volumes temporários, políticas de QoS, destinos SnapMirror , LUNs e volumes de sistema/raiz.
+As regras de faturamento do Keystone STaaS variam para determinadas configurações de volume. Conhecer essas exceções ajuda você a evitar cobranças inesperadas ao trabalhar com volumes clonados, destinos do SnapMirror, LUNs ou storage temporário.
 
 
 
@@ -29,22 +29,6 @@ Observe o seguinte:
 * Não há período de carência de 24 horas para volumes clonados.  Somente o tamanho do clone é considerado.
 * Quando o volume do clone excede 10% do tamanho físico do pai, o clone é cobrado como um volume padrão (capacidade lógica utilizada).
 
-
-
-
-[[billing-for-advanced-data-protection]]
-== Faturamento para proteção avançada de dados
-
-A proteção avançada de dados usa o NetApp MetroCluster para espelhar dados entre dois clusters fisicamente separados.  Para agregados espelhados do MetroCluster , os dados são gravados duas vezes, uma vez em cada cluster.  O serviço Keystone cobra pelo consumo de cada lado de forma independente, resultando em dois registros de consumo idênticos.  As taxas adicionais são aplicadas a todas as capacidades da assinatura, independentemente de os dados estarem na origem ou se forem dados espelhados ou não espelhados.
-
-Cada site MetroCluster tem sua própria assinatura e cobrança.  Para configurações do MetroCluster , a medição de uso considera como o armazenamento é utilizado em ambos os sites.  Se você tiver uma configuração do MetroCluster com 100 TiB por site, apenas 50 TiB serão usados ativamente em cada site, com os 50 TiB restantes em cada site servindo como backup espelhado.  Os custos adicionais de proteção avançada de dados são calculados com base nesses 100 TiB de uso ativo total e divididos entre ambos os sites por meio de suas respectivas assinaturas de 50 TiB cada.
-
-Se você monitorar seus clusters por meio do ONTAP System Manager (Gerenciador do Sistema) ou do Active IQ Unified Manager (Gerenciador Unificado), poderá observar uma discrepância entre o consumo relatado nessas ferramentas e no Keystone.  O System Manager e o Unified Manager não relatam volumes no cluster espelhado (remoto) e, ao fazer isso, relatam metade das métricas de consumo que o serviço Keystone relata.
-
-.Exemplo:
-O Site A e o Site B são configurados em uma configuração MetroCluster . Quando um usuário cria um volume de 10 TB no site A, um volume idêntico de 10 TB é criado no site B. O Keystone identifica 10 TB de consumo em cada site, para um aumento total de 20 TB. O System Manager e o Unified Manager relatam um volume de 10 TB criado no site A, mas não relatam um volume de 10 TB no Site B.
-
-Além disso, todos os volumes criados em um sistema Keystone com proteção avançada de dados serão contabilizados no consumo de proteção avançada de dados, independentemente de esses volumes serem espelhados ou não.
 
 
 

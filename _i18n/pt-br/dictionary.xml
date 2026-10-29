@@ -86,7 +86,6 @@
   <block id="02ebdf7c9de6e8483fc7db75a00034e7" category="list-text">As taxas se aplicam somente aos seus serviços de armazenamento de arquivos e blocos.</block>
   <block id="dfd0252d57910ac70c5c31013436bba6" category="doc">Cronogramas de faturamento</block>
   <block id="c63c700d510218e3fd6113514c7cadf9" category="inline-link-macro">Veja as tendências de consumo das suas assinaturas Keystone</block>
-  <block id="b3f5d2a190d6e7bd7689ffbabbb1e2f2" category="inline-link-macro">Capacidades de armazenamento suportadas no Keystone</block>
   <block id="44356560df15caffd928422c99dc9948" category="summary">Os requisitos de capacidade para níveis de serviço variam de acordo com o arquivo, bloco, objeto ou armazenamento em nuvem suportado pela assinatura do Keystone STaaS.</block>
   <block id="6095900a0be4c21e582c9ce633f3eb3f" category="doc">Requisitos de capacidade para níveis de serviço de desempenho</block>
   <block id="2dbc37040c346751f80f916ad9f4f33e" category="paragraph">Os requisitos de capacidade para os níveis de serviço de desempenho do Keystone STaaS diferem entre as ofertas de armazenamento de arquivo, bloco, objeto e nuvem suportadas pela assinatura do Keystone STaaS.</block>
@@ -203,7 +202,6 @@
   <block id="03242372ae5b03ca7f547f3cb7dab64f" category="inline-link-macro">Adendo de Proteção de Dados (DPA)</block>
   <block id="a58e8ea096956351960d74a5b466e9e0" category="paragraph">A solução de monitoramento Keystone ITOM está em conformidade com o Regulamento Geral de Proteção de Dados da União Europeia (GDPR) e a Lei de Privacidade do Consumidor da Califórnia (CCPA).  Ele também fornece um<block ref="12861122e9a15898b646770ef3c2b260" category="inline-link-macro-rx"></block> para documentar esses compromissos.  A solução de monitoramento ITOM não coleta nem armazena nenhum dado pessoal.</block>
   <block id="28734ee482d13456cc49c54e4f4ae12f" category="summary">O Data Infrastructure Insights aumenta a eficiência do Keystone STaaS monitorando, solucionando problemas e otimizando o armazenamento em nuvens públicas e data centers privados.</block>
-  <block id="3b95e9802e539ed39990d7c53e7f63cc" category="paragraph">O NetApp Data Infrastructure Insights (DII, anteriormente conhecido como Cloud Insights) é uma oferta complementar para o Keystone STaaS.  A integração deste serviço com o Keystone STaaS aprimora os recursos de monitoramento, solução de problemas e otimização dos recursos de armazenamento fornecidos pela Keystone em nuvens públicas e data centers privados.</block>
   <block id="b4116a637c9ad7ac63e4694f7d72fe47" category="inline-link-macro">Documentação do Data Infrastructure Insights</block>
   <block id="791f81543da974a0b785676eb2cfa67d" category="paragraph">Para saber mais sobre o Data Infrastructure Insights, consulte<block ref="d3b10d06b902e7a0afb7dc49b48a5ee1" category="inline-link-macro-rx"></block> .</block>
   <block id="35093b8f232384c1cc56aa0b089de156" category="section-title">Implantação do DII para Keystone</block>
@@ -256,9 +254,6 @@
   <block id="5e3fca9227064d2d04c47a0f13b4fffe" category="paragraph">Para mais informações sobre os serviços da Keystone , consulte:</block>
   <block id="b47b3a710484adb2c8cfacd64043b550" category="paragraph-title">Gerente de Sucesso Keystone</block>
   <block id="2d0539451bff9f553647efc300f001de" category="section-title">Gerando solicitações de serviço</block>
-  <block id="24acde87a618c9dc2d11377311afc495" category="summary">A infraestrutura, o design, a escolha de tecnologia e os produtos componentes da Keystone residem exclusivamente na NetApp.</block>
-  <block id="c556196a410876d85c1dc7aafc4fee9f" category="doc">Infraestrutura Keystone</block>
-  <block id="7954e225c8bd390ff2168144c5e393c1" category="paragraph">A NetApp é a única responsável pela infraestrutura, design, escolhas tecnológicas e componentes do Keystone, que se aplicam aos ambientes NetApp e operados pelo cliente.</block>
   <block id="adf9ce2fefed448c1faa955a05142679" category="paragraph">A NetApp reserva-se o direito de tomar as seguintes ações:</block>
   <block id="4de39da4981120681cbe9328c80e44c0" category="list-text">Selecione, substitua ou reaproveite produtos.</block>
   <block id="8ee500899221695e76d9d58e146df90f" category="list-text">Atualize produtos com novas tecnologias quando considerado apropriado.</block>
@@ -308,18 +303,11 @@
   <block id="66dda1e1896da52a0c1c47a30b024aa2" category="list-text">Ao usar os serviços complementares de Proteção Avançada de Dados, a latência de destino se aplica somente ao atendimento de solicitações de E/S do armazenamento local.</block>
   <block id="6d254a15ba3fea951a58068af61e1688" category="section-title">Volume AQoS</block>
   <block id="8c037b7d81c288bf1b9266d8836d1b4a" category="paragraph">Cada volume ONTAP deve ter a política de qualidade de serviço adaptável (AQoS) aplicável aplicada.  Caso contrário, a capacidade dentro de cada volume que não tiver uma política de AQoS aplicada será cobrada na taxa do Nível de Serviço mais alto.</block>
-  <block id="23b37b253ca769ce608c60059a855b79" category="summary">Saiba mais sobre o faturamento do Keystone para configurações específicas, incluindo volumes clonados, proteção avançada de dados e muito mais.</block>
-  <block id="800fd26c24ceb1cf9f6c2b23f77d23e9" category="paragraph">Entender o faturamento do Keystone para configurações específicas pode ajudar você a otimizar o uso do serviço e gerenciar custos.  As configurações incluem volumes clonados, proteção avançada de dados, volumes temporários, políticas de QoS, destinos SnapMirror , LUNs e volumes de sistema/raiz.</block>
   <block id="ff6306dccf086261b36fc9764ec0a69c" category="section-title">Faturamento de volumes clonados</block>
   <block id="0e3a3dc0c3eeb16df240b7eafc4a840c" category="paragraph">Se os volumes forem clonados no ONTAP e você os usar para fazer backup e restaurar seus dados, poderá continuar usando os clones sem nenhum pagamento adicional.  No entanto, volumes clonados usados para qualquer outra finalidade em seu negócio por um período prolongado serão cobrados.</block>
   <block id="308838aa7669887098042a1899ce59bc" category="list-text">Os volumes clones não são cobrados, desde que seu tamanho seja menor que 10% do volume pai (a capacidade física usada no volume clone em comparação com a capacidade física usada no volume pai).</block>
   <block id="4a71061ce212df640aef8be8d2595397" category="list-text">Não há período de carência de 24 horas para volumes clonados.  Somente o tamanho do clone é considerado.</block>
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">Quando o volume do clone excede 10% do tamanho físico do pai, o clone é cobrado como um volume padrão (capacidade lógica utilizada).</block>
-  <block id="6a249c25be1113adfd4b390d43270d08" category="section-title">Faturamento para proteção avançada de dados</block>
-  <block id="5db4fbedef3c3fe2cd69fb00f0149f1a" category="paragraph">A proteção avançada de dados usa o NetApp MetroCluster para espelhar dados entre dois clusters fisicamente separados.  Para agregados espelhados do MetroCluster , os dados são gravados duas vezes, uma vez em cada cluster.  O serviço Keystone cobra pelo consumo de cada lado de forma independente, resultando em dois registros de consumo idênticos.  As taxas adicionais são aplicadas a todas as capacidades da assinatura, independentemente de os dados estarem na origem ou se forem dados espelhados ou não espelhados.</block>
-  <block id="536a21a9808fc714076b198f94a4a506" category="paragraph">Se você monitorar seus clusters por meio do ONTAP System Manager (Gerenciador do Sistema) ou do Active IQ Unified Manager (Gerenciador Unificado), poderá observar uma discrepância entre o consumo relatado nessas ferramentas e no Keystone.  O System Manager e o Unified Manager não relatam volumes no cluster espelhado (remoto) e, ao fazer isso, relatam metade das métricas de consumo que o serviço Keystone relata.</block>
-  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph-title">Exemplo:</block>
-  <block id="a8bfd47f5b9fe7efcabf364ce6b11add" category="paragraph">Além disso, todos os volumes criados em um sistema Keystone com proteção avançada de dados serão contabilizados no consumo de proteção avançada de dados, independentemente de esses volumes serem espelhados ou não.</block>
   <block id="ba4c22a98feebac558bbaac68b704e09" category="section-title">Faturamento de volumes temporários</block>
   <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">Ocasionalmente, volumes temporários (TMP) são criados pelo ONTAP ao mover volumes.  Esses volumes temporários têm vida curta e o consumo nesses volumes não é medido para faturamento.</block>
   <block id="f3fd1171857d8ea7abb7920fd1fd0c55" category="section-title">Políticas de faturamento e QoS adaptáveis</block>
@@ -333,9 +321,7 @@
   <block id="6490b5d86d9c2c555b3e5beda0a2a9d5" category="list-text">O restante do espaço no volume, se houver, é cobrado de acordo com a política de QoS adaptável do nível de serviço definido no volume.</block>
   <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">Volumes de sistema e raiz</block>
   <block id="3655e8bb18b4941a3bf9ce392c24bbb4" category="paragraph">Os volumes do sistema e da raiz são monitorados como parte do monitoramento geral do serviço Keystone , mas não são contados nem cobrados.  O consumo nesses volumes é isento de faturamento.</block>
-  <block id="554b9774fcd47c93aacebd604a76b86c" category="summary">Como parte da sua assinatura do NetApp Keystone , a NetApp estende a oferta NRNVC para seus serviços de arquivo, bloco e objeto.</block>
   <block id="6a69842e6e38f4acc01bbde008bf7a4f" category="doc">Componentes não retornáveis, não voláteis e em conformidade com SnapLock</block>
-  <block id="8db09ad8b057ebdb5478401fb9e32f1c" category="paragraph">Como parte da sua assinatura do NetApp Keystone , a NetApp estende a oferta de componentes não retornáveis e não voláteis (NRNVC) para seus serviços de arquivo, bloco e objeto.</block>
   <block id="c5362d4c47bc0b20f1e6873a4a685afd" category="paragraph">A NetApp não recupera a mídia de armazenamento físico usada durante todo o período do serviço ou no término do serviço, quando a NetApp recupera todos os seus ativos físicos usados na entrega do serviço.</block>
   <block id="328eac5144e07d22553d9fb87c2f2fb8" category="paragraph">Você pode assinar este serviço adicional como parte da sua assinatura do Keystone .  Se você adquiriu este serviço, observe o seguinte:</block>
   <block id="e35bc286817799a8ecac7de0060837be" category="list-text">Você não precisa devolver nenhuma unidade ou memória não volátil ao final do período de serviço ou se elas falharem ou forem consideradas defeituosas durante o período de serviço.</block>
@@ -349,16 +335,7 @@
   <block id="cbe21b6da30db10de9cd33de72b5dc48" category="paragraph">A tecnologia SnapLock habilita o recurso NRNVC tornando a unidade inutilizável após a data de expiração definida no volume.  Para usar a tecnologia SnapLock em seus volumes, você precisa assinar o NRNVC.  Isso se aplica somente a serviços de arquivamento e bloqueio.</block>
   <block id="f14c7b4687be07acacb0f5aeed1474f5" category="inline-link">O que é SnapLock</block>
   <block id="1ae3a07b6896d577a03f95172e8b37ab" category="paragraph">Para obter informações sobre a tecnologia SnapLock , consulte<block ref="75641a5590d09822bddecb04bdc449c0" category="inline-link-rx"></block> .</block>
-  <block id="5f06e3acb72a6b6d15e07dec8e02541b" category="summary">O NetApp Keystone STaaS oferece dois modelos operacionais para entrega de serviços.  Você deve entender essas opções antes de começar a usar o Keystone.</block>
   <block id="c11d3902def90b2c39f1b05142fc762e" category="doc">Modelos operacionais em Keystone</block>
-  <block id="4017209949d03f232ecddb6bf8aea269" category="paragraph">O NetApp Keystone STaaS oferece dois modelos operacionais para entrega de serviços: modelo operado por parceiro e modelo operado pelo cliente.  Você deve entender essas opções antes de começar a usar o Keystone.</block>
-  <block id="6318e8b902dd302d5ad2e2ac912ca98c" category="list-text">*Modelo operado por parceiros*: Este modelo oferece duas opções:</block>
-  <block id="c611ee589f9a1c9e3b6492cc4cacf6d1" category="list-text">*Prestador de serviços*: Um provedor de serviços opera os serviços para seus clientes finais.  Como parte contratada da NetApp, o provedor de serviços gerencia um ambiente multilocatário onde cada locatário, que é cliente do provedor de serviços, tem sua própria assinatura, cobrada pelo provedor de serviços.  O administrador do provedor de serviços é responsável por executar todas as tarefas administrativas para os inquilinos.</block>
-  <block id="f6d7168635231e9ae9dffcb54c7d1149" category="list-text">*Revendedor*: Como revendedor, um parceiro atua como uma ponte entre a NetApp e o cliente.  O parceiro vende os serviços da Keystone ao cliente final e gerencia o faturamento.  Enquanto o parceiro cuida do faturamento, a NetApp fornece suporte direto ao cliente.  O suporte da Keystone interage com o cliente e cuida de todas as tarefas administrativas para os inquilinos.</block>
-  <block id="28b248353af5ce3bf6916f6280f509a3" category="list-text">*Modelo operado pelo cliente*: Como cliente, você pode assinar os serviços da Keystone de acordo com os níveis de serviço de desempenho e armazenamento selecionados.  A NetApp define a arquitetura e os produtos e implementa o Keystone em suas instalações.  Você precisa gerenciar a infraestrutura por meio de seus recursos de armazenamento e TI.  Com base no seu contrato, você pode gerar solicitações de serviço a serem atendidas pela NetApp ou pelo seu provedor de serviços.  Um administrador da sua organização pode executar tarefas administrativas no seu site (ambiente).  Essas tarefas estão associadas aos usuários em seu ambiente.</block>
-  <block id="63e70807fd57df527662a30262f5b0cc" category="section-title">Funções e responsabilidades ao longo do ciclo de vida do serviço</block>
-  <block id="51716409e7a7cd44b90ac44db0fcb1f2" category="list-text">*Modelo operado por parceiro*: O compartilhamento de funções e responsabilidades depende do acordo entre você e o provedor de serviços ou parceiro.  Entre em contato com seu provedor de serviços para obter informações.</block>
-  <block id="463c3a95787ac56f36c227feeb7bd389" category="list-text">*Modelo operado pelo cliente*: A tabela a seguir resume o modelo geral do ciclo de vida do serviço e as funções e responsabilidades associadas a eles em um ambiente operado pelo cliente.</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Tarefa</block>
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
   <block id="ce26601dac0dea138b7295f02b7620a7" category="cell">Cliente</block>
@@ -384,28 +361,10 @@
   <block id="550340cfbad3ac61a634336458de3119" category="list-text">Correção de quebra de hardware</block>
   <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">Suporte de software</block>
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">Atualizações e patches</block>
-  <block id="31486f17bb0da292e6faff47c42e27a2" category="summary">Keystone é um modelo de serviço baseado em assinatura e pagamento conforme o crescimento, para empresas que preferem modelos de consumo de OpEx ao CapEx inicial ou leasing.</block>
   <block id="8ae3d79d3f1b6cb3022dbfb96c477b67" category="doc">Saiba mais sobre o NetApp Keystone</block>
-  <block id="6d7eb772ffa1657b401639ad7643de00" category="paragraph">O NetApp Keystone é um modelo de serviço baseado em assinatura e pagamento conforme o uso que fornece uma experiência de nuvem híbrida perfeita para empresas que preferem modelos de consumo de despesas operacionais em vez de despesas de capital iniciais ou leasing para atender às suas necessidades de armazenamento e proteção de dados.</block>
-  <block id="0e0663d0cd50d63b8c1a8c2f4b8e245e" category="paragraph">Com o Keystone, você se beneficia de:</block>
-  <block id="293f329ac1b5f2e326126f6010c7cb0a" category="list-text">*Custo-benefício*: Pague somente pelo armazenamento necessário com flexibilidade para lidar com capacidade extra.</block>
-  <block id="7cedbc8165f3ea707459d6c31dad742d" category="list-text">*Eficiência de capital*: acesse armazenamento de nível empresarial sem investimentos iniciais.</block>
-  <block id="445d8846356b3dfdd1274453dc0427a1" category="list-text">*Escalabilidade*: dimensione facilmente sua capacidade de armazenamento conforme seu negócio cresce.</block>
-  <block id="c43a7fafafef1b3b0121e22470675788" category="list-text">*Personalização*: ajuste seus planos de armazenamento e migre para a nuvem conforme necessário, otimizando seus custos gerais.</block>
-  <block id="b398b395055931a2208ae5fba25c03d2" category="list-text">*Integração em nuvem*: combine serviços locais e em nuvem em uma única assinatura.</block>
-  <block id="c42045f8c1e7b91e0b11f358a25d0962" category="list-text">*Segurança*: Proteja seus dados com medidas de segurança avançadas e recuperação garantida contra ameaças.</block>
-  <block id="41a3dc785b2cc9fed55d572f2573b61e" category="inline-image-macro">Benefícios do Keystone</block>
-  <block id="dcaaa9fce1472aa821202e8e51abbd95" category="paragraph"><block ref="dcaaa9fce1472aa821202e8e51abbd95" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9c466ee20ee6cd0a46097868e1e033ae" category="paragraph">O Keystone fornece capacidade de armazenamento em níveis de serviço de desempenho predefinidos para tipos de armazenamento de arquivos, blocos e objetos.  Esse armazenamento pode ser implantado no local e operado pela NetApp, um parceiro ou o cliente.  O Keystone pode ser usado em associação com serviços de nuvem da NetApp , como o Cloud Volumes ONTAP, que pode ser implantado em um ambiente hiperescalar de sua escolha.</block>
-  <block id="e6e41564c0eb58e7df450956b2e9d7ef" category="section-title">Armazenamento como serviço Keystone (STaaS)</block>
-  <block id="db1293ec8548c413e40861e5a81d1401" category="paragraph">As ofertas de armazenamento como serviço (STaaS) visam fornecer um modelo semelhante à nuvem pública para aquisição, implantação e gerenciamento de infraestrutura de armazenamento.  Enquanto muitas empresas ainda estão trabalhando em sua estratégia para nuvem híbrida, o Keystone STaaS oferece a flexibilidade para começar com serviços locais e fazer a transição para a nuvem quando chegar a hora certa.  Isso garante que você possa proteger seus compromissos em diferentes modelos de implantação, realocando seus gastos conforme necessário, sem aumentar sua fatura mensal.</block>
   <block id="a6f1b0a7a0dc76c228aff931a7f131c9" category="inline-link-macro">Preços Keystone</block>
   <block id="e6158c69831c3faa8af6ba0dce7118fd" category="list-text"><block ref="e6158c69831c3faa8af6ba0dce7118fd" category="inline-link-macro-rx"></block></block>
-  <block id="9e38decf152b1fba3ebe0ddbb861a5a3" category="inline-link-macro">Serviços complementares no Keystone STaaS</block>
-  <block id="91ad65d98336ef29959957165ed0c9ea" category="list-text"><block ref="91ad65d98336ef29959957165ed0c9ea" category="inline-link-macro-rx"></block></block>
-  <block id="d534e2cd061f06b6e0ad742d6dda7fee" category="list-text"><block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block></block>
   <block id="df7d31258a77cf6838aec404025cc8f0" category="list-text"><block ref="df7d31258a77cf6838aec404025cc8f0" category="inline-link-macro-rx"></block></block>
-  <block id="f29d51ebfc7a851025b60dc1bcc5560e" category="summary">A Keystone oferece um modelo de pagamento conforme o crescimento para suas necessidades de consumo flexíveis e escaláveis.</block>
   <block id="ef379c37057d9a196c5c79f68a141fe6" category="paragraph">A Keystone oferece os seguintes recursos de cobrança:</block>
   <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">Ele apresenta faturamento previsível para a capacidade comprometida e pagamento por uso para uso de capacidade variável (burst).</block>
   <block id="1506e8c7e13ed05e538e60e10a3477b1" category="paragraph">O faturamento do Keystone é baseado na capacidade comprometida e no consumo de pico variável.</block>
@@ -490,7 +449,6 @@
   <block id="99bd16c85cd1ef64c6ea102f25b33359" category="list-text">Taxa de transferência máxima = (12288 * 32 * 1024) / (1024 * 1024) = 384 MBps/TiB</block>
   <block id="237499763b358b8ef0c6dc69fde2706a" category="paragraph">Se um volume tiver 700 GiB de dados lógicos usados, a taxa de transferência disponível será:</block>
   <block id="02a49e3ec5c5ab57dc26bbd217365bc3" category="paragraph"><block ref="aa1ec52fdaaee3031df5d6a8e8b00f44" prefix="" category="inline-code"></block></block>
-  <block id="71b75e7482eec980a2ea5869f64cbf9c" category="summary">O Keystone STaaS oferece capacidade de armazenamento em níveis de serviço predefinidos.  Cada volume gerenciado pela Keystone está associado a um nível de serviço.</block>
   <block id="391d525ac5052ae01c2eb2bf929d6706" category="paragraph">Uma assinatura pode ter vários planos de tarifas e cada plano de tarifas corresponde a um nível de serviço de desempenho.  Cada plano de tarifas tem uma capacidade comprometida por nível de serviço de desempenho.</block>
   <block id="4182ab15a404865f9525355f8e07083c" category="paragraph">Cada nível de serviço de desempenho é definido por sua densidade de E/S, ou seja, IOPS/TiB/volume.  Esta é a proporção de desempenho (operações de entrada/saída por segundo [IOPS]) e capacidade de armazenamento utilizada (TiB), que é IOPS/TiB na latência média por volume.</block>
   <block id="e454c9ca30d2e42e70a55ea28dbc890e" category="paragraph">Você seleciona níveis de serviço de desempenho com base no seu ambiente de armazenamento e nas necessidades de armazenamento e consumo.  Os níveis de serviço de desempenho básico estão disponíveis para você por padrão.  Níveis de serviço de desempenho específicos também estão disponíveis, caso você tenha optado por serviços adicionais.  Por exemplo, para o serviço complementar de proteção avançada de dados, o nível de serviço de desempenho _Advanced Data-Protect_ é atribuído à sua assinatura.</block>
@@ -614,7 +572,6 @@
   <block id="892db0165f2238f40c3370386d79cac7" category="inline-image-macro">modelo de planilha do Excel</block>
   <block id="f0fbc9cddebee973debd106e878bebdd" category="paragraph"><block ref="f0fbc9cddebee973debd106e878bebdd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cac189ace7fac11fbcff63b35adf8770" category="list-text">Uma solicitação de crédito de serviço deve ser iniciada dentro de seis semanas após o suporte do NetApp Keystone validar uma violação.  Todos os créditos de serviço devem ser reconhecidos e aprovados pela NetApp.</block>
-  <block id="e89bdbf88ea78e787698305e26fb7442" category="summary">A Keystone oferece SLO baseado em latência por nível de serviço de desempenho, conforme descrito no pedido da Keystone para capacidade consumida até o limite de pico.</block>
   <block id="9f6ccc631816a7182a52d977c6827823" category="paragraph">O NetApp Keystone oferece SLO baseado em latência por nível de serviço de desempenho, conforme descrito no pedido do Keystone para capacidade consumida até o limite de pico, de acordo com os termos e condições listados a seguir.</block>
   <block id="23f04236d1f84e52d087f768059adbbe" category="list-text">*Desempenho degradado*: A quantidade de tempo, em minutos, por incidente, durante a qual a meta de latência do 90º percentil não é atingida.</block>
   <block id="3fe43b4ffa54563c104bbdf1eeea2b59" category="list-text">A latência do *90º percentil* é medida por volume, por nível de desempenho, para todos os volumes dentro de uma Ordem Keystone .  A latência é amostrada a cada cinco minutos, e o valor do 90º percentil calculado ao longo de um período de 24 horas é usado como medida diária, considerando os seguintes pontos:</block>
@@ -648,7 +605,6 @@
   <block id="dcfe0b3ef8eb8156a5e83949c2e2f7b6" category="cell">3%</block>
   <block id="b9ad6821bc2a0e4300b5b91ca5245476" category="paragraph">Usando a fórmula: Créditos de serviço = (10/50) X 1000 x 2 x 0,03</block>
   <block id="732192040cca36723308ae6b02982093" category="paragraph">Com base no cálculo, os créditos de serviço serão de US$ 12.</block>
-  <block id="fed70707a2e768c22f4b0fc06a401786" category="summary">A NetApp garante a recuperação de dados de Snapshot de volumes SnapLock Compliance em caso de ataque de ransomware com o programa Ransomware Recovery Guarantee</block>
   <block id="30a37a729e8d5bdf11c9e3c6965f6872" category="doc">Garantia de Recuperação de Ransomware</block>
   <block id="c314df61fd93029a87d16eb15b842e7d" category="paragraph">A NetApp garante a recuperação de dados de Snapshot de volumes SnapLock Compliance em caso de ataque de ransomware com o programa Ransomware Recovery Guarantee.  O NetApp Ransomware Recovery Assurance Service é necessário para dar suporte ao programa Ransomware Recovery Guarantee e deve ser adquirido separadamente do pedido Keystone associado.</block>
   <block id="c6f45ce2284ef7f44c38a58ebbd013e0" category="section-title">Níveis de serviço</block>
@@ -658,7 +614,6 @@
   <block id="edb32d0cffb273251a459f28452610a9" category="list-text">Os créditos são fornecidos durante o período de assinatura ativo do pedido Keystone relevante.</block>
   <block id="a5c0e3b5e544c9e98cfff04374762f87" category="list-text">Para assinaturas com cobrança mensal, os créditos serão divididos ao longo dos próximos 12 meses e poderão ser usados para quaisquer faturas futuras da Keystone até o final do período da assinatura.  Se a assinatura terminar em menos de 12 meses, ela poderá ser renovada para continuar usando os créditos, ou os créditos poderão ser aplicados a outras faturas da NetApp .</block>
   <block id="accb4d9ec21427fc3d795090c44c8639" category="list-text">Para assinaturas anuais, os créditos serão aplicados à próxima fatura da Keystone , se disponível.  Se não houver faturas futuras do Keystone , os créditos poderão ser aplicados a outras faturas da NetApp .</block>
-  <block id="6f7cc0a1419b02f4c77b218d576fc3c6" category="summary">A Keystone oferece uma medição garantida do número máximo de watts reais por tebibyte (W/TiB) para serviços de armazenamento baseados em matrizes de armazenamento flash ONTAP com SLO de Sustentabilidade.</block>
   <block id="c55e6c034cd841d3f6ae411f366dff41" category="paragraph">O NetApp Keystone oferece uma medição garantida do número máximo de watts reais por tebibyte (W/TiB) para serviços de armazenamento baseados em matrizes de armazenamento flash ONTAP com SLO de Sustentabilidade.  O SLO de sustentabilidade define o consumo máximo de W/TiB para cada nível de serviço de desempenho elegível, ajudando as organizações a atingir suas metas de sustentabilidade.</block>
   <block id="864c642a56d20e6430164211b9f12588" category="list-text">*Watts*: O consumo de energia relatado pelo AutoSupport diário, incluindo o uso pelo controlador e prateleiras de disco conectadas.</block>
   <block id="fbce2f0375e75ac94f7d2ed62924d9bc" category="list-text">*Tebibyte*: O máximo de:</block>
@@ -704,7 +659,6 @@
   <block id="0b2c78b413a92fa3d683991180e6b149" category="paragraph">Fatura mensal = (capacidade comprometida [TiB] * taxa comprometida [$/TiB]) + (capacidade de burst média diária provisionada [TiB] * taxa de burst [$/TiB]).  A fatura mensal contém uma cobrança mínima com base na capacidade comprometida.</block>
   <block id="2eb54516538e34e5753ac19de355cf86" category="paragraph">A conta mensal varia além da cobrança mínima com base no consumo médio diário de capacidade de pico.</block>
   <block id="db7ef8b55156f5b6fc1f3807d49d1119" category="summary">Os serviços Keystone STaaS oferecem suporte a ONTAP e StorageGRID.</block>
-  <block id="4e4be6640d3e6688fbc771ec3b218a39" category="doc">Armazenamento suportado no Keystone</block>
   <block id="539b9a746066fbaf5619ee72a6affe15" category="paragraph">Os serviços Keystone STaaS oferecem suporte ao armazenamento de arquivos e blocos com ONTAP, armazenamento de objetos com StorageGRID e Cloud Volumes ONTAP.</block>
   <block id="83051df9527e67fafbf41db513cd8e94" category="paragraph">O Keystone STaaS fornece serviços padrão e opcionais para seu armazenamento.</block>
   <block id="f711abd7b1376e4ea173ce403853e332" category="paragraph">* Serviços padrão do Keystone STaaS*: Os serviços padrão estão incluídos na assinatura básica e não são cobrados separadamente.</block>
@@ -741,7 +695,6 @@
   <block id="d96e0cf44b3111cb9ae984add2b97c74" category="paragraph">A Keystone STaaS fornece serviços de armazenamento em nuvem.  O Keystone STaaS oferece suporte aos recursos de gerenciamento de dados do Cloud Volumes ONTAP na Amazon Web Services (AWS), Microsoft Azure e Google Cloud Platform.</block>
   <block id="2a947eac17f71a99037966f44ce8252d" category="admonition">Os serviços de computação, armazenamento e rede baseados em hiperescala exigidos pelo Cloud Volumes ONTAP não são fornecidos pela NetApp como parte das assinaturas do Keystone STaaS; essas assinaturas precisam ser adquiridas diretamente de provedores de serviços de nuvem hiperescala.</block>
   <block id="b9582a9d01a3bb00c5c7df318f3cd4ed" category="summary">O United States Protected Support é um serviço complementar que fornece entrega e suporte de serviços Keystone contínuos de cidadãos dos EUA em solo americano.</block>
-  <block id="21fe13388dd575bae131356d62eb3d04" category="paragraph">O United States Protected Support (USPS) é uma oferta complementar para assinaturas do NetApp Keystone .  Ele lhe dá direito a receber entrega e suporte de serviços Keystone contínuos de cidadãos dos EUA em solo americano.</block>
   <block id="8816d718cde960556e2d767cd7bc6a24" category="paragraph">Leia as seções a seguir para entender quais elementos de suas assinaturas estão vinculados a este serviço complementar e são fornecidos de acordo com os termos do Contrato NetApp Keystone :disclaimer1[Os serviços e ofertas descritos aqui estão sujeitos, limitados e regidos por um Contrato Keystone totalmente executado.]</block>
   <block id="10d701676d6c78ebafad1c0adf816cc7" category="section-title">Monitoramento NetApp USPS</block>
   <block id="75d0ff56559c8650dad12b15a71e6950" category="paragraph">A equipe de suporte do NetApp USPS Keystone monitora a integridade dos seus produtos e serviços assinados, fornece suporte remoto e colabora com seu gerente de sucesso do Keystone .  Todo o pessoal que monitora os produtos associados aos pedidos de assinatura relevantes da Keystone são cidadãos dos EUA que operam em solo americano.</block>
@@ -749,9 +702,7 @@
   <block id="e8483ac20b1990d2362dd45e18cfb1d2" category="section-title">Atividades de implantação</block>
   <block id="82ed1e96c97e812264424ac485673960" category="paragraph">Quando disponível, as atividades de implantação e instalação no local e remotas são conduzidas por cidadãos dos EUA em solo americano. Nota de rodapé: isenção de responsabilidade [A disponibilidade de pessoal apropriado para atividades no local depende da localização geográfica em que os sistemas Keystone são implantados.]</block>
   <block id="cedba9b370f4f8fb7584b8a96576dbce" category="paragraph">Quando disponíveis, as atividades de suporte e solução de problemas no local são conduzidas por cidadãos dos EUA em solo americano. nota de rodapé: isenção de responsabilidade[]</block>
-  <block id="3564049af4b6d8549eeccf2c18fc9bb7" category="summary">Conclua algumas tarefas de configuração para permitir que o Keystone Collector colete dados de uso em um ambiente que não tenha acesso à Internet, também conhecido como _site escuro_ ou _modo privado_.</block>
   <block id="ac1824aafbc93ef9f076e8c86d829ea7" category="doc">Configurar o Keystone Collector em modo privado</block>
-  <block id="4725d6ccb258fcebc2d1c40c828efdad" category="paragraph">Conclua algumas tarefas de configuração para permitir que o Keystone Collector colete dados de uso em um ambiente que não tenha acesso à Internet, também conhecido como _site escuro_ ou _modo privado_.  Esta é uma atividade única para ativar e associar os componentes necessários ao seu ambiente de armazenamento.  Uma vez configurado, o Keystone Collector monitorará todos os clusters ONTAP gerenciados pelo Active IQ Unified Manager.</block>
   <block id="544918a98971531911cde1c8c60f796e" category="admonition">O Keystone Collector fornece o utilitário Keystone Collector Management Terminal User Interface (TUI) para executar atividades de configuração e monitoramento.  Você pode usar vários controles do teclado, como Enter e as teclas de seta, para selecionar as opções e navegar por esta TUI.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Passos</block>
   <block id="091f26e937a9d40df8650aa04378561d" category="list-text">Inicie o utilitário TUI de gerenciamento do Keystone Collector:</block>
@@ -1042,9 +993,6 @@
   <block id="e481e00ab54faed62b9dea98ed860aea" category="inline-image-macro">Captura de tela da interface do usuário para exibir as políticas de AQoS criadas</block>
   <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">Tela TUI para exibir a mensagem de erro para criação de política</block>
-  <block id="6c0db94d9ea0b326e31b7d4eba357a6e" category="summary">O Keystone coleta informações de configuração, status e uso para assinaturas ONTAP e StorageGRID .  Ele também pode coletar dados de desempenho do ONTAP .</block>
-  <block id="2a5a28f579ee3b6816454c527351ec56" category="doc">Tipos de dados do usuário que a Keystone coleta</block>
-  <block id="7c5da8baa0fbbd37b4a692b7125db568" category="paragraph">O Keystone coleta informações de configuração, status e uso das assinaturas do Keystone ONTAP e do Keystone StorageGRID , bem como dados de telemetria da máquina virtual (VM) que hospeda o Keystone Collector.  Ele pode coletar dados de desempenho somente para ONTAP , se esta opção estiver habilitada no Keystone Collector.</block>
   <block id="e14f2b2670997486a2e4f3918cbe9cb6" category="section-title">Coleta de dados ONTAP</block>
   <block id="ee5ca5bbfae8b59d25890e341fb270f9" category="example-title">&lt;strong&gt;Dados de uso coletados para ONTAP: Saiba mais&lt;/strong&gt;</block>
   <block id="4752622b9e77aa409c0f10beb0726f74" category="paragraph">A lista a seguir é uma amostra representativa dos dados de consumo de capacidade coletados para o ONTAP:</block>
@@ -1256,7 +1204,6 @@
   <block id="494dd216fe759558e1a91f40c35ee621" category="list-text">Registros de serviço dos serviços Keystone</block>
   <block id="9c62788e882432afb4a67231a8793b98" category="summary">Instale o software ITOM Collector em sistemas baseados em Linux.</block>
   <block id="76c87a002b2f377e07b664132c3a197e" category="doc">Instalar o ITOM Collector em sistemas Linux</block>
-  <block id="0964ef7e9609896cd57878b05fd16b15" category="paragraph">Conclua algumas etapas para instalar o ITOM Collector, que coleta dados de métricas em seu ambiente de armazenamento.  Você pode instalá-lo em sistemas Windows ou Linux, dependendo de suas necessidades.</block>
   <block id="ed5f434c9fb860090390831cf62c2cda" category="admonition">A equipe de suporte da Keystone fornece um link dinâmico para baixar o arquivo de configuração do ITOM Collector, que expira em duas horas.</block>
   <block id="15e54aabc31e95c20bd5b9e9534cb8f3" category="inline-link-macro">Instalar o ITOM Collector em sistemas Windows</block>
   <block id="78c894c65eab257836a2fa2a880d28b4" category="paragraph">Para instalar o ITOM Collector em sistemas Windows, consulte<block ref="d04ab87c73184a2a7be46f1ebca8138a" category="inline-link-macro-rx"></block> .</block>
@@ -1796,7 +1743,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de Privacidade</block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="a7a411a95daabfbcf6e39078b5f44902" category="summary">Problemas encontrados em versões anteriores dos serviços NetApp Keystone STaaS foram corrigidos em versões posteriores.</block>
   <block id="0488df5729275bc610c775109a5e97ed" category="doc">Problemas corrigidos no Keystone STaaS</block>
   <block id="7186d4f0f71f9b706a05940b8abcacd0" category="cell">Descrição do problema</block>
   <block id="ad7fffc52967fac2195a87d71ddfefed" category="cell">Depois da correção</block>
@@ -1871,7 +1817,6 @@
   <block id="2fd8a3db64e08617acb19923d6feb044" category="paragraph">Na guia *Detalhes do volume*, a coluna *Tipo de política de QoS* exibe _QoS_ quando nenhuma política de QoS é aplicada, e a coluna Compatível mostra _Não definido_, causando uma inconsistência no status da política de QoS exibida.</block>
   <block id="3156e09a94461db7bf19fe1f351546ed" category="paragraph">Detalhes do volume indisponíveis para assinaturas primárias e vinculadas</block>
   <block id="98b4e51c8dbd4ac2829fdf8a44b9eac2" category="paragraph">A guia *Resumo do volume* mostra zero para o número total de volumes, status de conformidade de QoS, contagem de volumes protegidos e capacidade total consumida para assinaturas primárias e secundárias vinculadas.</block>
-  <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportados por esta versão do produto ou que não interoperam corretamente com ele.  Revise essas limitações cuidadosamente.</block>
   <block id="1dd6b840b80d1691b68b67682f45c121" category="doc">Limitações conhecidas no Keystone STaaS</block>
   <block id="747c6db0ede286805c21b0b78f4ce14f" category="paragraph">Limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportados pelos serviços ou componentes do Keystone STaaS, ou que não interoperam corretamente.  Revise essas limitações cuidadosamente.</block>
   <block id="4610ba0c418ec86857336be9f8a618f3" category="section-title">Limitações do Keystone Collector</block>
@@ -1959,7 +1904,6 @@
   <block id="d99ad2d9a576f68ae4b88fb369c0150d" category="list-text">Entenda o processo de autenticação em duas etapas.</block>
   <block id="2242d62d3e8be601b23d94ea56e90d58" category="list-text">*Gerar um token de acesso*: O token de atualização é usado para gerar tokens de acesso.  Um token de acesso é necessário para autorizar chamadas de API para o serviço Keystone e é válido por uma hora.</block>
   <block id="f8f8242a29d5eb9256ae05747db07412" category="list-text">Execute uma chamada de API para recuperar os dados desejados. Você pode recuperar programaticamente listas de clientes, dados de assinatura de clientes e detalhes de consumo de clientes.</block>
-  <block id="8e3557260fa2ecc062aeb9b921f99cce" category="summary">Serviços de assinatura Keystone STaaS sobre Keystone Flex</block>
   <block id="9b49427715766283678564a0225a2326" category="paragraph">O Keystone STaaS foi precedido pelos serviços de assinatura do Keystone (anteriormente conhecidos como serviços de assinatura do Keystone Flex).</block>
   <block id="4ec497757752cb6159657c1bede33384" category="inline-link-macro">Painel Keystone</block>
   <block id="78463a384a5aa4fad5fa73e2f506ecfc" category="inline-link">Inglês</block>
@@ -1980,9 +1924,7 @@
   <block id="737069279f8616b0af23f56a5f3dee0e" category="list-text"><block ref="737069279f8616b0af23f56a5f3dee0e" category="inline-link-rx"></block></block>
   <block id="4be8e06d27bca7e1828f2fa9a49ca985" category="inline-link">italiano</block>
   <block id="ad9e9c61c4a47bb6dfe2d4903529fe03" category="list-text"><block ref="ad9e9c61c4a47bb6dfe2d4903529fe03" category="inline-link-rx"></block></block>
-  <block id="9489be5fe307489eb48f54e4d9e08b90" category="summary">A NetApp oferece recursos novos e aprimorados em cada versão dos serviços Keystone STaaS.</block>
   <block id="c39448c44492bce0f20d4135a111f379" category="doc">Novidades no Keystone STaaS</block>
-  <block id="0d3416f2b111546052098b9c77ea87f5" category="paragraph">Saiba mais sobre os recursos e aprimoramentos mais recentes nos serviços Keystone STaaS.</block>
   <block id="5e7c6c3c4a3f1109745fdf45ec1f1b45" category="section-title">05 de agosto de 2025</block>
   <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">30 de junho de 2025</block>
   <block id="cfa9db7c89ff68cb147c3dad7e8b0b59" category="section-title">Lançamento da versão 3 (v3) do Keystone</block>
@@ -2082,9 +2024,7 @@
   <block id="e21135b6ab126eefb31b234c688584d2" category="section-title">Data convertida para fuso horário UTC</block>
   <block id="deaf5bbabe29231a9826b313fee569a1" category="inline-link-macro">Painel e relatórios de assinatura do Keystone</block>
   <block id="e2328d669041a542b4660884da5e30c6" category="paragraph">Os dados retornados nas guias da tela * Assinaturas Keystone * do Digital Advisor são exibidos no horário UTC (fuso horário do servidor).  Quando você insere uma data para consulta, ela é automaticamente considerada no horário UTC. Para obter mais informações, consulte <block ref="111f11f9178fe48f6cc874a0bf33e9ed" category="inline-link-macro-rx"></block> .</block>
-  <block id="5c201143f722abb135fb91ea77a2a32b" category="sidebar">O NetApp Keystone é um serviço flexível baseado em assinatura de pagamento conforme o uso que oferece uma experiência de nuvem híbrida perfeita para clientes que preferem despesas operacionais a despesas de capital ou leasing.  Ele oferece a capacidade de acelerar o tempo de retorno do investimento ao remover o fardo de TI de gerenciar recursos e evitar o longo ciclo de aquisição.  Navegue pelos documentos nesta biblioteca para saber mais sobre a oferta de armazenamento como serviço (STaaS) do NetApp Keystone .</block>
   <block id="6ee3962f219413522af2700bec386d97" category="sidebar">Documentação Keystone</block>
-  <block id="914dcbba0b077ce4f352aa32f6a6d389" category="sidebar">O NetApp Keystone é uma oferta de armazenamento como serviço, com pagamento conforme o uso, para serviços de armazenamento de dados no local e na nuvem em uma única assinatura, com a capacidade de realocar os gastos com armazenamento entre as nuvens.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Começar</block>
   <block id="895b14af35ea6854d4009fe0ca2d99a9" category="sidebar">O que é o NetApp Keystone?</block>
   <block id="1f5e8b836d490bee65ada2e551662a8f" category="sidebar">Instalar o Keystone Collector</block>
@@ -2092,21 +2032,15 @@
   <block id="e52a62b3d3e55847cd42b248736bba1b" category="sidebar">Ver insights de assinatura</block>
   <block id="7c38a1a6d325208696c25a2b660d7c45" category="sidebar">Ver ativos</block>
   <block id="90b170feab9928831461b78974ca9730" category="sidebar">Pesquisar dados e gerar relatórios</block>
-  <block id="bf871fbeda66c457eaf1656d09ea34de" category="sidebar">Serviços suportados em Keystone</block>
   <block id="ffd11ace57b086a5480fb17f7a15d168" category="sidebar">Níveis de serviço de desempenho Keystone</block>
   <block id="edfc4c86589e31546a8fb2d8b085b8c9" category="sidebar">Qualidade de Serviço (QoS)</block>
   <block id="272552b591277a155ab212d038a32279" category="sidebar">Quais são as unidades de medida?</block>
   <block id="202e5e87c64fed77827697acb780124e" category="sidebar">Qual é o armazenamento base suportado?</block>
   <block id="15b8bdededfed453d4aa35a4585d9e2c" category="sidebar">Posso realocar meus gastos locais para a nuvem?</block>
-  <block id="e95f37597101815c1d465e37eb31cab2" category="sidebar">Preços e faturamento da Keystone</block>
-  <block id="d86cc1250d7492d626c32cc9fb65dfab" category="sidebar">Saiba mais sobre os preços do Keystone</block>
-  <block id="196d7c712c7c6a9911f2d9bbb5f61bf7" category="sidebar">Faça mais com os serviços da Keystone</block>
   <block id="f4933584c28adc3bd3ea423ed96920ec" category="sidebar">Saiba mais sobre sua equipe de suporte</block>
   <block id="c977c72cd7678128aadf339e54fc0498" category="sidebar">O que posso fazer com meus dados frios ou menos utilizados?</block>
   <block id="3c433d996e071fc968830570a2649830" category="sidebar">Como posso proteger meus dados do Keystone ?</block>
   <block id="84b3e771654397ccc8ec23cf38bfc805" category="sidebar">Monitore, solucione problemas e aprimore o armazenamento</block>
-  <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">Suporte ao cidadão dos EUA</block>
-  <block id="d59048f21fd887ad520398ce677be586" category="sidebar">Saber mais</block>
   <block id="dab2edf9eaac3950e92c281ce358af01" category="sidebar">Digital Advisor Active IQ</block>
   <block id="5ecb6b24c169667ff1a176768115659e" category="sidebar">Active IQ Unified Manager</block>
   <block id="e5471403f1b2eefb0fe47b6193a72bbc" category="sidebar">Documentos Keystone</block>
@@ -2115,7 +2049,6 @@
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">Problemas corrigidos</block>
   <block id="95dc0391ce7b396d7dd5622284e8fc3e" category="sidebar">Problemas conhecidos</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitações conhecidas</block>
-  <block id="f5d84aae2147a90073cdd05d5634eb44" category="sidebar">Saiba mais sobre o Keystone STaaS</block>
   <block id="05bbb43b3d923283e0b6ffafd088f41f" category="sidebar">Componentes</block>
   <block id="51e229527022b23ef548bfc016bfb0ac" category="sidebar">Fluxo de dados</block>
   <block id="162f770f667ccd871599b660829f874f" category="sidebar">Modelos operacionais</block>
@@ -2154,8 +2087,6 @@
   <block id="8e4d26d9b322f38152cd72b8fdf2ed25" category="admonition">Os serviços de computação, armazenamento e rede baseados em hiperescalador exigidos pelo Cloud Volumes ONTAP não são fornecidos pela NetApp como parte das assinaturas do Keystone STaaS; esses serviços precisam ser adquiridos diretamente de provedores de serviços de nuvem em hiperescalador.</block>
   <block id="dc2f3454954797b5fb83b2868fdaf36f" category="list-text">Capacidade: Medida em GiB, TiB e PiB.</block>
   <block id="aefe5d691bbfd5f85d52918fd2b8748f" category="list-text">*Medição de capacidade em GiB, TiB e PiB*: Medições de capacidade de armazenamento de dados usando base de 1024 (1 GiB = 1024^3^ bytes, 1 TiB = 1024^4^ bytes e 1 PiB = 1024^5^ bytes).</block>
-  <block id="d4017514ab5a420c895a9fc731b4b395" category="paragraph">Cada site MetroCluster tem sua própria assinatura e cobrança.  Para configurações do MetroCluster , a medição de uso considera como o armazenamento é utilizado em ambos os sites.  Se você tiver uma configuração do MetroCluster com 100 TiB por site, apenas 50 TiB serão usados ativamente em cada site, com os 50 TiB restantes em cada site servindo como backup espelhado.  Os custos adicionais de proteção avançada de dados são calculados com base nesses 100 TiB de uso ativo total e divididos entre ambos os sites por meio de suas respectivas assinaturas de 50 TiB cada.</block>
-  <block id="541d21d5ff884f1d0b139f95e569de26" category="paragraph">O Site A e o Site B são configurados em uma configuração MetroCluster . Quando um usuário cria um volume de 10 TB no site A, um volume idêntico de 10 TB é criado no site B. O Keystone identifica 10 TB de consumo em cada site, para um aumento total de 20 TB. O System Manager e o Unified Manager relatam um volume de 10 TB criado no site A, mas não relatam um volume de 10 TB no Site B.</block>
   <block id="7e8fe67b005603b496012796735f2d36" category="doc">Rastreamento de uso lógico aprimorado com uma nova coluna</block>
   <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">Uma nova coluna, Total footprint, foi adicionada para melhorar o rastreamento do consumo do Keystone para volumes do FabricPool :</block>
   <block id="729a65ff91860ad65935d125d788f643" category="list-text">* Painel do Keystone no BlueXP*: Você pode ver a coluna *Pegada total* na aba *Volumes em clusters* dentro da aba *Ativos*.</block>
@@ -2175,7 +2106,6 @@
   <block id="bcf269fdba28fb16246a22e167483e0c" category="section-title">Visualização simplificada dos níveis de serviço de desempenho</block>
   <block id="1c560ebcd3a4417c966fc32410160aad" category="list-text"><block ref="1c560ebcd3a4417c966fc32410160aad" category="inline-link-macro-rx"></block></block>
   <block id="f1725014f45852c6d29865ed1732954a" category="paragraph">Os dados históricos de consumo para cada nível de serviço de desempenho são exibidos em um gráfico de linhas com base no intervalo de tempo selecionado. Se uma assinatura do Keystone for modificada ou renovada, você pode definir a data de início para uma data anterior para visualizar dados de consumo anteriores.</block>
-  <block id="59bf2678f53f6a44de56bb54540c62f2" category="summary">Use a guia Monitoramento para visualizar e criar monitores de alertas para suas assinaturas do Keystone .</block>
   <block id="06dace1d8d4bcbb149776f29c2ecb1c6" category="doc">Visualize e crie monitores de alerta para assinaturas do Keystone</block>
   <block id="0189c782e04bc566597908eddaee3dd5" category="section-title">Ver monitores de alerta</block>
   <block id="d8d1f09f12d3047d0b1d5264e0fbb3d4" category="paragraph">Para visualizar os monitores de alerta, siga estas etapas:</block>
@@ -2218,7 +2148,6 @@
   <block id="b3f8c20435f04a33e07ab53c0c9f7689" category="list-text"><block ref="b3f8c20435f04a33e07ab53c0c9f7689" category="inline-link-macro-rx"></block></block>
   <block id="0ebc03672fcf3b001eb123454c829481" category="inline-link-macro">Visualizar e gerenciar alertas para assinaturas do Keystone</block>
   <block id="45b1b24d622565a139eb50e1cef4cd1b" category="list-text"><block ref="45b1b24d622565a139eb50e1cef4cd1b" category="inline-link-macro-rx"></block></block>
-  <block id="1853b61f9b6b779d424aeae83667bdd2" category="summary">Use a guia Monitoramento para visualizar e gerenciar alertas para suas assinaturas do Keystone .</block>
   <block id="7945624e1cf116b23d8e231fa6ab8d6d" category="paragraph">Para configurar alertas definidos pelo usuário, consulte<block ref="78059b8e17cadd39b328bdc0fd7cd2de" category="inline-link-macro-rx"></block> .</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">Ver alertas</block>
   <block id="17ec1dd00ee2fa8e3a2bea341f3176eb" category="paragraph">Para visualizar alertas ativos, siga estas etapas:</block>
@@ -2264,7 +2193,6 @@
   <block id="e833a568221431c19dcca95c850ae159" category="paragraph">Você pode visualizar o uso diário de dados acumulados em intervalos de um período de cobrança mensal ou trimestral por meio do Console ou do Digital Advisor.  No Console, a tabela *Explosão acumulada por dias* fornece dados detalhados, incluindo registro de data e hora, capacidade comprometida, consumida e acumulada em estouro, se você selecionar *Explosão acumulada* no menu suspenso *Exibir* na guia *Tendência de consumo*.</block>
   <block id="dfa8d7fe27ec169b0ef41ef00fee0ae8" category="paragraph">Para visualizar o status de consumo atual de suas assinaturas por meio do NetApp Console ou do Digital Advisor, siga estas etapas:</block>
   <block id="10cb2c81585ad95f970824cfe6301506" category="summary">Como assinante do NetApp Keystone STaaS, você pode acessar o painel do Keystone por meio do NetApp Console ou do Digital Advisor</block>
-  <block id="c3cfe25887e605c51c4e6e8d2d976921" category="paragraph">Você pode acessar o painel do Keystone por meio do NetApp Console ou do Digital Advisor após assinar os serviços do NetApp Keystone .</block>
   <block id="f5d302c73eacff7b76d482bf489706b0" category="inline-link-macro">fazendo login no Console</block>
   <block id="635729a4f0a6dc6d9b4d20446b497c80" category="paragraph">Efetue login no Console usando suas credenciais do site de suporte da NetApp ou inscreva-se para um login na nuvem da NetApp usando seu e-mail e uma senha. Para obter detalhes, consulte <block ref="7dcc8a9f27b5ee3278b228b8863caa51" category="inline-link-macro-rx"></block> .</block>
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">Efetue login no Console.</block>
@@ -2308,7 +2236,6 @@
   <block id="a79d6591df4c712ce010c266887785cb" category="paragraph">Você pode consultar a página *Ativos* no NetApp Console para visualizar esses detalhes. Para visualizar os detalhes de uma assinatura específica do Keystone STaaS, consulte<block ref="33df2a894b84cf92bf7b059b0628f59d" category="inline-link-macro-rx"></block> . Se você quiser visualizar detalhes de várias assinaturas Keystone , consulte<block ref="5fe743b586c50b2c4c63c54967e2b587" category="inline-link-macro-rx"></block> .</block>
   <block id="c7409eaa8633fe96cf75ec03a907af58" category="paragraph"><block ref="c7409eaa8633fe96cf75ec03a907af58" category="inline-image-macro-rx" type="image"></block></block>
   <block id="964c0373b6e90b739308a155629631d1" category="paragraph"><block ref="964c0373b6e90b739308a155629631d1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a117e95e0e717db586ac46cfe455c16c" category="summary">Problemas conhecidos identificam problemas que podem impedir você de usar o Keystone de forma eficaz.</block>
   <block id="56c7b419b1c28b2e596114d1fcf4fd33" category="paragraph">Problemas conhecidos identificam problemas que podem impedir você de usar o Keystone STaaS de forma eficaz.</block>
   <block id="ebc614947502c956dd0fcafc02067f05" category="paragraph">Esta API recupera uma lista de todas as assinaturas e níveis de serviço de desempenho associados ao customerID fornecido.</block>
   <block id="af84df9dc62db50a848fb88711a5b185" category="paragraph">A API responderá com um objeto JSON contendo uma lista de todas as assinaturas e detalhes do nível de serviço de desempenho associado para o cliente em questão. Aqui está um exemplo de resposta:</block>
@@ -2442,16 +2369,8 @@
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">08 de dezembro de 2025</block>
   <block id="ee53a2d144b153a8ad44855abe0429a8" category="list-text">Python 3 (3.9.14 a 3.11.8)</block>
   <block id="642f94d714f235631bdda58a0641ee29" category="doc">Complemento de proteção de dados avançada para Keystone.</block>
-  <block id="e1ae7a5642f41154cb522f32ff888693" category="doc">Requisitos de capacidade para os níveis de serviço de desempenho do Keystone</block>
   <block id="a2cec0e19e9a9e466d5734a20002287a" category="doc">Componentes necessários para os serviços Keystone</block>
   <block id="e6031ccc926a297ed489fed2eb5fc832" category="paragraph">Você precisa de vários componentes para habilitar os serviços NetApp Keystone STaaS. Analise esses componentes antes de começar.</block>
-  <block id="7b2a0cab269bf73e47e958a9123402e1" category="doc">Complemento Data Infrastructure Insights para Keystone</block>
-  <block id="f4661181da0130d61f3128498582908f" category="doc">Serviço adicional de armazenamento em camadas de dados para Keystone.</block>
-  <block id="43b82c4e7e58013ebe91d40fcb3f7718" category="doc">SLO de disponibilidade para Keystone</block>
-  <block id="259bdb910694b04b20beea4776938bc1" category="doc">SLO de desempenho para Keystone</block>
-  <block id="55f8301e147b74d377ba17c059419cab" category="doc">Garantia de recuperação de ransomware para Keystone</block>
-  <block id="34a4bf3e6647e3dbdeb2e4f10c663eab" category="doc">Objetivo de aprendizagem de sustentabilidade (SLO) para Keystone</block>
-  <block id="27aa1272743b7f2386d3189a53b56acd" category="doc">Complemento USPS para Keystone</block>
   <block id="52f54d887aa41d09a6436a07a2e0764c" category="doc">Requisitos para ONTAP e StorageGRID para Keystone</block>
   <block id="116f188b55b3963186369fe6e76fae16" category="doc">Instale o Keystone ITOM Collector em sistemas Linux.</block>
   <block id="d647eab7452f325c298991f79290af31" category="doc">Instale o Keystone ITOM Collector em sistemas Windows.</block>
@@ -2623,10 +2542,7 @@
   <block id="ed7ea238eb12e525c819f7503ae42929" category="list-text">*Keystone version*: A versão do serviço Keystone que está sendo usada para a assinatura. As regras do plano de tarifas para níveis de serviço de desempenho podem variar entre as versões da assinatura. Para saber mais sobre a versão v1, consulte <block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>. Esta coluna está oculta por padrão e pode ser habilitada usando o ícone de seleção de colunas <block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="a317125c258dec2606079ff63caaadb2" category="paragraph">2026-03-30</block>
   <block id="5b57bf4dba78305736e07582baae16bb" category="section-title">30 de março de 2026</block>
-  <block id="a98df09202cc6e4ad7e06d5c995a6d93" category="summary">Utilize o site de suporte da NetApp para criar uma solicitação de suporte ou encontrar informações de contato para suas assinaturas da Keystone.</block>
-  <block id="87c73f5bfb171c5c0b72cd1a7ea79280" category="paragraph">NetApp fornece serviços operacionais aos clientes Keystone. Os clientes recebem um Keystone Success Manager (KSM) dedicado, opções de contato direto para suporte e monitoramento proativo por meio da solução ITOM.</block>
   <block id="585c05c1d0460b954c3964cd9a3ffb3e" category="section-title">Serviços de suporte da NetApp</block>
-  <block id="d76bb60a63fdb624e2fc6b78e311c3e3" category="paragraph">NetApp fornece serviços operacionais remotamente aos clientes Keystone. Esses serviços abrangem uma gama de atividades de gerenciamento de storage, incluindo gerenciamento de ativos e configuração, gerenciamento de capacidade e desempenho, gerenciamento de mudanças, gerenciamento de eventos e incidentes, atendimento de solicitações de serviço e geração de relatórios.</block>
   <block id="a2900fe72fef1254ae96a9980be42aa2" category="paragraph">Seu KSM trabalha em estreita colaboração com você em seus serviços Keystone e fornece relatórios operacionais e de faturamento semanais ou mensais. As responsabilidades específicas são definidas em seu acordo Keystone da NetApp.</block>
   <block id="ad119d5ea30f6c26b58e0af5bc43c9fe" category="section-title">Contate o suporte</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link-macro">NetApp site de suporte</block>
@@ -2673,8 +2589,6 @@
   <block id="f649abbfb1fbdf6d16ef1e522e9f0b3f" category="paragraph">Tendência de queda imprecisa nos dados de previsão de consumo</block>
   <block id="af9ef0b1942bfef1a3c549bcd43ad2d0" category="paragraph">Na aba *Tendência de consumo*, quando a opção *Previsão* está ativada na visualização *Consumo histórico*, a utilização de capacidade projetada mostra uma tendência de queda significativa e imprecisa.</block>
   <block id="9e011831a807911dc5fe5c1f934f6d23" category="section-title">27 de abril de 2026</block>
-  <block id="6c46cb6cf0652f0fe88be3a6955c9f48" category="doc">Faturamento Keystone para tipos de volume específicos</block>
-  <block id="8ebbc3a6a44524610a169b7e4db2ddbc" category="doc">Saiba mais sobre o faturamento do Keystone</block>
   <block id="218297c180a0d90e1e1e369654e41b5e" category="paragraph">Com NetApp Keystone STaaS, você paga pelo que contrata e somente extra pelo que usar além desse limite. Esta página explica como o modelo de pagamento conforme o uso funciona, incluindo como o preço do seu compromisso de armazenamento é calculado, como a capacidade é medida e faturada e quando as faturas são geradas.</block>
   <block id="d49c791831a337b675eb6b844e7d0282" category="section-title">Modelo de precificação Keystone</block>
   <block id="f413046b2aeb1ac90c58e030bc21f7e0" category="paragraph">Sua assinatura Keystone oferece custos previsíveis com a flexibilidade de aumentar a capacidade conforme a demanda de carga de trabalho. As cobranças do Keystone são baseadas no nível de serviço selecionado e na capacidade contratada.</block>
@@ -2715,7 +2629,6 @@
   <block id="3679634ac4d56686ec17bf3b53f67247" category="sidebar">O que é capacidade comprometida?</block>
   <block id="e6ff8f3b83ecc7de79998d1038e44b10" category="sidebar">O que acontece quando ultrapasso a minha capacidade contratada?</block>
   <block id="8c4d76fa92f09a8376865002414752f9" category="sidebar">Quando as faturas são geradas?</block>
-  <block id="58738d2f8ee7ea1370382ef241eb44f2" category="sidebar">Entenda a cobrança da Keystone</block>
   <block id="4f4e942fb2a8e3cbbc7009bb9e99d967" category="doc">Exibição aprimorada de várias atualizações no mesmo dia na linha do tempo da assinatura</block>
   <block id="fad09c803865d7a730faa5e2a3f20dc6" category="paragraph">O gráfico da linha do tempo de assinaturas agora exibe um número quando várias atualizações de assinatura de diferentes tipos ocorrem no mesmo dia, em vez de ícones separados. Passe o cursor sobre o número para ver todos os tipos de atualização daquele dia. O relatório baixado inclui uma linha separada para cada atualização, fornecendo um registro completo de todas as alterações. Para saber mais, consulte <block ref="6bdc06544a2a6817dc4209abc6ea98ff" category="inline-link-macro-rx"></block>.</block>
   <block id="0e3e57bffd0893b655bd0cbbfa13b3f1" category="paragraph"><block ref="0e3e57bffd0893b655bd0cbbfa13b3f1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2781,8 +2694,6 @@
   <block id="c11ff4c4af6e617e0c27f005526215c1" category="paragraph">2026-08-10</block>
   <block id="92f0ca3d130ab33a16d28b57af2ef1fa" category="doc">Saiba mais sobre a infraestrutura Keystone</block>
   <block id="ce554340b5d358edd16adc582cbd1e9f" category="doc">Métricas e definições de armazenamento do Keystone STaaS</block>
-  <block id="efc51c397e61250c642c86d68b092174" category="doc">Serviço adicional de NRNVC e conformidade SnapLock para Keystone</block>
-  <block id="7e09a61a4369064a74afa38f6e7a8c9a" category="paragraph">Para obter mais informações sobre a implantação, consulte <block ref="d03ef5b6e8b6191ac72b7ae5462d2546" category="inline-link-macro-rx"></block> e <block ref="79f76dbd81e71f36d15d1dac3766b8c8" category="inline-link-macro-rx"></block>.</block>
   <block id="d03ef5b6e8b6191ac72b7ae5462d2546" category="list-text"><block ref="d03ef5b6e8b6191ac72b7ae5462d2546" category="inline-link-macro-rx"></block></block>
   <block id="b3e473fe04a8ccacad32fa6cbce9ed33" category="inline-link-macro">Serviços de suporte para o Keystone</block>
   <block id="7f0b447c374e3209d4e9d60f6086fb1e" category="list-text">Os créditos de serviço podem ser aplicados a uma fatura futura. Os créditos de serviço não se aplicam a assinaturas Keystone expiradas. Para saber mais, consulte <block ref="1ed065cbb5ab0431ea9f338f6c76a9cb" category="inline-link-macro-rx"></block>.</block>
@@ -2851,4 +2762,101 @@
   <block id="d2fc234fa58b5424fb66e69d6f37ea37" category="paragraph">Use o NetApp Console para gerar ou agendar relatórios de integridade para uma ou mais assinaturas. Esses relatórios do PowerPoint consolidam o uso das assinaturas, a integridade operacional, os riscos e as vulnerabilidades. O Digital Advisor não oferece suporte à geração nem ao agendamento de relatórios de avaliação de integridade.</block>
   <block id="0557e64d44b59ed5a4145771c544da91" category="paragraph">Para saber mais, consulte <block ref="1f95c525270767ec0581ce04383996f5" category="inline-link-macro-rx"></block>.</block>
   <block id="e019cb225a4644922cdd06575b099710" category="section-title">12 de outubro de 2026</block>
+  <block id="e4a689245c04941e542e87f87c71830f" category="doc">Complemento de proteção avançada de dados para o Keystone STaaS</block>
+  <block id="c1bec1b4a3f0a5d826cc94b870131b21" category="doc">Requisitos de capacidade e ajustes para o Keystone STaaS</block>
+  <block id="fb7e3602321c198f1b68df6f2bddaf51" category="doc">Componentes necessários para os serviços Keystone STaaS</block>
+  <block id="3982aa9c00ca1105982d7b420aa229d1" category="doc">Complemento do Data Infrastructure Insights para o Keystone STaaS</block>
+  <block id="a62b271fa3f5a9f9fbb89e9400bebdd0" category="paragraph">NetApp Data Infrastructure Insights (DII, anteriormente conhecido como Cloud Insights) é um serviço adicional para o Keystone STaaS. A integração desse serviço com o Keystone STaaS aprimora os recursos de monitoramento, solução de problemas e otimização dos recursos de storage fornecidos pelo Keystone em nuvens públicas e data centers privados.</block>
+  <block id="64fa90c4f22186e52644e58da8e73710" category="doc">Serviço complementar de hierarquização de dados para o Keystone STaaS</block>
+  <block id="9b7f299ef284f363333bfeb461335dd0" category="summary">A infraestrutura, o design, a escolha da tecnologia e os produtos de componentes do Keystone STaaS são de responsabilidade exclusiva da NetApp.</block>
+  <block id="88b9a02d2802c69bfdfff8cc758fc128" category="doc">Saiba mais sobre a infraestrutura do Keystone STaaS</block>
+  <block id="813fac179986d80a080c66a7a7b15442" category="paragraph">NetApp é a única responsável pela infraestrutura, design, escolhas tecnológicas e componentes do Keystone STaaS, o que se aplica tanto aos ambientes operados pela NetApp quanto aos ambientes operados pelo cliente.</block>
+  <block id="6f285b6c1a2d390cb50ce12d04f5ee5b" category="summary">As regras de faturamento do Keystone STaaS variam para determinadas configurações de volume. Esta página explica o faturamento de volumes clonados, SnapMirror de destino, LUNs, volumes temporários e volumes do sistema.</block>
+  <block id="829210c07994a3174c03425581a0b91e" category="doc">Faturamento do Keystone STaaS para tipos específicos de volume</block>
+  <block id="d383107dbc2fbb5b836a6c3f1f66251c" category="paragraph">As regras de faturamento do Keystone STaaS variam para determinadas configurações de volume. Conhecer essas exceções ajuda você a evitar cobranças inesperadas ao trabalhar com volumes clonados, destinos do SnapMirror, LUNs ou storage temporário.</block>
+  <block id="5523984d83e6484992e74f6bf0473696" category="summary">Como parte da sua assinatura do Keystone STaaS, NetApp amplia o serviço adicional NRNVC para seus serviços de arquivo, bloco e objeto.</block>
+  <block id="7ab2ac1fbc10a6ee11d8a2934cc7401f" category="doc">Serviço complementar de NRNVC e conformidade do SnapLock para Keystone STaaS</block>
+  <block id="de9d26eaa9f4a5b3bfe4f73a6df3458d" category="paragraph">Como parte da sua assinatura do Keystone STaaS, a NetApp estende o serviço complementar de componentes não retornáveis e não voláteis (NRNVC) para seus serviços de arquivo, bloco e objeto.</block>
+  <block id="1eb1bf476d163a8d68b96ccdb527663e" category="summary">Saiba como as responsabilidades operacionais diferem entre os modelos do Keystone STaaS operados por parceiros e operados pelo cliente e onde os clientes do Keystone XaaS podem obter suporte.</block>
+  <block id="84927023d57ff7105e2d1513a930ba4b" category="doc">Modelos operacionais para o Keystone</block>
+  <block id="8f85ca2a6f749b6e5996d5cf9c77d8d0" category="paragraph">O NetApp Keystone está disponível por meio das ofertas de assinatura Keystone Storage-as-a-Service (STaaS) e Keystone XaaS. O Keystone STaaS oferece suporte a modelos operacionais operados por parceiros e operados por clientes, enquanto o Keystone XaaS é fornecido exclusivamente por parceiros da NetApp. Sua oferta e seu modelo operacional determinam quem gerencia seu ambiente de storage, cuida das operações diárias e fornece suporte.</block>
+  <block id="ec8aea78d93b7a391484480ec257b19c" category="section-title">Modelos operacionais do Keystone STaaS</block>
+  <block id="5f4a423b6db8c24ff99e0b3fd91875ee" category="paragraph">Os modelos operacionais do Keystone STaaS definem as responsabilidades da NetApp, dos parceiros e dos clientes ao longo do ciclo de vida do serviço. As seções a seguir descrevem os modelos operados pelo parceiro e pelo cliente.</block>
+  <block id="f3cb6d41bba80312235e23ec8b86dd9c" category="section-title">Modelo operado por parceiros</block>
+  <block id="6893c5c77b841676a3202adf82f522ad" category="paragraph">Um parceiro pode fornecer o Keystone STaaS como provedor de serviços ou revendedor. As responsabilidades dependem do seu acordo com o parceiro. Entre em contato com seu provedor de serviços ou parceiro para entender quais tarefas esse provedor ou parceiro realiza para você.</block>
+  <block id="a5c530aebe9501248c4ab02a82823ec5" category="paragraph">*Prestador de serviços*: um prestador de serviços opera os serviços para seus clientes finais. Como parte contratada da NetApp, o prestador de serviços gerencia um ambiente de alocação a vários clientes. Cada locatário é um cliente do prestador de serviços e tem uma assinatura separada que o prestador de serviços fatura diretamente. O administrador do prestador de serviços é responsável por executar todas as tarefas administrativas para os locatários. *Revendedor*: como revendedor, um parceiro atua como ponte entre a NetApp e o cliente. O parceiro vende os serviços Keystone ao cliente final e gerencia o faturamento. Enquanto o parceiro cuida do faturamento, a NetApp fornece suporte direto ao cliente. O suporte do Keystone interage com o cliente e cuida de todas as tarefas administrativas dos locatários.</block>
+  <block id="d3b0fab21e3be9cba3f2f45f27029849" category="section-title">Modelo operado pelo cliente</block>
+  <block id="a389b6ccd467f426c8951a6b7030e884" category="paragraph">Em um modelo operado pelo cliente, você assina o Keystone STaaS com base em seus requisitos de storage e nos níveis de serviço de desempenho selecionados. NetApp define a arquitetura e os produtos e implanta o storage em suas instalações.</block>
+  <block id="3d1646f86c028711718c84767624ef9a" category="paragraph">Suas equipes de storage e TI gerenciam a infraestrutura. Um administrador da sua organização executa tarefas administrativas para os usuários do seu ambiente. Dependendo do seu contrato, você pode enviar solicitações de serviço para a NetApp ou para o seu provedor de serviços.</block>
+  <block id="559c91aead2d4c8d8a888dcfc781ebfd" category="paragraph">A tabela a seguir resume as responsabilidades da NetApp e do cliente em um ambiente do Keystone STaaS operado pelo cliente.</block>
+  <block id="b0da4a424e4ac203b0070238f4756d46" category="section-title">Entrega e suporte de parceiros do Keystone XaaS</block>
+  <block id="a0a49c1cd12aae07c0e0cd0ae609080c" category="paragraph">O Keystone XaaS é uma oferta de assinatura separada sob o NetApp Keystone, fornecida exclusivamente por parceiros da NetApp. Os parceiros fornecem o serviço aos seus clientes finais e gerenciam o suporte e as operações diárias.</block>
+  <block id="6a0c9de0f54e1bb01b0de08ad1bd0376" category="paragraph">Se você utiliza o Keystone XaaS, entre em contato com seu parceiro direto para obter serviço e suporte. Os modelos operacionais do Keystone STaaS e a tabela de responsabilidades operada pelo cliente acima não descrevem as responsabilidades do Keystone XaaS.</block>
+  <block id="fd0a6672dd43784ae9da165b72211dde" category="list-text"><block ref="fd0a6672dd43784ae9da165b72211dde" category="inline-link-macro-rx"></block></block>
+  <block id="dc991dde3226679c296b3a015f8c6004" category="list-text"><block ref="dc991dde3226679c296b3a015f8c6004" category="inline-link-macro-rx"></block></block>
+  <block id="9c6d4d86654b407a13c4377f57433185" category="summary">O NetApp Keystone é a plataforma e marca de storage como serviço da NetApp. O Keystone STaaS é sua principal oferta de assinatura para serviços de storage de arquivos, blocos e objetos.</block>
+  <block id="ade44830b69d05e1478ac622dc80a132" category="paragraph">NetApp Keystone é uma plataforma que fornece o Keystone Storage-as-a-Service (STaaS), uma oferta de assinatura com pagamento conforme o uso para empresas que preferem despesa operacional a investimentos iniciais ou leasing.</block>
+  <block id="ab39311f1bc80acdd6e070ce577c0769" category="section-title">Oferta e serviços do Keystone STaaS</block>
+  <block id="f46441640db1db4fabeccd81a7923b2b" category="paragraph">O Keystone STaaS oferece um modelo semelhante ao da nuvem pública para aquisição, implantação e gerenciamento da infraestrutura de storage. Ao assinar o Keystone STaaS, você seleciona os tipos de storage e os níveis de serviço de desempenho que atendem às suas necessidades.</block>
+  <block id="ef365496afdec899c0755c18ef9c7cc7" category="paragraph">Keystone STaaS é a oferta que define como as funcionalidades de storage são entregues e consumidas. Os serviços são as funcionalidades disponíveis com essa oferta; os serviços padrão estão incluídos na assinatura básica, enquanto os serviços adicionais podem ser adquiridos quando você precisar de funcionalidades adicionais. Por exemplo, a proteção avançada de dados (ADP) é um serviço adicional que fornece espelhamento síncrono entre sites para configurações compatíveis.</block>
+  <block id="758647d81ff350c6880c630570b44a0f" category="paragraph">Essa distinção ajuda você a entender quais funcionalidades estão incluídas na sua assinatura e quais exigem uma compra adicional. Para obter informações sobre serviços padrão e complementares, consulte <block ref="32999c765ee523f7718a7908120f4502" category="inline-link-macro-rx"></block>.</block>
+  <block id="ab1dfb7377b06b4577e13687b7089dd6" category="section-title">Flexibilidade de storage e modelos operacionais</block>
+  <block id="5d5cee9b9ecdd7a2357bbf3567479a88" category="paragraph">O Keystone STaaS oferece suporte a vários tipos de storage e níveis de serviço de desempenho. Você pode começar com storage no local e adicionar serviços em nuvem conforme suas necessidades mudarem. Ajustes de capacidade e realocações na nuvem estão sujeitos aos termos da sua assinatura.</block>
+  <block id="850ca4ac8d4367a08746a9965b376b4d" category="paragraph">O Keystone STaaS pode ser operado em um modelo operado por parceiro ou por cliente. Para obter detalhes, consulte <block ref="df7d31258a77cf6838aec404025cc8f0" category="inline-link-macro-rx"></block>.</block>
+  <block id="932c94fd3f6f5ed5cceccfacda6b64a1" category="section-title">Principais benefícios do Keystone STaaS</block>
+  <block id="16970e9e21f42da13f7973e2bc152e5a" category="list-text">*Eficiência de custos*: tenha custos previsíveis para a capacidade contratada, com cobranças baseadas no uso para o consumo acima dessa contratação.</block>
+  <block id="90afbe0dfb88863b07a75ada0118737e" category="list-text">*Eficiência de capital*: acesse storage corporativo sem grandes investimentos iniciais.</block>
+  <block id="17a1f31c882f22dd3cda7c251eba6496" category="list-text">*Escalabilidade*: aumente sua capacidade de storage à medida que seu negócio cresce.</block>
+  <block id="163cdeffc182ad9d3b71b8f39e0f445d" category="list-text">*Flexibilidade*: ajuste seu plano de storage e mova cargas de trabalho para a nuvem quando fizer sentido.</block>
+  <block id="43314ea9f4dd88c136c5daf801c99518" category="list-text">*Integração com a nuvem*: use serviços locais e na nuvem com uma única assinatura.</block>
+  <block id="d01680bd9e5edb3376e627cd6f72a7c4" category="list-text">*Segurança*: proteja seus dados com medidas de segurança avançadas e recursos de recuperação.</block>
+  <block id="04b52c545ff55f9ed2d541fec1b2b5d2" category="inline-link-macro">Faturamento do Keystone STaaS</block>
+  <block id="55494aae2e75daf13526bf526456cf99" category="list-text"><block ref="55494aae2e75daf13526bf526456cf99" category="inline-link-macro-rx"></block></block>
+  <block id="b0e4b48b1b20c14e687b39b510f4f574" category="inline-link-macro">Serviço adicional de proteção de dados avançada</block>
+  <block id="8b329d90071eeb9833e6bf7e38d6751d" category="list-text"><block ref="8b329d90071eeb9833e6bf7e38d6751d" category="inline-link-macro-rx"></block></block>
+  <block id="32999c765ee523f7718a7908120f4502" category="list-text"><block ref="32999c765ee523f7718a7908120f4502" category="inline-link-macro-rx"></block></block>
+  <block id="97aa8c41b45bb85c7d02d2ba4207fe77" category="inline-link-macro">Níveis de serviço de desempenho no Keystone STaaS</block>
+  <block id="5afba0544f1ccb40bf471ad13881c152" category="list-text"><block ref="5afba0544f1ccb40bf471ad13881c152" category="inline-link-macro-rx"></block></block>
+  <block id="d81446da754fd372d574ffb0de4f0885" category="list-text"><block ref="d81446da754fd372d574ffb0de4f0885" category="inline-link-macro-rx"></block></block>
+  <block id="cb2c00e885d9f9df1add423a84ab143d" category="summary">Com NetApp Keystone STaaS, você paga pelo que se compromete e paga somente pelo que usar além disso. Esta página explica como funciona o modelo de pagamento conforme o uso, desde como seu compromisso de storage é precificado até como a capacidade é medida e faturada, e quando as faturas são geradas.</block>
+  <block id="a9a9bf6b6c0cb590666e48740616bb84" category="doc">Saiba mais sobre o faturamento do Keystone STaaS</block>
+  <block id="60aec626991dc0ffcdec7dd5f8a3c4fc" category="summary">O Keystone STaaS para a versão 3 oferece capacidade de storage em níveis de serviço predefinidos. Cada volume gerenciado pelo Keystone STaaS está associado a um nível de serviço.</block>
+  <block id="c58bcd6909c6274a2cd1cdabea7b9310" category="doc">SLO de disponibilidade para o Keystone STaaS</block>
+  <block id="ae329aa1322861385426793daef84b59" category="summary">O Keystone STaaS oferece SLO baseado em latência por nível de serviço de desempenho, conforme descrito no pedido do Keystone para capacidade consumida até o limite de burst.</block>
+  <block id="6e81588c686416479139c45583fe8153" category="doc">SLO de desempenho para Keystone STaaS</block>
+  <block id="eb39f4d278c726b88763c2231c0eec38" category="summary">Para as assinaturas do Keystone STaaS, a NetApp garante a recuperação dos dados de Snapshot dos volumes SnapLock Compliance no caso de um ataque de ransomware com o programa Ransomware Recovery Guarantee.</block>
+  <block id="b7c207a4f359ff5de1a204f31b383c9b" category="doc">Garantia de recuperação contra ransomware para o Keystone STaaS</block>
+  <block id="af3e5868c67db6ef71bbef290ba461e4" category="summary">Saiba como o SLO de sustentabilidade do Keystone STaaS define metas de consumo de energia para sua implantação e como solicitar créditos de serviço caso essas metas não sejam atingidas.</block>
+  <block id="5bfb94695f5c10a684a50cca0d10e48c" category="doc">SLO de sustentabilidade para o Keystone STaaS</block>
+  <block id="f2db38fdad38511d80c2353842fd12b0" category="summary">Use o site de suporte da NetApp para criar um chamado de suporte ou encontrar informações de contato para suas assinaturas do Keystone STaaS.</block>
+  <block id="04caaedeaecbb1c1a9884b171745eade" category="doc">Serviços de suporte para o Keystone STaaS</block>
+  <block id="4db08f31801a5ab611d53b62185c9334" category="paragraph">NetApp fornece aos clientes do Keystone STaaS serviços operacionais. Os clientes recebem um Keystone Success Manager (KSM) dedicado, opções de contato direto com o suporte e monitoramento proativo por meio da solução ITOM.</block>
+  <block id="c6ec8c918eb2766c554098b0dc610a08" category="paragraph">A NetApp fornece serviços operacionais remotamente aos clientes do Keystone STaaS. Esses serviços abrangem uma série de atividades de gerenciamento de storage, incluindo gerenciamento de ativos e configuração, gerenciamento de capacidade e desempenho, gerenciamento de mudanças, gerenciamento de eventos e incidentes, atendimento de solicitações de serviço e geração de relatórios.</block>
+  <block id="e8e3442d8a4e29f5e0801cb4b8111ca6" category="doc">Tipos de capacidade de storage para o Keystone STaaS</block>
+  <block id="064c213e881f5f4f3d5396ec658179d9" category="doc">Serviços de storage compatíveis com o Keystone STaaS</block>
+  <block id="3cfe0a2552b9528612502f2978e9e0dc" category="doc">Complemento de suporte protegido dos EUA para o Keystone STaaS</block>
+  <block id="f8bd4e9c5347b2f14cfb7befdb857aba" category="paragraph">O United States Protected Support (USPS) é um serviço complementar para as assinaturas do NetApp Keystone STaaS. Isso dá a você o direito de receber a prestação e o suporte dos serviços contínuos do Keystone por cidadãos dos EUA em solo dos EUA.</block>
+  <block id="e4a83797ae987c5417978ed86f322c8a" category="summary">Configure o Keystone Collector para coletar dados de uso em modo privado em um ambiente _dark site_ sem acesso à internet.</block>
+  <block id="313c970e13f71f61db473edeebd291ce" category="paragraph">Configure o Keystone Collector para coletar dados de uso em modo privado em um ambiente _dark site_ sem acesso à internet. Essa configuração única ativa e associa os componentes necessários ao seu ambiente de storage. Depois de configurado, o Keystone Collector monitorará todos os clusters ONTAP gerenciados pelo Active IQ Unified Manager.</block>
+  <block id="fc54b8700160e588a86ad81f8fe4a4ec" category="summary">O Keystone Collector coleta dados de configuração, status e uso dos sistemas ONTAP e StorageGRID associados às assinaturas do Keystone STaaS. Ele também coleta telemetria da máquina virtual que hospeda o Keystone Collector e, opcionalmente, pode coletar dados de desempenho do ONTAP.</block>
+  <block id="87c52dfb4bdf6fa05a865ff443ffd4ab" category="doc">Dados coletados pelo Keystone Collector</block>
+  <block id="b5f7c87a270181a33a3db1fb108b451a" category="paragraph">O Keystone Collector coleta dados de configuração, status e uso dos sistemas ONTAP e StorageGRID associados às assinaturas Keystone STaaS, bem como a telemetria da máquina virtual (VM) que hospeda o Keystone Collector. Opcionalmente, o Keystone Collector pode coletar dados de desempenho do ONTAP quando esse recurso estiver habilitado.</block>
+  <block id="5495cc8f648825d7b80220c80f654660" category="paragraph">Instale o ITOM Collector em um sistema Linux para coletar métricas de infraestrutura para monitorar seu ambiente Keystone STaaS.</block>
+  <block id="88a86d7a0eb477abd41518699763adfa" category="paragraph">Você pode acessar o painel do Keystone da sua assinatura do Keystone STaaS por meio do NetApp Console ou do Digital Advisor.</block>
+  <block id="0bd9b5f0cd69fa03457d5261e27e985e" category="summary">Use a guia Monitoramento para visualizar e criar monitores de alerta para suas assinaturas do Keystone.</block>
+  <block id="bb0423c913eb15d7c9f73c6f1fb0f03e" category="summary">Use a guia Monitoramento para visualizar e gerenciar alertas das suas assinaturas do Keystone.</block>
+  <block id="8791357f8b99ca86537057245eed8ddd" category="summary">Esta página lista os problemas resolvidos no Keystone STaaS e em seus componentes.</block>
+  <block id="53f6379d281525b874bffcca82338881" category="summary">As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas pelos serviços ou componentes do Keystone STaaS, ou que não interoperam corretamente.</block>
+  <block id="f72e3263f44391ec212f134c66adc466" category="summary">Saiba como os serviços legados de assinatura do Keystone diferem do Keystone STaaS</block>
+  <block id="63162f8712c65392ebbb9f00c368c716" category="summary">Conheça os recursos e melhorias mais recentes do Keystone STaaS.</block>
+  <block id="2ab679218907c9a0b4e63d1d59504cf1" category="sidebar">O NetApp Keystone é a plataforma de storage como serviço da NetApp. O Keystone Storage-as-a-Service (STaaS), uma oferta por assinatura no Keystone, fornece serviços de storage de arquivos, blocos e objetos por meio de um modelo de pagamento conforme o uso. O Keystone STaaS permite que as organizações consumam storage como despesa operacional, em vez de fazer um investimento inicial de capital.</block>
+  <block id="faddb25a2d7ddac0ce3d45a0c83a2b5f" category="sidebar">O Keystone STaaS é uma oferta por assinatura na plataforma NetApp Keystone que fornece serviços de storage de arquivos, blocos e objetos por meio de um modelo de pagamento conforme o uso.</block>
+  <block id="997f1c45a230e3dc1dd544b1cbc5987a" category="sidebar">Serviços suportados no Keystone STaaS</block>
+  <block id="a28313cbc23d61683e0a7011c19f0ee3" category="sidebar">Preços e faturamento do Keystone STaaS</block>
+  <block id="48f04a7ecce4b3969cc574012d6d1763" category="sidebar">Serviços adicionais para Keystone STaaS</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">Mais recursos</block>
+  <block id="4693cd1b6690921f370c1c0ecccf429a" category="sidebar">Infraestrutura do Keystone STaaS</block>
+  <block id="4f31540eacf98846f3768b63903865ae" category="sidebar">Configure e defina o Keystone STaaS</block>
+  <block id="fa1e432a1f554890f9fa99b0d4c0bc99" category="sidebar">Serviços adicionais do Keystone STaaS</block>
+  <block id="6ef8b6f4a4abf48e514d5a286146651b" category="sidebar">Entenda a cobrança do Keystone STaaS</block>
 </blocks>

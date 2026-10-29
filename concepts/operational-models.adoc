@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/operational-models.html 
-keywords: Operational models, partner operations, customer operations, roles and responsibilities, r and r 
-summary: O NetApp Keystone STaaS oferece dois modelos operacionais para entrega de serviços.  Você deve entender essas opções antes de começar a usar o Keystone. 
+keywords: operational models, Keystone STaaS, Keystone XaaS, partner operations, customer operations, roles and responsibilities, partner support 
+summary: Saiba como as responsabilidades operacionais diferem entre os modelos do Keystone STaaS operados por parceiros e operados pelo cliente e onde os clientes do Keystone XaaS podem obter suporte. 
 ---
-= Modelos operacionais em Keystone
+= Modelos operacionais para o Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,34 @@ summary: O NetApp Keystone STaaS oferece dois modelos operacionais para entrega 
 
 
 [role="lead"]
-O NetApp Keystone STaaS oferece dois modelos operacionais para entrega de serviços: modelo operado por parceiro e modelo operado pelo cliente.  Você deve entender essas opções antes de começar a usar o Keystone.
-
-* *Modelo operado por parceiros*: Este modelo oferece duas opções:
-+
-** *Prestador de serviços*: Um provedor de serviços opera os serviços para seus clientes finais.  Como parte contratada da NetApp, o provedor de serviços gerencia um ambiente multilocatário onde cada locatário, que é cliente do provedor de serviços, tem sua própria assinatura, cobrada pelo provedor de serviços.  O administrador do provedor de serviços é responsável por executar todas as tarefas administrativas para os inquilinos.
-** *Revendedor*: Como revendedor, um parceiro atua como uma ponte entre a NetApp e o cliente.  O parceiro vende os serviços da Keystone ao cliente final e gerencia o faturamento.  Enquanto o parceiro cuida do faturamento, a NetApp fornece suporte direto ao cliente.  O suporte da Keystone interage com o cliente e cuida de todas as tarefas administrativas para os inquilinos.
-
-
-* *Modelo operado pelo cliente*: Como cliente, você pode assinar os serviços da Keystone de acordo com os níveis de serviço de desempenho e armazenamento selecionados.  A NetApp define a arquitetura e os produtos e implementa o Keystone em suas instalações.  Você precisa gerenciar a infraestrutura por meio de seus recursos de armazenamento e TI.  Com base no seu contrato, você pode gerar solicitações de serviço a serem atendidas pela NetApp ou pelo seu provedor de serviços.  Um administrador da sua organização pode executar tarefas administrativas no seu site (ambiente).  Essas tarefas estão associadas aos usuários em seu ambiente.
+O NetApp Keystone está disponível por meio das ofertas de assinatura Keystone Storage-as-a-Service (STaaS) e Keystone XaaS. O Keystone STaaS oferece suporte a modelos operacionais operados por parceiros e operados por clientes, enquanto o Keystone XaaS é fornecido exclusivamente por parceiros da NetApp. Sua oferta e seu modelo operacional determinam quem gerencia seu ambiente de storage, cuida das operações diárias e fornece suporte.
 
 
 
+[[keystone-staas-operational-models]]
+== Modelos operacionais do Keystone STaaS
 
-[[roles-and-responsibilities-across-the-service-lifecycle]]
-== Funções e responsabilidades ao longo do ciclo de vida do serviço
+Os modelos operacionais do Keystone STaaS definem as responsabilidades da NetApp, dos parceiros e dos clientes ao longo do ciclo de vida do serviço. As seções a seguir descrevem os modelos operados pelo parceiro e pelo cliente.
 
-* *Modelo operado por parceiro*: O compartilhamento de funções e responsabilidades depende do acordo entre você e o provedor de serviços ou parceiro.  Entre em contato com seu provedor de serviços para obter informações.
-* *Modelo operado pelo cliente*: A tabela a seguir resume o modelo geral do ciclo de vida do serviço e as funções e responsabilidades associadas a eles em um ambiente operado pelo cliente.
 
+
+[[partner-operated-model]]
+=== Modelo operado por parceiros
+
+Um parceiro pode fornecer o Keystone STaaS como provedor de serviços ou revendedor. As responsabilidades dependem do seu acordo com o parceiro. Entre em contato com seu provedor de serviços ou parceiro para entender quais tarefas esse provedor ou parceiro realiza para você.
+
+*Prestador de serviços*: um prestador de serviços opera os serviços para seus clientes finais. Como parte contratada da NetApp, o prestador de serviços gerencia um ambiente de alocação a vários clientes. Cada locatário é um cliente do prestador de serviços e tem uma assinatura separada que o prestador de serviços fatura diretamente. O administrador do prestador de serviços é responsável por executar todas as tarefas administrativas para os locatários. *Revendedor*: como revendedor, um parceiro atua como ponte entre a NetApp e o cliente. O parceiro vende os serviços Keystone ao cliente final e gerencia o faturamento. Enquanto o parceiro cuida do faturamento, a NetApp fornece suporte direto ao cliente. O suporte do Keystone interage com o cliente e cuida de todas as tarefas administrativas dos locatários.
+
+
+
+[[customer-operated-model]]
+=== Modelo operado pelo cliente
+
+Em um modelo operado pelo cliente, você assina o Keystone STaaS com base em seus requisitos de storage e nos níveis de serviço de desempenho selecionados. NetApp define a arquitetura e os produtos e implanta o storage em suas instalações.
+
+Suas equipes de storage e TI gerenciam a infraestrutura. Um administrador da sua organização executa tarefas administrativas para os usuários do seu ambiente. Dependendo do seu contrato, você pode enviar solicitações de serviço para a NetApp ou para o seu provedor de serviços.
+
+A tabela a seguir resume as responsabilidades da NetApp e do cliente em um ambiente do Keystone STaaS operado pelo cliente.
 
 |===
 | Tarefa | NetApp | Cliente 
@@ -80,4 +89,21 @@ Apoiar
 
 | image:check.png["marca de verificação"] | Nenhum 
 |===
-Para obter mais informações sobre a implantação, consulte link:../concepts/infra.html["Saiba mais sobre a infraestrutura Keystone"] e link:..//concepts/components.html["Componentes necessários para os serviços Keystone"].
+
+
+[[keystone-xaas-partner-delivery-and-support]]
+== Entrega e suporte de parceiros do Keystone XaaS
+
+O Keystone XaaS é uma oferta de assinatura separada sob o NetApp Keystone, fornecida exclusivamente por parceiros da NetApp. Os parceiros fornecem o serviço aos seus clientes finais e gerenciam o suporte e as operações diárias.
+
+Se você utiliza o Keystone XaaS, entre em contato com seu parceiro direto para obter serviço e suporte. Os modelos operacionais do Keystone STaaS e a tabela de responsabilidades operada pelo cliente acima não descrevem as responsabilidades do Keystone XaaS.
+
+
+
+[[related-information]]
+== Informações relacionadas
+
+* link:../concepts/overview.html["Saiba mais sobre o NetApp Keystone"]
+* link:../concepts/infra.html["Saiba mais sobre a infraestrutura Keystone"]
+* link:../concepts/components.html["Componentes necessários para os serviços Keystone"]
+

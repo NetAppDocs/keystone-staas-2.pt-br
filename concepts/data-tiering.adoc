@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: O serviço complementar de hierarquização de dados identifica dados usados com menos frequência e os hierarquiza no armazenamento compatível. 
 ---
-= Serviço adicional de armazenamento em camadas de dados para Keystone.
+= Serviço complementar de hierarquização de dados para o Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

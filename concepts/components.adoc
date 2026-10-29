@@ -4,7 +4,7 @@ permalink: concepts/components.html
 keywords: infrastructure component, deployment requirement, installation requirement 
 summary: Saiba mais sobre os componentes necessários para habilitar os serviços do NetApp Keystone STaaS em seu ambiente. 
 ---
-= Componentes necessários para os serviços Keystone
+= Componentes necessários para os serviços Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

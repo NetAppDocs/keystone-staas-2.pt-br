@@ -14,7 +14,7 @@ summary: Como assinante do NetApp Keystone STaaS, você pode acessar o painel do
 
 
 [role="lead"]
-Você pode acessar o painel do Keystone por meio do NetApp Console ou do Digital Advisor após assinar os serviços do NetApp Keystone .
+Você pode acessar o painel do Keystone da sua assinatura do Keystone STaaS por meio do NetApp Console ou do Digital Advisor.
 
 [role="tabbed-block"]
 ====
